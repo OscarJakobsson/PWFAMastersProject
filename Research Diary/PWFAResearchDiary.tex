@@ -1,0 +1,161 @@
+
+\documentclass[%
+onecolumn, notitlepage,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%showpacs,preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{article}
+\usepackage[
+top    =2.5cm,
+bottom = 2.5cm,
+left   = 1.5cm,
+right  = 1.5cm]{geometry}
+%\usepackage{amsmath}
+%\usepackage[tbtags]{amsmath}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{natbib}
+\usepackage{varwidth}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{tikz} 
+\usepackage{ltxgrid}
+\usetikzlibrary{shapes,arrows,positioning,automata,backgrounds,calc,er,patterns}
+\usepackage{tikz-feynman}
+\tikzfeynmanset{compat=1.0.0}
+\usetikzlibrary{decorations.shapes}
+\tikzset{decorate sep/.style 2 args=
+{decorate,decoration={shape backgrounds,shape=circle,shape size=#1,shape sep=#2}}}
+%\usepackage{tikz,newtxmath}
+\usetikzlibrary{arrows,decorations.markings}
+\usepackage[pdfencoding=auto]{hyperref}
+\usepackage[utf8x]{inputenc} 
+\usepackage{accents}
+
+%\usepackage{pdflscape}
+\usepackage{rotating}
+
+
+\newcommand*{\dt}[1]{%
+  \accentset{\mbox{\large\bfseries .}}{#1}}
+
+\definecolor{testcolour}{rgb}{0.149019,0,0.439215}
+\hypersetup{colorlinks=true,citecolor=testcolour ,urlcolor=testcolour,linkcolor=testcolour,filecolor=testcolour}
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[LE,RO]{Share\LaTeX}
+\fancyhead[RE,LO]{\textsc{DESY $|$ ATLAS}}
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+ \newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\DeclareMathOperator{\sinc}{sinc}
+\newcommand{\fvec}[1]{\underaccent{\Scale[1]{\sim}}{#1}}
+\fancypagestyle{firstpage}{%
+  \fancyhf{}
+\fancyhead[LE,RO]{ \textsc{OSCAR JAKOBSSON $|$ 2018}}
+\fancyhead[RE,LO]{\textsc{MPhys $|$ PWFA}}
+\fancyhead[CE,CO]{\textsc{RESEARCH DIARY}}
+\fancyfoot[LE,RO]{\thepage}
+}
+\usepackage{accents}
+ \DeclareMathAccent{\wtilde}{\mathord}{largesymbols}{"65}
+\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+%\usepackage{movie15}
+
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}
+  \setlength\parskip{0pt}
+  \begin{center}
+}{%
+  \end{center}
+}
+
+\def\Xint#1{\mathchoice
+   {\XXint\displaystyle\textstyle{#1}}%
+   {\XXint\textstyle\scriptstyle{#1}}%
+   {\XXint\scriptstyle\scriptscriptstyle{#1}}%
+   {\XXint\scriptscriptstyle\scriptscriptstyle{#1}}%
+   \!\int}
+\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$}
+     \vcenter{\hbox{$#2#3$}}\kern-.5\wd0}}
+\def\ddashint{\Xint=}
+\def\dashint{\Xint-}
+
+\let\oldhat\hat
+\renewcommand{\hat}[1]{\oldhat{{#1}}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+
+\def\dbar{{\mathchar'26\mkern-12mu \mathrm{d}}} 
+
+\begin{document}
+
+%\preprint{APS/123-QED}
+\thispagestyle{firstpage}
+\begin{minipage}{0.7\textwidth}
+\vspace{-5pt}
+\noindent \textbf{Project:} A compact plasma beam dump for next generation particle accelerators.\\
+\noindent \textbf{Supervisor:} Dr. Guoxing Xia.\\ 
+\noindent \textbf{Duration:} 24 Weeks, 2018-19.\vspace{-19pt}\\
+\begin{tabbing}
+\textbf{Location:}  \=The University of Manchester,\\
+\>Cockcroft Accelerator Group,\\
+\>Manchester, UK.
+\end{tabbing}
+\end{minipage}
+
+
+\begin{figure}[h]
+\vspace{-95pt}\hfill
+\includegraphics[scale=0.4]{ManchesterCrest.pdf} 
+\end{figure}\vspace{-35pt}
+\noindent\rule{0.72\textwidth}{0.4pt}\\
+\\
+\noindent \textbf{Week 1}\\
+First meeting with Guoxing: Discussed project outline, necessary background reading and the \texttt{EPOCH} software.\\
+Received documents from Guoxing: LFWA PhD thesis \citep{Chou2016}, PWFA and beam dump papers \citep{Bonatto2015,Bonatto2016,Lu2005,Wu2010,Chou2016a,Hanahoe2017} and  \texttt{EPOCH} users manual \citep{Bennett2015}.\\
+\\
+\noindent \textbf{Week 2}\\
+
+
+\clearpage
+ \vfill
+ \bibliographystyle{unsrt}
+ \bibliography{PWFA.bib}
+
+
+ \end{document}
+ 
