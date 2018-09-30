@@ -35,6 +35,7 @@ right  = 1.5cm]{geometry}
 \usepackage{natbib}
 \usepackage{varwidth}
 \usepackage{amsmath}
+\usepackage{amssymb}		
 \usepackage{fancyhdr}
 \usepackage{float}
 \usepackage[usenames, dvipsnames]{color}
@@ -52,9 +53,18 @@ right  = 1.5cm]{geometry}
 \usepackage[utf8x]{inputenc} 
 \usepackage{accents}
 
+\usepackage{moreverb}		
+\usepackage{listings}	
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
 %\usepackage{pdflscape}
 \usepackage{rotating}
-
+\usepackage{color}
+\usepackage{enumitem, xcolor}
+\definecolor{MancPurple}{RGB}{93,42,122}
+\definecolor{MancYellow}{RGB}{252,207,32}
 
 \newcommand*{\dt}[1]{%
   \accentset{\mbox{\large\bfseries .}}{#1}}
@@ -64,7 +74,7 @@ right  = 1.5cm]{geometry}
 \pagestyle{fancy}
 \fancyhf{}
 %\fancyhead[LE,RO]{Share\LaTeX}
-\fancyhead[RE,LO]{\textsc{DESY $|$ ATLAS}}
+\fancyhead[RE,LO]{\textsc{MpPhys $|$ PWFA}}
 \fancyfoot[CE,CO]{\leftmark}
 \fancyfoot[LE,RO]{\thepage}
  \newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}
@@ -81,19 +91,7 @@ right  = 1.5cm]{geometry}
 }
 \usepackage{accents}
  \DeclareMathAccent{\wtilde}{\mathord}{largesymbols}{"65}
-\usepackage{hyperref}% add hypertext capabilities
-%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
-%\linenumbers\relax % Commence numbering lines
-
-%\usepackage[showframe,%Uncomment any one of the following lines to test 
-%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
-%%text={7in,10in},centering,
-%%margin=1.5in,
-%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
-%%height=10in,a5paper,hmargin={3cm,0.8in},
-%]{geometry}
-
-%\usepackage{movie15}
+\usepackage{hyperref}
 
 \newenvironment{tightcenter}{%
   \setlength\topsep{0pt}
@@ -139,18 +137,62 @@ right  = 1.5cm]{geometry}
 
 
 \begin{figure}[h]
-\vspace{-95pt}\hfill
+\vspace{-95pt}\hspace{0.85\textwidth}
 \includegraphics[scale=0.4]{ManchesterCrest.pdf} 
 \end{figure}\vspace{-35pt}
 \noindent\rule{0.72\textwidth}{0.4pt}\\
 \\
-\noindent \textbf{Week 1}\\
-First meeting with Guoxing: Discussed project outline, necessary background reading and the \texttt{EPOCH} software.\\
-Received documents from Guoxing: LFWA PhD thesis \citep{Chou2016}, PWFA and beam dump papers \citep{Bonatto2015,Bonatto2016,Lu2005,Wu2010,Chou2016a,Hanahoe2017} and  \texttt{EPOCH} users manual \citep{Bennett2015}.\\
-\\
+\noindent \textbf{Week 1}
+\begin{itemize}
+\item[\textcolor{MancPurple}{\textbullet}]  First meeting with Guoxing: Discussed project outline, necessary background reading and the \texttt{EPOCH} software. Received documents from Guoxing: LFWA PhD thesis \citep{Chou2016}, PWFA and beam dump papers \citep{Bonatto2015,Bonatto2016,Lu2005,Wu2010,Chou2016a,Hanahoe2017} and  \texttt{EPOCH} users manual \citep{Bennett2015}.
+\item[\textcolor{MancPurple}{\textbullet}] Read theory section in Hanahoe's thesis \citep{Hanahoe2017}.
+\item[\textcolor{MancPurple}{\textbullet}] \underline{Weekly outline:} Background reading to understand the theory of LWFA, PWFA and plasma wakefield deceleration. I will study the beam dump so no laser will feature in my simulations, however good to study LWFA to understand more about PWFA. There are several PIC softwares: QuickPIC, OSIRIS, VLPL3D, Vorpal, EPOCH, XOOPIC, OOPIC, LCODE...why use EPOCH?
+\item[\textcolor{MancPurple}{\textbullet}] \underline{Concepts covered:}
+ \begin{itemize}
+\item[\textcolor{MancPurple}{\textopenbullet}] Gessner (2.3-2.4) - \textbf{Linear regime}: Response of a cold, non-interacting plasma, with a ultra-relativistic "delta function" particle beam by considering the electron density perturbation $n_1$. Compute Green's function for $n_1$ and then convolve the solution with a 2-D Gaussian beam to get the plasma's response of a non-point-like beam, (2.18 Gessner). I could produce 2D plot $n_1/n_0$ to show this response.
+\item[\textcolor{MancPurple}{\textopenbullet}] Derive wave equations for $\vec{E}$ and $\vec{B}$ fields in the plasma following the density perturbation.
+\item[\textcolor{MancPurple}{\textopenbullet}] Derive longitudinal and transverse $E$-fields for the ultra-relativistic delta function driving bunch, then convolve with extended Gaussian beam.
+\item[\textcolor{MancPurple}{\textopenbullet}] \textbf{Non-linear regime}: Derive accelrating and transverse fields in the blow-out regime (Gessner 2.7).
+\end{itemize}
+\item[\textcolor{MancPurple}{\textbullet}] I read Wu et al.  - \textit{Collective deceleration: Toward a compact beam dump}\citep{Wu2010} . No yet summarised the theory section in this paper.
+\item[\textcolor{MancPurple}{\textbullet}] \underline{Questions:} 
+\begin{itemize}
+\item[\textcolor{MancPurple}{\textopenbullet}] Should I look at LWFA theory as well, even though we won't have lasers present in the beam dump? Actually, the active scheme proposed by Bonatto et al. is laser-driven so I should look at LWFA as well, right?
+\item[\textcolor{MancPurple}{\textopenbullet}] Should I also look at positron beam dumping if I am to look at the ILC beam dump?
+\end{itemize}
+
+\item[\textcolor{MancPurple}{\textbullet}] \underline{Concepts to look up:} 
+\begin{itemize}
+\item[\textcolor{MancPurple}{\textopenbullet}] Bump-on-tail instability.
+\item[\textcolor{MancPurple}{\textopenbullet}] Landau damping
+\item[\textcolor{MancPurple}{\textopenbullet}] Plasma beatatron-wavelength
+\item[\textcolor{MancPurple}{\textopenbullet}]  Look up current beam dumps for e-colliders and tabeltop LWFAs .
+\end{itemize}
+\end{itemize}
+\textbf{Linear regime:}
+Perturbation due to beam $n\left(r,\xi \right)\to n\left(r,\xi \right)+\tilde{n}\left(r,\xi \right)$, use Maxwell's equations and continuity equation.\\
+\textit{-- Density:}
+\begin{equation}
+-\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)\tilde{n}\left(r,\xi \right)=n_b\left(r,\xi \right) ~,~~\tilde{n}\left(r,\xi<0 \right)=0
+\end{equation}
+\begin{equation}
+\mathcal{L}_{\xi}\tilde{n}\left(r,\xi \right)=n_b\left(r,\xi \right) \quad \Rightarrow \quad \mathcal{L}_{\xi}G\left(\xi,\xi'\right)=\delta\left(\xi\right)
+\end{equation}
+\begin{equation}
+G\left(\xi,\xi'\right)=\left\{ \begin{aligned}
+&0&&, -\infty<\xi<0\\
+&A\sin\left((k_p\xi \right) + B\cos\left(k_p\xi \right)&&, 0<\xi<\infty
+\end{aligned}\right.
+\end{equation}
+where the Green's function obeys the same b.c as the density perturbation, i.e it is continuous across the boundary with a discontinuous derivative across the boundary.
+Integrate across discontinuity at $\xi=0$
+\begin{equation}
+\lim_{\epsilon\to 0}\int_{-\epsilon}^{\epsilon} \mathcal{L}_{\xi}G\left(\xi,\xi'\right)\mathrm{d}\xi=\lim_{\epsilon\to 0}\int_{-\epsilon}^{\epsilon}\delta\left(\xi\right)\mathrm{d}\xi=1 \quad \Rightarrow \quad \lim_{\epsilon\to 0}\left[-\frac{1}{k_p^2}\frac{\partial G}{\partial \xi}\right]^{\epsilon}_{-\epsilon}=1
+\end{equation}
+\begin{equation}
+G\left(\xi,\xi'\right)=-k_p\sin\left(k_p\xi \right)\Theta\left(\xi \right) \quad \Rightarrow \quad \tilde{n}\left(r,\xi \right)=\int_{-\infty}^{\infty}G\left(\xi,\xi'\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'
+\end{equation}
 \noindent \textbf{Week 2}\\
-
-
 \clearpage
  \vfill
  \bibliographystyle{unsrt}

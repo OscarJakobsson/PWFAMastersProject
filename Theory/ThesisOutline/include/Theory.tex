@@ -1,23 +1,31 @@
 % CREATED BY DAVID FRISK, 2016
 \chapter{Theory}
 
-In the following sections, examples of a figure, an equation, a table, a chemical structure, a list, a listing and a to-do note are shown.
 
-\section{Figure}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.45\linewidth, trim=3cm 11cm 3cm 11cm]{figure/X.pdf}
-\includegraphics[width=0.45\linewidth, trim=3cm 11cm 3cm 11cm]{figure/Y.pdf}
-\caption{Surface and contour plots showing the two dimensional function $z(x,y)=\sin(x+y)\cos(2x)$.}
-\end{figure}
-
-\section{Equation}
+\section{PWFA - Linear Regime}
+Perturbation due to beam $n\left(r,\xi \right)\to n\left(r,\xi \right)+\tilde{n}\left(r,\xi \right)$, use Maxwell's equations and continuity equation.
 \begin{equation}
-f(t)=\left\{ \begin{array}{ll}
-1,~~~~ & t< 1 \\
-t^2 & t\geq 1
+-\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)\tilde{n}\left(r,\xi \right)=n_b\left(r,\xi \right) ~,~~\tilde{n}\left(r,\xi<0 \right)=0
+\end{equation}
+\begin{equation}
+\mathcal{L}_{\xi}\tilde{n}\left(r,\xi \right)=n_b\left(r,\xi \right) \quad \Rightarrow \quad \mathcal{L}_{\xi}G\left(\xi,\xi'\right)=\delta\left(\xi\right)
+\end{equation}
+\begin{equation}
+G\left(\xi,\xi'\right)=\left\{ \begin{array}{ll}
+0,~~ & -\infty<\xi<0\\
+A\sin\left((k_p\xi \right) + B\cos\left(k_p\xi \right),~~ & 0<\xi<\infty
 \end{array}\right.
 \end{equation}
+where the Green's function obeys the same b.c as the density perturbation, i.e it is continuous across the boundary with a discontinuous derivative across the boundary.
+Integrate across discontinuity at $\xi=0$
+\begin{equation}
+\lim_{\epsilon\to 0}\int_{-\epsilon}^{\epsilon} \mathcal{L}_{\xi}G\left(\xi,\xi'\right)\mathrm{d}\xi=\lim_{\epsilon\to 0}\int_{-\epsilon}^{\epsilon}\delta\left(\xi\right)\mathrm{d}\xi=1 \quad \Rightarrow \quad \lim_{\epsilon\to 0}\left[-\frac{1}{k_p^2}\frac{\partial G}{\partial \xi}\right]^{\epsilon}_{-\epsilon}=1
+\end{equation}
+\begin{equation}
+G\left(\xi,\xi'\right)=-k_p\sin\left(k_p\xi \right)\Theta\left(\xi \right) \quad \Rightarrow \quad \tilde{n}\left(r,\xi \right)=\int_{-\infty}^{\infty}G\left(\xi,\xi'\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'
+\end{equation}
+\section{Equation}
+
 
 \section{Table}
 \begin{table}[H]
