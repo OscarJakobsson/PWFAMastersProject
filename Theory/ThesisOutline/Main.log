@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  30 SEP 2018 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  3 OCT 2018 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -777,6 +777,17 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count150
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
@@ -830,15 +841,15 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen187
-\Hy@linkcounter=\count150
-\Hy@pagecounter=\count151
+\Hy@linkcounter=\count151
+\Hy@pagecounter=\count152
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count152
+\Hy@SavedSpaceFactor=\count153
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -850,7 +861,7 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count153
+\c@Hy@tempcnt=\count154
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -858,7 +869,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen188
-\Fld@menulength=\count154
+\Fld@menulength=\count155
 \Field@Width=\dimen189
 \Fld@charsize=\dimen190
 Package hyperref Info: Hyper figures OFF on input line 6369.
@@ -870,31 +881,31 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count155
-\c@Item=\count156
-\c@Hfootnote=\count157
+\Hy@abspage=\count156
+\c@Item=\count157
+\c@Hfootnote=\count158
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count158
-\c@bookmark@seq@number=\count159
+\Fld@listcount=\count159
+\c@bookmark@seq@number=\count160
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip51
+\Hy@SectionHShift=\skip53
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 49.
+Package hyperref Info: Option `colorlinks' set `true' on input line 55.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box46
-\beforetitleunit=\skip52
-\aftertitleunit=\skip53
+\beforetitleunit=\skip54
+\aftertitleunit=\skip55
 \ttl@plus=\dimen191
 \ttl@minus=\dimen192
 \ttl@toksa=\toks40
@@ -905,15 +916,15 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip54
-\f@nch@O@elh=\skip55
-\f@nch@O@erh=\skip56
-\f@nch@O@olh=\skip57
-\f@nch@O@orh=\skip58
-\f@nch@O@elf=\skip59
-\f@nch@O@erf=\skip60
-\f@nch@O@olf=\skip61
-\f@nch@O@orf=\skip62
+\f@nch@headwidth=\skip56
+\f@nch@O@elh=\skip57
+\f@nch@O@erh=\skip58
+\f@nch@O@olh=\skip59
+\f@nch@O@orh=\skip60
+\f@nch@O@elf=\skip61
+\f@nch@O@erf=\skip62
+\f@nch@O@olf=\skip63
+\f@nch@O@orf=\skip64
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
@@ -930,7 +941,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks41
 \XKV@tempa@toks=\toks42
 )
-\XKV@depth=\count160
+\XKV@depth=\count161
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
@@ -939,18 +950,18 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count161
-\calc@Bcount=\count162
+\calc@Acount=\count162
+\calc@Bcount=\count163
 \calc@Adimen=\dimen196
 \calc@Bdimen=\dimen197
-\calc@Askip=\skip63
-\calc@Bskip=\skip64
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count163
-\calc@Cskip=\skip65
+\calc@Ccount=\count164
+\calc@Cskip=\skip67
 )
-\c@@todonotes@numberoftodonotes=\count164
+\c@@todonotes@numberoftodonotes=\count165
 )) (./Main.aux)
 \openout1 = `Main.aux'.
 
@@ -982,16 +993,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count165
+\scratchcounter=\count166
 \scratchdimen=\dimen198
 \scratchbox=\box47
-\nofMPsegments=\count166
-\nofMParguments=\count167
+\nofMPsegments=\count167
+\nofMParguments=\count168
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count168
+\MPscratchCnt=\count169
 \MPscratchDim=\dimen199
-\MPnumerator=\count169
-\makeMPintoPDFobject=\count170
+\MPnumerator=\count170
+\makeMPintoPDFobject=\count171
 \everyMPtoPDFconversion=\toks44
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1016,7 +1027,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count171
+\c@lstlisting=\count172
 
 ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
@@ -1061,7 +1072,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count172
+\c@section@level=\count173
 )
 LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
@@ -1113,7 +1124,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
-<frontpage2.pdf, id=98, 597.50829pt x 845.0471pt>
+<frontpage2.pdf, id=82, 597.50829pt x 845.0471pt>
 File: frontpage2.pdf Graphic file (type pdf)
 <use frontpage2.pdf>
 Package pdftex.def Info: frontpage2.pdf  used on input line 42.
@@ -1158,7 +1169,7 @@ page2.pdf>]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<figure/auxiliary/ManchesterCrest.pdf, id=142, 164.37741pt x 280.16078pt>
+<figure/auxiliary/ManchesterCrest.pdf, id=126, 164.37741pt x 280.16078pt>
 File: figure/auxiliary/ManchesterCrest.pdf Graphic file (type pdf)
 <use figure/auxiliary/ManchesterCrest.pdf>
 Package pdftex.def Info: figure/auxiliary/ManchesterCrest.pdf  used on input li
@@ -1220,6 +1231,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 104.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 104.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
 Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
@@ -1262,26 +1278,23 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ]
 Chapter 2.
-[3]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 72.
-) (./include/Methods.tex [4]
-Chapter 3.
-) (./include/Results.tex [5
+[3] [4]) (./include/Methods.tex [5] [6
 
-] [6
+]
+Chapter 3.
+) (./include/Results.tex [7] [8
 
 ]
 Chapter 4.
-) (./include/Conclusion.tex [7] [8
+) (./include/Conclusion.tex [9] [10
 
 ]
 Chapter 5.
-) [9] [10
+) [11] [12
 
-] (./include/backmatter/References.tex) [11
+] (./include/backmatter/References.tex (./Main.bbl)) [13
 
-] [12
+] [14
 
 ]
 (./include/backmatter/Appendix_1.tex
@@ -1289,48 +1302,50 @@ Appendix A.
 ) [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
  (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: ED354A144884838F80D73C676AF3D0E8;1295.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+(rerunfilecheck)             Checksum: 5B8B6A033D81336A692997BC3444D8BA;1125.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 22867 strings out of 492649
- 410942 string characters out of 6129622
- 493544 words of memory out of 5000000
- 26185 multiletter control sequences out of 15000+600000
- 70033 words of font info for 55 fonts, out of 8000000 for 9000
+ 22651 strings out of 492649
+ 407373 string characters out of 6129622
+ 498103 words of memory out of 5000000
+ 25952 multiletter control sequences out of 15000+600000
+ 78341 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,13n,80p,502b,1079s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+ 64i,13n,67p,502b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
 texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
 18/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2018/texmf-d
 ist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/
-enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/l
+enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/l
 m-ts1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr
 /local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
-pe1/public/lm/lmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
-lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/lm/lmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/lm/lmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtti
-10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Main.pdf (27 pages, 6779888 bytes).
+/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/lm/lmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.
+pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
+blic/lm/lmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmt
+t12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtti10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on Main.pdf (29 pages, 6770665 bytes).
 PDF statistics:
- 458 PDF objects out of 1000 (max. 8388607)
- 385 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 207 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 452 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 175 words of extra memory for PDF output out of 10000 (max. 10000000)
 

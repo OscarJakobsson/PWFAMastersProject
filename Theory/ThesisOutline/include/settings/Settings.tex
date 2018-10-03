@@ -28,6 +28,8 @@
 \usepackage{float} 									% Enables object position enforcement using [H]
 \usepackage{parskip}								% Enables vertical spaces correctly 
 
+\usepackage{natbib}
+\usepackage{ mathrsfs }
 
 
 % OPTIONAL SETTINGS (DELETE OR COMMENT TO SUPRESS)
@@ -35,6 +37,10 @@
 % Disable automatic indentation (equal to using \noindent)
 \setlength{\parindent}{0cm}                         
 
+\let\oldhat\hat
+\renewcommand{\hat}[1]{\oldhat{{#1}}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+ \DeclareMathAccent{\wtilde}{\mathord}{largesymbols}{"65}
 
 % Caption settings (aligned left with bold name)
 \usepackage[labelfont=bf, textfont=normal,
