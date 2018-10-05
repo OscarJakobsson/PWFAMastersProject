@@ -2,6 +2,10 @@
 
 
 \section{PWFA - Linear-Fluid Wakefield Theory}
+\subsection{Plasma Dynamics}
+\begin{equation}
+\omega_p=\sqrt{\frac{4\pi e^2n_0}{me}}
+\end{equation}
 \subsection{Density perturbations}
 Perturbation due to beam $n\left(r,\xi \right)\to n\left(r,\xi \right)+n_1\left(r,\xi \right)$, use Maxwell's equations and continuity equation.
 \begin{equation}
@@ -25,7 +29,7 @@ For simplicity set arrival of beam at $t=0$, such that $\xi'=0$.
 \begin{equation}
 G\left(\xi,\xi'\right)=-k_p\sin\left(k_p\xi \right)\Theta\left(\xi \right) \quad \Rightarrow \quad n_1\left(r,\xi \right)=\int_{-\infty}^{\infty}G\left(\xi,\xi'\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'
 \end{equation}
-\subsection{Longitudinal Accelerating Field} %Accelerating and Focusing Electric Fields
+\subsection{Longitudinal Accelerating Field} 
 \begin{align}
 &\boldsymbol{\nabla}\times \vec{E}=-\frac{1}{c}\frac{\partial \vec{B}}{\partial t} \\
 &\boldsymbol{\nabla}\times \vec{B}=\frac{4\pi}{c}\vec{J}+\frac{1}{c}\frac{\partial \vec{B}}{\partial t}
@@ -47,18 +51,24 @@ where $k_p=\omega_p/c$ is the plasma wave number. To find the electric field alo
 \begin{equation}
 \left(\nabla^2-\frac{1}{c^2}\frac{\partial^2}{\partial t^2}-k_p^2\right)E_z=\frac{4\pi}{c}\frac{\partial \rho_b}{\partial t}+4\pi\frac{\partial}{\partial z}\left(\rho_b+\rho_p\right)
 \end{equation}
-using $\nabla^2=\nabla^2_{\perp}+\partial^2_z$, in Fourier transform space, where
+using $\nabla^2=\nabla^2_{\perp}+\partial^2_z$, in Fourier transform space, where\\
+\textcolor{purple}{change this to E=integral tilde E, then substitute that into the following equations, since the RHS of 2.14 is not correct, fourier transform of the derivative acting on the function is not the same as the derivative acting on the transformed function}
 \begin{equation}
-\wtilde{E}_z\left(k\right)=\int_ {-\infty}^{\infty}E_z(\xi)e^{-ik\xi}\mathrm{d}k~~,~~~\wtilde{\rho}_b\left(\xi\right)+\wtilde{\rho}_p\left(\xi\right)=\int_ {-\infty}^{\infty}\left(\rho_b(k)+\rho_b(k)\right)e^{ik\xi}\mathrm{d}k
+E_z(\xi)\left(k\right)=\int_ {-\infty}^{\infty}\wtilde{E}_z(k)e^{ik\xi}\mathrm{d}k~~,~~~\left(\rho_b(k)+\rho_b(k)\right)=\int_ {-\infty}^{\infty}\left(\wtilde{\rho}_b\left(\xi\right)+\wtilde{\rho}_p\right)\left(\xi\right)e^{ik\xi}\mathrm{d}\xi
 \end{equation}
 such that 
 \begin{equation}
-\left(\frac{\partial^2 }{\partial z^2}-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\right)\wtilde{E}_z\left(\xi\right)=0
+\left(\frac{\partial^2 }{\partial z^2}-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\right)E_z(\xi)=0
+\end{equation}
+and
+\begin{equation}
+\frac{4\pi}{c}\frac{\partial {\rho}_b}{\partial t}+4\pi\frac{\partial }{\partial z}\left({\rho}_b+{\rho}_p\right)=-4\pi i k\wtilde{\rho}_b+4i k\pi\wtilde{\rho}_b+4i k\pi\wtilde{\rho}_p=4i k\pi\wtilde{\rho}_p
 \end{equation}
 which gives 
 \begin{equation}
-\left(\nabla^2_{\perp}-k^2_p\right)\wtilde{E}_z\left(\xi\right)=\frac{4\pi}{c}\frac{\partial \wtilde{\rho}_b}{\partial t}+4\pi\frac{\partial }{\partial z}\left(\wtilde{\rho}_b+\wtilde{\rho}_p\right)
+\left(\nabla^2_{\perp}-k^2_p\right)\wtilde{E}_z\left(\xi\right)=4\pi i k\wtilde{\rho}_p
 \end{equation}
+We note that the two contributions from the beam cancel each other out, this is because of relativistic effects (?) \citep{Gessner2016}.
 From eq. XXX we have
 \begin{equation}
 \frac{\partial^2{\rho}_p}{\partial t^2}+\omega_p^2{\rho}_p=-\omega_p^2{\rho}_b \quad \Rightarrow\quad
@@ -70,24 +80,113 @@ From eq. XXX we have
 \end{equation}
 \begin{equation}
  \left(\frac{\partial^2 }{\partial r^2}+\frac{1}{r}\frac{\partial }{\partial r} -k^2_p\right)\wtilde{E}_z
-=\left[\frac{4\pi}{c}\frac{\partial}{\partial t}+4\pi\left(1+\frac{k_p^2}{k^2-k_p^2}\right)\frac{\partial }{\partial z}\right]\wtilde{\rho}_b
+=4\pi ik_p^2 \frac{k}{k^2-k_p^2}\wtilde{\rho}_b
 \end{equation}
 We now rewrite this equation as
 \begin{equation}
 \mathscr{L}\wtilde{E}_z= \wtilde{f}(r)
 \end{equation}
-We proceed as before and solve this PDE by finding the Green's function. We assume that the source is radially symmetric such that $\mathscr{L}G(r,r')=\delta(r-r')$. The LHS of eq. XXX is the modified Bessel function of order zero and the RHS represents our source term. Consequently the Green's function is formed by linear combinations of  modified Bessels functions of order zero.
+We proceed as before and solve this PDE by finding the Green's function. Working in a cylindrical coordinate system we have that the Green's function must satisfy 
+\begin{equation}
+\mathscr{L}G(\vec{r},\vec{r}')=\delta(\vec{r}-\vec{r}')=\frac{1}{r}\delta(r-r')\delta(\phi-\phi')\delta(z-z')
+\end{equation}
+where the RHS is the 3D Dirac delta function in cylindrical polar coordinates, defined such that 
+$\int\delta(\vec{r}-\vec{r}')r\mathrm{d}r\mathrm{d}\phi\mathrm{d}z=1$. Letting 
+\begin{equation}
+G(\vec{r},\vec{r}')=G_r(r,r')\delta(\phi-\phi')\delta(z-z')
+\end{equation}
+leads to 
+\begin{equation}
+\mathscr{L}G_r(r,r')=\frac{1}{r}\delta(r-r')
+\end{equation}
+The LHS of this expression is the modified Bessel function of order zero and the RHS represents our source term. Consequently the Green's function is formed by linear combinations of, the linearly independent, modified Bessels functions of order zero. \todo{Standard Bessel function with complex arguments}
 \begin{equation}
 G\left(r,r'\right)=\left\{ \begin{array}{ll}
-A(r_0)(A_1 I_0(r)+B_1K_0(r)) &,~ 0<r<r'\\
-B(r_0)(A_2 I_0(r)+B_2K_0(r))  &,~ r'<r<\infty
+A(r')(A_1 I_0(k_pr)+B_1K_0(k_pr)) &,~ 0<r<r'\\
+B(r')(A_2 I_0(k_pr)+B_2K_0(k_pr))  &,~ r'<r<\infty
 \end{array}\right.
 \end{equation}
-
-
-\newpage
-Now lets solve this for the a beam charge distribution that is a delta function in $z$, yet with radial symmetry
+requiring that the two parts of this expression each satisfy one of the B.Cs we have that $B_1=A_2=0$ since $K_0(k_pr)\to \infty$ as $r\to 0$ and $I_0(k_pr)\to \infty$ as $r\to \infty$. Continuity in $G(r,r')$ at $r=r'$ further gives that 
 \begin{equation}
-\rho_b=\frac{e}{2\pi r}\delta(r-r_0)\delta(\xi) \quad \Rightarrow\quad  \left(r^2\frac{\partial^2 }{\partial r^2}+r\frac{\partial }{\partial r} -r^2k^2_p\right)\wtilde{E}_z=2ei\frac{kk_p^2}{k^2-k^2_p}r\delta(r-r_0)
+G\left(r,r'\right)=A_0\left\{ \begin{array}{ll}
+I_0(k_pr)K_0(k_pr') &,~ 0<r<r'\\
+I_0(k_pr')K_0(k_pr)  &,~ r'<r<\infty
+\end{array}\right.
 \end{equation}
-We may compute the electric field from the Green's function directly, or by first computing the point-particle and then convolving it with the point-field, which ever is more computationally demanding. 
+where $A_0$ is a constant of proportionality that we find by integrating $\mathscr{L}G(r,r')=\delta(r-r')/r$ with respect to $r$ across the interval $\left[r'-\epsilon, r'+\epsilon \right]$, which needs to be satisfied for all $\epsilon$, including the limit as $\epsilon\to 0$.
+\begin{align}
+ \lim_{\epsilon\to 0}\int_{r'-\epsilon}^{r'+\epsilon}\left(\frac{\partial^2 G}{\partial r^2}+\frac{1}{r}\frac{\partial G}{\partial r} -k^2_pG\right)\mathrm{d}r= \lim_{\epsilon\to 0}\int_{r'-\epsilon}^{r'+\epsilon}\frac{1}{r}\delta(r-r')\mathrm{d}r&=\frac{1}{r'}\\
+ \lim_{\epsilon\to 0}\Big[\frac{1}{k_p}\frac{\partial G}{\partial r} \Big]_{z-\epsilon}^{z+\epsilon}=\frac{A_0}{k_p} \left.\left(I_0(k_pr')\frac{\partial K_0(k_pr)}{\partial r}-\frac{\partial I_0(k_pr)}{\partial r}K_0(k_pr')\right)\right|_{r=r'} &=\frac{1}{r'}
+\end{align}
+\todo{find missing minus sign, check if a green's function can have r' in front, see judith's notes for what the constant of proportionality should be.}
+This equality must hold for all values of $r'$. Hence, following an approach by Jackson \citep{Jackson1962}, we evaluate the LHS for $r'\gg 1$, where $I_0$ and $K_0$ take the limiting forms 
+\begin{equation}
+I_0(k_pr')\to \frac{1}{\sqrt{2\pi k_pr'}}e^{k_pr'} \quad \text{and} \quad K_0(k_pr')\to \sqrt{\frac{\pi}{2k_pr'}}e^{-k_pr'}
+\end{equation}
+which implies that $A_0=-1$. \textcolor{purple}{Here Gessner gets $A=4\pi$ because of Jackson but I don't see why.} 
+\begin{equation}
+G\left(r,r'\right)=- I_0(k_pr)K_0(k_pr')\Theta(r'-r)-I_0(k_pr')K_0(k_pr)\Theta(r-r')
+\end{equation}
+We can thus find $\wtilde{E}_z$ from 
+\begin{equation}
+\wtilde{E}_z(r,k)=\int_{-\infty}^{\infty}G\left(r,r'\right)f(r',k)r'\mathrm{d}r'
+\end{equation}
+and then perform an inverse Fourier transform to find 
+\begin{equation}
+E_z(r,\xi)=\frac{1}{2\pi}\int_ {-\infty}^{\infty}\wtilde{E}_z\left(r,k\right)e^{ik\xi}\mathrm{d}\xi
+\end{equation}
+Doing this yields 
+\begin{align}
+E_z(r,\xi)&=\frac{4\pi ik_p^2}{2\pi}\int_{-\infty}^{\infty}\frac{ke^{ik\xi}}{k^2-k_p^2}\mathrm{d}k\int_0^{\infty}G\left(r,r'\right)\wtilde{\rho}_b(r')r'\mathrm{d}r'\\
+&=-2\pi k_p^2\cos(k_p\xi)\Theta(\xi)\int_0^{\infty}G\left(r,r'\right)\wtilde{\rho}_b(r')r'\mathrm{d}r'
+\end{align}
+Where the $\Theta(\xi)$ has been added due to causality.\\
+Now lets solve this for a bi-Gaussian beam charge distribution. To do this, we may compute the electric field from the Green's function directly and then carrying out the inverse Fourier transform, or we could choose to first compute the field due to a point-particle and then convolving it with the bi-Gaussian distribution. We proceed by doing the latter by choosing a charge distribution with radial symmetry and a delta function in the $z$-direction to match our Green's function.
+\begin{align}
+{\rho}_{b_0}(r,\xi)=\frac{e}{2\pi r}\delta(r-r')\delta(\xi) \quad \Rightarrow\quad  \wtilde{\rho}_{b_0}(r,k)=\int_ {-\infty}^{\infty}\rho_b(r,\xi)e^{-ik\xi}\mathrm{d}\xi=\frac{e}{2\pi r}\delta(r-r')
+\end{align}
+which gives 
+\begin{equation}
+E_z(r,\xi)=-ek_p^2\cos(k_p\xi)G\left(r,r'\right)\Theta(\xi)
+\end{equation}
+\textcolor{red}{But my Green's function has a $A=-1$ as constant and not $A=4\pi$ as Bonatto and Gessner}\\
+This is refer to as the single-particle wake function \citep{Gessner2016}. The longitudinal electric field resulting from an arbitrary source distribution $n_b(r,\xi)$ is given by the convolution of the source by the single-particle wake function:
+\begin{align}
+E_z(r,\xi)&=-ek_p^2 \int_{-\infty}^{\infty} \cos(k_p(\xi-\xi'))\Theta(\xi-\xi')\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r'\right) n_b(r',\xi')r'\mathrm{d}r'\\
+&=-ek_p^2 \int_{-\infty}^{\xi} \cos(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r'\right) n_b(r',\xi')r'\mathrm{d}r'
+\end{align}
+\textcolor{red}{which is not the same as Bonatto/Gessner, the limits are different, is this not how to do a convolution?}
+\subsection{Transversel Focusing Field} 
+
+\clearpage
+\section{Particle interactions with matter}
+\subsection{Bohr-Fermi-Bethe-Bloch Theory}
+
+\subsection{Collective Plasma Deceleration}
+
+\begin{equation}
+-\left(\frac{\mathrm{d}E}{\mathrm{d}z}\right)_{\text{coll-wave-break}}=F_e=eE_{wave-break}=m_e c\omega_{p}\left(\frac{n_b}{n_e}\right)
+\end{equation}
+
+What is the wave-breaking electric field?
+
+\subsection{Notes Bonatto}
+Rate of change due to the longitudinal electric field acting on an electron beam, i.e position beam in the decelerating region of the wakefield.\\
+"the beam only experiences its self-excited wakefield."\\
+In the passive beam dump, are we essentially slowing down a "drive bunch" without having a witness bunch behind to get accelerated?\\
+It is probaly better to use gamma as in Bonatto's paper, to make it easier to explain total beam energy integral. Basically integrate over all particles.\\
+\\
+$U=\gamma m_ec^2$
+\begin{equation}
+-\frac{\mathrm{d}U}{\mathrm{d}s}=(F_e)_z=eE_z
+\end{equation}
+where $s$ is the distance travelled in the plasma and $U$ is the energy of a particle in the beam at position $\xi$. 
+for ultra relativistic beams, $\beta\sim 1$, the longitudinal electric field is a function of the position along the bunch $\xi=z-ct$ and not $z$ explicitly. 
+\begin{equation}
+U(s,\xi)=U_0-esE_z(\xi)
+\end{equation}
+The total energy of the beam after travelling a distance $s$ is then found by integrating across all the particles in the beam, which is integrating across $\xi$ since analysis is in 1-D.
+\begin{equation}
+\mathcal{U}(s)=U_0\int_{-\infty}
+\end{equation}
+
