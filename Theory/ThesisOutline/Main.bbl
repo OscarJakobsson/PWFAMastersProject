@@ -1,12 +1,26 @@
 \begin{thebibliography}{1}
 
-\bibitem{Gessner2016}
-Spencer~J. Gessner.
-\newblock {DEMONSTRATION OF THE HOLLOW CHANNEL PLASMA WAKEFIELD ACCELERATOR}.
-\newblock {\em Energy}, 501(C), 2010.
-
 \bibitem{Jackson1962}
 John~David Jackson.
 \newblock {Jackson - Classical Electrodynamics (3rd Ed.).pdf}, 1962.
+
+\bibitem{Dawson1959}
+John~M Dawson.
+\newblock {Electron Oscillations in a Cold Plasma}.
+\newblock Technical Report~2, 1959.
+
+\bibitem{Lu2006}
+W.~Lu, C.~Huang, M.~Zhou, M.~Tzoufras, F.~S. Tsung, W.~B. Mori, and
+  T.~Katsouleas.
+\newblock {A nonlinear theory for multidimensional relativistic plasma wave
+  wakefields}.
+\newblock {\em Physics of Plasmas}, 13(5), 2006.
+
+\bibitem{Bonatto2016}
+A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~R. Geddes, C.~Benedetti, E.~Esarey,
+  and W.~P. Leemans.
+\newblock {Compact disposal of high-energy electron beams using passive or
+  laser-driven plasma decelerating stage}.
+\newblock {\em AIP Conference Proceedings}, 1777(1):0--5, 2016.
 
 \end{thebibliography}

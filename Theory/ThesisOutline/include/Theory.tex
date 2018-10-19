@@ -2,12 +2,42 @@
 
 
 \section{PWFA - Linear-Fluid Wakefield Theory}
-\subsection{Plasma Dynamics}
+\subsection{Plasma Dynamics - fluid model}
 \textcolor{red}{What is the wave-breaking field $E_Z$, why is it the maximum possible acceleration/deceleration field? Is it always reached?}
 \begin{equation}
 \omega_p=\sqrt{\frac{4\pi e^2n_0}{me}}
 \end{equation}
 \subsection{Density perturbations}
+Continuity equation
+\begin{equation}
+\frac{\partial n}{\partial t}=-\mathbf{\nabla}\cdot (n\vec{v})
+\end{equation}
+where $n$ is the plasma density and $\vec{v}$ the plasma fluid velocity. Charge conservation.\\
+Lorentz force law:
+\begin{equation}
+m_e\frac{\partial n\vec{v}}{\partial t}=en\left(\vec{E}+\frac{\vec{v}\times \vec{B}}{c}\right)
+\end{equation}
+Treating the plasma response to a particle beam perturbatively we have $n(r,z,t)=n_0+n_1(r,z,t)$ where $n_0$ is the ion density and $n_1$ the plasma perturbation. We let $\vec{v}, \vec{E}, \vec{B}$ be perturbative responses to the beam. From continuity equation we have
+\begin{equation}
+\frac{\partial n_0}{\partial t}+\frac{\partial n_1}{\partial t}=-\mathbf{\nabla}\cdot (n_0\vec{v})-\mathbf{\nabla}\cdot (n_1\vec{v}) \quad \Rightarrow \quad \frac{\partial n_1}{\partial t}\approx -n_0\mathbf{\nabla}(\vec{v})
+\end{equation}
+From the Lorentz force law have
+\begin{equation}
+m_en_0\frac{\partial (1+n_1/n_0)\vec{v}}{\partial t}\approx en_0(1+n_1/n_0)\vec{E} \quad \Rightarrow \quad  m_e\frac{\partial \vec{v}}{\partial t}\approx e\vec{E}
+\end{equation}
+which, using Gauss's law, gives
+\begin{equation}
+\frac{\partial (\mathbf{\nabla}\cdot\vec{v})}{\partial t}\approx \frac{e}{m_e}\mathbf{\nabla}\cdot\vec{E}= \frac{e^2}{m_e}4\pi (n_1+n_b)
+\end{equation}
+where $n_1+n_b$ is the free charge. Hence
+\begin{equation}
+\frac{\partial^2 n_1}{\partial t^2}= -n_0\frac{\partial (\mathbf{\nabla}\cdot\vec{v})}{\partial t}=-\frac{ 4\pi n_0e^2}{m_e} (n_1+n_b) 
+\end{equation}
+which gives
+\begin{equation}
+\frac{\partial^2 n_1}{\partial t^2}+\omega_p^2n_1=-\omega_p^2n_b
+\end{equation}
+where the $\omega_p=(4\pi e^2n_0/m_e)^{1/2}$ is the plasma frequency. We can rewrite this expression in the reference frame of the beam.\\
 Perturbation due to beam $n\left(r,\xi \right)\to n\left(r,\xi \right)+n_1\left(r,\xi \right)$, use Maxwell's equations and continuity equation.
 \begin{equation}
 -\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)n_1\left(r,\xi \right)=n_b\left(r,\xi \right) ~,~~n_1\left(r,\xi<0 \right)=0
@@ -163,13 +193,13 @@ E_z(r,\xi)&=-ek_p^2 \int_{-\infty}^{\infty} \cos(k_p(\xi-\xi'))\Theta(\xi-\xi')\
 \end{align}
 \textcolor{red}{which is not the same as Bonatto/Gessner/Schroeder, the limits are different, they have from xi to infity  , is this not how to do a convolution? Why don't we have somethign like $r-r'$ from a radial convolution or something? Bonatto, Schroder has the integral from infinity to xi, why? \\ These expressions with $-4\pi$ does not satisfy the diff.eq that I am trying to solve in transform space, so why do they use them if they don't solve their original diff. equations?\\ Mira's thesis also has $4\pi$ if converting to cgs.}
 \subsection{Transverse Focusing Field} 
-
+Use Panofsky-Wenzel theorem
 
 
 \clearpage
 \section{Non-linear Regime} 
 \subsection{Wave-breaking field}
-\underline{Dawson's derivation}
+\underline{Dawson's derivation} [Note: The wave-breaking field does not represent the onset of the non-linear regime but the highest achievable field in the non-linear regime.]
 We consider a simple 1D linear non-relativistic electron sheet model first used by Dawson \citep{Dawson1959} to show the breakdown of the linear model (\textcolor{red}{correct?}). Consider the plasma being made up of thin sheets of ions and electrons. A sheet at equilibrium position $z=z_0$ is then displaced by $\eta_0(z_0)$, where the displacement is set as function of the equilibrium position for full generality, to a new position $z=z_0+\eta_0$. The displaced sheet reveals a positive surface charge density $\sigma=en_0\eta_0$, where $n_0$ is the electron charge density in the plasma. This sets up a restoring electric field which we find using Gauss's law to be $E_{\text{res}}=4\pi n_0e\eta_0$ which yields a restoring force
 \begin{equation}
  m_e\frac{\partial^2\eta_0}{\partial t^2}=-eE_{\text{res}}=-4\pi n_0e^2\eta_0=-\omega_p^2\eta_0
@@ -232,20 +262,21 @@ n=\frac{n_0}{1+\frac{\partial \eta }{\partial z_0}}
 Having seen that the linear theory can break down mathematically, it is crucial to ask whether this is realised in 3D models and experiments as well. 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{SahaiThesisPlot}
+\includegraphics[scale=1]{SahaiThesisPlot.png}
 \caption{Plot corresponding to Dawson's derivation of the wave-breaking field [ref. Sahai].}
 \label{DawsonCriterionPlot}
 \end{figure}
 
 \clearpage
 \section{Particle interactions with matter}
+Conventional beam dumps work by stochastic interactions of the beam with the dense medium [hanahoe 6.5]
 \subsection{Bohr-Fermi-Bethe-Bloch Theory}
 Bethe-Bloch forumla:
 \begin{equation}
 -\expval{\frac{\mathrm{d}U}{\mathrm{d}s}}_{\text{ion}}=\frac{4\pi e^4n_{e,m}}{m_ec^2\beta^2}\left[\ln\left(\frac{2m_e\gamma^2v^2}{I}\right) -\beta^2\right]
 \end{equation}
 
-\subsection{Collective Plasma Deceleration}
+\subsection{Collective Plasma Deceleration -- Non-Linear regime }
 
 \begin{equation}
 -\left(\frac{\mathrm{d}E}{\mathrm{d}z}\right)_{\text{coll-wave-break}}=F_e=eE_{wave-break}=m_e c\omega_{p}\left(\frac{n_b}{n_e}\right)
@@ -253,6 +284,23 @@ Bethe-Bloch forumla:
 
 What is the wave-breaking electric field?
 
+
+
+\subsection{Collective Plasma Deceleration -- Linear regime }
+Based on the work of Lu et. al \citep{Lu2006}, wherein it was shown that the predictions from the linear models perform well even in the non-linear regime, it is of interest to compute the energy loss in the linear regime. This follows the analysis by Bonatto et al. \citep{Bonatto2016}.\\
+The energy loss of a bunch is due to the work carried out by the longitudinal electric field $E_z$, neglecting effects such as bremsstralung etc. The rate of energy change with propagation distance of a particle at position $(r,\xi)$ in the bunch after travelling is given by the force exerted on the particle by the longitudinal electric field:
+\begin{equation}
+\frac{\mathrm{d}U_p}{\mathrm{d}s}=-eE_z(r,\xi)
+\end{equation}
+where we have assumed that there occurs no modulation of the particle bunch as it traverses the plasma, hence the electric field is only a function of the position in the bunch $E_z(r,\xi)$ and not the propagation distance $s$. Integrating over the propagation distance then gives the energy of one particle in the beam at position $(r,\xi)$ after travelling a distance s:
+\begin{equation}
+U_e(r,\xi,s)=U_e(r,\xi,0)-seE_z(r,\xi)
+\end{equation}
+from which multiplication by the beam number density $n_b(r,\xi)$ and integration over the volume of the bunch gives the total energy of all particles in the bunch after propagation distance s
+\begin{equation}
+U(s)=\int  U_e(r,\xi,0)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi-se\int E_z(r,\xi)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi
+\end{equation}
+where $\mathrm{d}V=r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi$ [I think].
 \subsection{Notes Bonatto}
 Rate of change due to the longitudinal electric field acting on an electron beam, i.e position beam in the decelerating region of the wakefield.\\
 "the beam only experiences its self-excited wakefield."\\
@@ -273,3 +321,7 @@ The total energy of the beam after travelling a distance $s$ is then found by in
 \mathcal{U}(s)=U_0\int_{-\infty}
 \end{equation}
 
+We will proceed by calculating the gamma factor of a given particle in the beam who's energy we wish to compute.
+\begin{equation}
+\gamma(s,\xi)=\gamma_0-esE_z(\xi)
+\end{equation}
