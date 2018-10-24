@@ -15,12 +15,12 @@
 \contentsline {subsection}{\numberline {2.3.1}Bohr-Fermi-Bethe-Bloch Theory}{11}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Collective Plasma Deceleration -- Non-Linear regime }{11}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Collective Plasma Deceleration -- Linear regime }{11}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Notes Bonatto}{11}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.4}Notes Bonatto}{12}{subsection.2.3.4}
 \contentsline {chapter}{\numberline {3}Simulations}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Particle-in-Cell Simulations}{13}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}EPOCH}{13}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Grid settings}{14}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Notes.}{15}{section.3.2}
+\contentsline {section}{\numberline {3.2}Notes.}{16}{section.3.2}
 \contentsline {chapter}{\numberline {4}Results}{17}{chapter.4}
 \contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}
 \contentsline {chapter}{Bibliography}{21}{chapter.5}

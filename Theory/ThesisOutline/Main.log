@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  18 OCT 2018 15:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  24 OCT 2018 09:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2400,7 +2400,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--269
  []
 
 [9] [10 <./SahaiThesisPlot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 304--310
+Underfull \hbox (badness 10000) in paragraph at lines 305--311
 
  []
 
@@ -2429,11 +2429,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-) (./include/Results.tex [15] [16
-
-]
+[15]) (./include/Results.tex [16]
 Chapter 4.
-) (./include/Conclusion.tex [17] [18
+) (./include/Conclusion.tex [17
+
+] [18
 
 ]
 Chapter 5.
@@ -2465,7 +2465,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
 Here is how much of TeX's memory you used:
  31549 strings out of 492649
  586383 string characters out of 6129622
- 655247 words of memory out of 5000000
+ 656247 words of memory out of 5000000
  34765 multiletter control sequences out of 15000+600000
  607642 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2495,7 +2495,7 @@ live/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
 /texlive/2018/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive
 /2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/t
 exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Main.pdf (33 pages, 7021618 bytes).
+Output written on Main.pdf (33 pages, 7023825 bytes).
 PDF statistics:
  594 PDF objects out of 1000 (max. 8388607)
  507 compressed objects within 6 object streams

@@ -199,6 +199,80 @@ Integrate across discontinuity at $\xi=0$
 G\left(\xi,\xi'\right)=-k_p\sin\left(k_p\xi \right)\Theta\left(\xi \right) \quad \Rightarrow \quad \tilde{n}\left(r,\xi \right)=\int_{-\infty}^{\infty}G\left(\xi,\xi'\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'
 \end{equation}
 \noindent \textbf{Week 2}\\
+\begin{itemize}
+\item[\textcolor{MancPurple}{\textbullet}] Read Bonatto's paper on active and passive beam dump. Wrote up theory studies from week 1. 
+\item[\textcolor{MancPurple}{\textbullet}]Read Dawson's 1959 paper on the wave-breaking field limit and wrote up a summary of the theory.
+\item[\textcolor{MancPurple}{\textbullet}] Meet with Yangme Li and Guxing to install the plasma Particle-In-Cell simualtion software \textit{EPOCH} on my laptop, as well as the data visulaisation software \textit{VisIt}. Guoxing applied for an account for me on the High Performance Computing (HPC) cluster, specifically the Computational Shared Facility (CSF) at the University of Manchester.
+\item[\textcolor{MancPurple}{\textbullet}] Installed EPOCH and VisIt, and compiled the EPOCH extension of VisIt (to read EPOCH's .sdf data files). Ran some short test simulations using sample code given by Yangme. 
+\end{itemize}
+\noindent \textbf{Week 3}\\
+Meeting Guoxing:
+\begin{itemize}
+\item We will change $\sigma_{x,y}$, in simulation from $\sigma_{x,y}=0.3 \mu m ~\to~5-10 \mu m$ because the $0.3\mu m$ EuPRAXIA beam parameter gives to high beam density $n_b$, which means that we can't have $n_b\sim n_p$ because the plasma density would have to be too high. We should aim for $n_p\sim 10^{17}-10^{18}\sim n_b$ (standard L/PWFA) parameters. 
+EuPRAXIA wants $\sigma_{x,y}$ small because small bunches gives more coherent radiation in undulators. One could expand the beam by letting it propagate freely (expand due to space charge) a distance before reaching the beam dump. 
+\item $\text{Run simulations with uniform plasma density for }\left\{\begin{aligned}
+&n_p\sim 0.1 n_b \quad &&\text{Non-linear}\\
+&n_p\sim  n_b\quad &&\text{Quasi-linear}\\
+&n_p\sim 10 n_b\quad &&\text{Linear}
+\end{aligned}\right.$ \\
+\item Use $\Delta E/E=0.01$ and bunch charge $30~$pC ($5~$fs).\\
+\item Estimate necessary simulation propagation length by saturation length using wave-breaking electric field gradient 
+$$L_{\text{sat}}\approx \frac{T_0}{eE_{wb}}=\frac{T_0}{e}\frac{e}{m_e c\omega_p}=\frac{T_0}{m_e c}\sqrt{\frac{m_e e\epsilon_0}{e^2n_b}} $$ 
+\item Project outline:
+\begin{itemize}
+\item Uniform plasma with varying $n_b\sim n_p$
+\item Vary plasma density profile
+\item Test laser to dump head of beam
+\item Run simulations for real FlashForward parameters and not the idealized EuPRAXIA parameters.
+\end{itemize}
+\item  100pC $$n_b=\frac{N_p}{(2\pi)^{3/2} \sigma_y^2\sigma_x}=\frac{6.25\times 10^{8}}{(2\pi)^{3/2} (5\times 10^{-6})^3}\approx 3.2\times 10^{23}~ \text{m}^{-3} $$
+$$\Rightarrow ~~eE_{\text{wb}}=\left\{\begin{aligned}
+&17 ~\text{GeV/m }&& n_p=0.1 n_b \\
+&54 ~\text{GeV/m} && n_p=n_b\\
+&172 ~\text{GeV/m} &&n_p=10 n_b
+\end{aligned}\right.\quad\Rightarrow ~~L_{sat}(1 ~\text{GeV})=\left\{\begin{aligned}
+&5.8 ~\text{cm}&& n_p=0.1 n_b \\
+&1.9 ~\text{cm} && n_p=n_b\\
+&0.6 ~\text{cm} &&n_p=10 n_b
+\end{aligned}\right.$$
+$$1 ~\text{GeV beam} ~~\Rightarrow ~~ L_{sat}\sim 2 ~\text{cm}=2*10^4 \mu \text{m} $$
+\item  30pC $$n_b=\frac{N_p}{(2\pi)^{3/2} \sigma_y^2\sigma_x}=\frac{1.87\times 10^{8}}{(2\pi)^{3/2} (5\times 10^{-6})^3}\approx 9.5\times 10^{22}~ \text{m}^{-3} $$
+$$\Rightarrow ~~eE_{\text{wb}}=\left\{\begin{aligned}
+&9.4 ~\text{GeV/m }&& n_p=0.1 n_b \\
+&30 ~\text{GeV/m} && n_p=n_b\\
+&94 ~\text{GeV/m} &&n_p=10 n_b
+\end{aligned}\right.\quad\Rightarrow ~~L_{sat}(1 ~\text{GeV})=\left\{\begin{aligned}
+&10.7 ~\text{cm}&& n_p=0.1 n_b \\
+&3.4 ~\text{cm} && n_p=n_b\\
+&1.1 ~\text{cm} &&n_p=10 n_b
+\end{aligned}\right.$$
+$$1 ~\text{GeV beam} ~~\Rightarrow ~~ L_{sat}\sim 3.4 ~\text{cm}=3.4*10^4 \mu \text{m} $$
+
+
+\end{itemize}
+
+\begin{itemize}
+\item[\textcolor{MancPurple}{\textbullet}] The HPC application was approved for me and we installed EPOCH on the CSF cluster. The newer version of EPOCH could not be installed so we used an older version (epoch-4.8.3) which compiled without any issues. 
+\item[\textcolor{MancPurple}{\textbullet}] I set up trial simulations for the alternative EuPRAXIA beam parameters that we wish to simulate, specifically using $\sigma_{x,y}=5 \mu m$ and $Q=30, 100$ pc. The previous Mphys students ran the 100 pc beam at very narrow energy spread $< 1\%$ and original 0.3 $\mu m$ beam width, we want to see the effect of the wider beam. These were run at the lowest acceptable resolution:
+\item[\textcolor{MancPurple}{\textbullet}] I queued simulations on the cluster for the 30 pc beam, this time using the higher resolution suggested by Yangme:
+\end{itemize}
+
+
+\noindent \textbf{Week 4}\\
+\begin{itemize}
+\item[\textcolor{MancPurple}{\textbullet}] Analysed the simulation data for the low resolution 30 pc beam at 5 $\mu m$ width and RMS length. The beam was propagated for 2 cm, which is the calculated saturation length for the quasilinear simulation. The resulting energy of the beam vs. spatial extent of the beam were generated and compiled into a video using a python script I wrote. The results after 2 cm are shown below:
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.3]{simulation30pc}
+\end{figure}
+\item[\textcolor{MancPurple}{\textbullet}] By integrating energy histograms using VisIt's query('Integrate') function in a Python script the energy decrease was computed as a function of propagation distance for the 3 cases above:
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.8]{EnergyDecrease30pc.pdf}
+\end{figure}
+\item[\textcolor{MancPurple}{\textbullet}] The varying plasma density was tried in EPOCH by doing some test simulation. This will be set up and run next week. 
+\end{itemize}
+
 \clearpage
  \vfill
  \bibliographystyle{unsrt}

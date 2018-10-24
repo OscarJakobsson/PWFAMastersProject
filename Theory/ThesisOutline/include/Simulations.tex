@@ -49,7 +49,7 @@ begin:boundaries
   bc_y_max = simple_outflow
 end:boundaries
 \end{verbatim}
-
+$$n_b = \frac{1}{{\sigma_x\sigma_y^2 (2\pi)^{3/2 }  }}e^{{{ - \left( {x - x_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - x_0 } \right)^2 } {2\sigma_x ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_x^2 }}}e^{{{ - \left( {y - y_0} \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y- y_0 } \right)^2 } {2\sigma_y ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}e^{{{ - \left( {y - y_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y - y_0 } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}$$
 \section{Notes.}
 Meeting Guoxing:
 \begin{itemize}
@@ -62,7 +62,7 @@ EuPRAXIA wants $\sigma_{x,y}$ small because small bunches gives more coherent ra
 \end{aligned}\right.$ \\
 \item Use $\Delta E/E=0.01$ and bunch charge $30~$pC ($5~$fs).\\
 \item Estimate necessary simulation propagation length by saturation length using wave-breaking electric field gradient 
-$$L_{\text{sat}}\approx \frac{T_0}{eE_{wb}} $$ 
+$$L_{\text{sat}}\approx \frac{T_0}{eE_{wb}}=\frac{T_0}{e}\frac{e}{m_e c\omega_p}=\frac{T_0}{m_e c}\sqrt{\frac{m_e e\epsilon_0}{e^2n_b}} $$ 
 \item Project outline:
 \begin{itemize}
 \item Uniform plasma with varying $n_b\sim n_p$
@@ -70,7 +70,28 @@ $$L_{\text{sat}}\approx \frac{T_0}{eE_{wb}} $$
 \item Test laser to dump head of beam
 \item Run simulations for real FlashForward parameters and not the idealized EuPRAXIA parameters.
 \end{itemize}
-\item  $$n_b=\frac{N_p}{(2\pi)^{3/2} \sigma_y^2\sigma_x}=\frac{6.25\times 10^{8}}{(2\pi)^{3/2} (5\times 10^{-6})^3}\approx 3.2\times 10^{23}~ \text{m}^{-3} ~~\Rightarrow ~~E_{\text{wb}}=54 ~\text{GeV/m}$$
+\item  100pC $$n_b=\frac{N_p}{(2\pi)^{3/2} \sigma_y^2\sigma_x}=\frac{6.25\times 10^{8}}{(2\pi)^{3/2} (5\times 10^{-6})^3}\approx 3.2\times 10^{23}~ \text{m}^{-3} $$
+$$\Rightarrow ~~eE_{\text{wb}}=\left\{\begin{aligned}
+&17 ~\text{GeV/m }&& n_p=0.1 n_b \\
+&54 ~\text{GeV/m} && n_p=n_b\\
+&172 ~\text{GeV/m} &&n_p=10 n_b
+\end{aligned}\right.\quad\Rightarrow ~~L_{sat}(1 ~\text{GeV})=\left\{\begin{aligned}
+&5.8 ~\text{cm}&& n_p=0.1 n_b \\
+&1.9 ~\text{cm} && n_p=n_b\\
+&0.6 ~\text{cm} &&n_p=10 n_b
+\end{aligned}\right.$$
 $$1 ~\text{GeV beam} ~~\Rightarrow ~~ L_{sat}\sim 2 ~\text{cm}=2*10^4 \mu \text{m} $$
+\item  30pC $$n_b=\frac{N_p}{(2\pi)^{3/2} \sigma_y^2\sigma_x}=\frac{1.87\times 10^{8}}{(2\pi)^{3/2} (5\times 10^{-6})^3}\approx 9.5\times 10^{22}~ \text{m}^{-3} $$
+$$\Rightarrow ~~eE_{\text{wb}}=\left\{\begin{aligned}
+&9.4 ~\text{GeV/m }&& n_p=0.1 n_b \\
+&30 ~\text{GeV/m} && n_p=n_b\\
+&94 ~\text{GeV/m} &&n_p=10 n_b
+\end{aligned}\right.\quad\Rightarrow ~~L_{sat}(1 ~\text{GeV})=\left\{\begin{aligned}
+&10.7 ~\text{cm}&& n_p=0.1 n_b \\
+&3.4 ~\text{cm} && n_p=n_b\\
+&1.1 ~\text{cm} &&n_p=10 n_b
+\end{aligned}\right.$$
+$$1 ~\text{GeV beam} ~~\Rightarrow ~~ L_{sat}\sim 3.4 ~\text{cm}=3.4*10^4 \mu \text{m} $$
+
 
 \end{itemize}
