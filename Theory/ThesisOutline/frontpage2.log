@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  30 SEP 2018 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  28 OCT 2018 21:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,18 +137,18 @@ s
 (./frontpage2.aux)
 \openout1 = `frontpage2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -226,45 +226,39 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
+(Font)              <12> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
-<laser-plasma_wakefield_accelerator.jpg, id=1, 3692.79625pt x 3382.6375pt>
-File: laser-plasma_wakefield_accelerator.jpg Graphic file (type jpg)
-<use laser-plasma_wakefield_accelerator.jpg>
-Package pdftex.def Info: laser-plasma_wakefield_accelerator.jpg  used on input 
-line 22.
-(pdftex.def)             Requested size: 553.89554pt x 507.37373pt.
-
-Overfull \hbox (44.42505pt too wide) in paragraph at lines 19--22
- | [] 
- []
-
-<crest_white.pdf, id=2, 102.79865pt x 175.06656pt>
+(Font)              <6> on input line 23.
+<visit0006.png, id=1, 565.11125pt x 532.99126pt>
+File: visit0006.png Graphic file (type png)
+<use visit0006.png>
+Package pdftex.def Info: visit0006.png  used on input line 27.
+(pdftex.def)             Requested size: 367.31795pt x 346.44022pt.
+<crest_white.pdf, id=3, 102.79865pt x 175.06656pt>
 File: crest_white.pdf Graphic file (type pdf)
 <use crest_white.pdf>
-Package pdftex.def Info: crest_white.pdf  used on input line 30.
+Package pdftex.def Info: crest_white.pdf  used on input line 35.
 (pdftex.def)             Requested size: 61.67966pt x 105.04073pt.
 [1
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./laser
--plasma_wakefield_accelerator.jpg> <./crest_white.pdf>] (./frontpage2.aux) ) 
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./visit
+0006.png> <./crest_white.pdf>] (./frontpage2.aux) ) 
 Here is how much of TeX's memory you used:
- 2565 strings out of 492649
- 35745 string characters out of 6129622
+ 2564 strings out of 492649
+ 35616 string characters out of 6129622
  110026 words of memory out of 5000000
  6431 multiletter control sequences out of 15000+600000
  6978 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,5n,43p,287b,129s stack positions out of 5000i,500n,10000p,200000b,80000s
-</u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-Output written on frontpage2.pdf (1 page, 727408 bytes).
+</usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+Output written on frontpage2.pdf (1 page, 214224 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 40 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

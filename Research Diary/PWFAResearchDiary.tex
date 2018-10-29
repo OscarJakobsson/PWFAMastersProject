@@ -65,7 +65,7 @@ right  = 1.5cm]{geometry}
 \usepackage{enumitem, xcolor}
 \definecolor{MancPurple}{RGB}{93,42,122}
 \definecolor{MancYellow}{RGB}{252,207,32}
-
+\definecolor{Orange2}{RGB}{255,102,0}
 \newcommand*{\dt}[1]{%
   \accentset{\mbox{\large\bfseries .}}{#1}}
 
@@ -74,7 +74,7 @@ right  = 1.5cm]{geometry}
 \pagestyle{fancy}
 \fancyhf{}
 %\fancyhead[LE,RO]{Share\LaTeX}
-\fancyhead[RE,LO]{\textsc{MpPhys $|$ PWFA}}
+\fancyhead[RE,LO]{\textsc{MPhys $|$ PWFA}}
 \fancyfoot[CE,CO]{\leftmark}
 \fancyfoot[LE,RO]{\thepage}
  \newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}
@@ -272,6 +272,20 @@ $$1 ~\text{GeV beam} ~~\Rightarrow ~~ L_{sat}\sim 3.4 ~\text{cm}=3.4*10^4 \mu \t
 \end{figure}
 \item[\textcolor{MancPurple}{\textbullet}] The varying plasma density was tried in EPOCH by doing some test simulation. This will be set up and run next week. 
 \end{itemize}
+
+\newpage
+\noindent \textbf{Success!} Managed to set up an initial distribution with arbitrary energy distribution. 
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.49\textwidth]{visit0002.png}
+\includegraphics[width=0.49\textwidth]{visit0007.png}
+\caption{\textcolor{Orange2}{\textbf{(Left)}}{: Energy distribution for bunch after propagating 3.4cm} \textcolor{blue}{\textbf{(Right)}}{: Energy distribution for bunch initialised at start of simulation.}}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\textwidth]{visit0004.png}
+\caption{\textcolor{Orange2}{\textbf{(1)}}{: Energy distribution for bunch after propagating 3.4cm} \textcolor{blue}{\textbf{(2)}}{: Energy distribution for bunch initialised at start of simulation.}}
+\end{figure}
 
 \clearpage
  \vfill
