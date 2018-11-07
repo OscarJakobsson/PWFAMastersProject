@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  6 NOV 2018 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  7 NOV 2018 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2606,21 +2606,44 @@ File: visit0004.png Graphic file (type png)
 <use visit0004.png>
 Package pdftex.def Info: visit0004.png  used on input line 384.
 (pdftex.def)             Requested size: 423.151pt x 289.05208pt.
- (./PWFAResearchDiary.bbl [14 <./visit0002.png (PNG copy)> <./visit0007.png (PN
-G copy)> <./visit0004.png>]) [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 394.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 394.
- (./PWFAResearchDiary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 394.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 394.
+ [14 <./visit0002.png (PNG copy)> <./visit0007.png (PNG copy)> <./visit0004.png
+>]
+<buncht1copy.png, id=420, 853.1875pt x 342.27875pt>
+File: buncht1copy.png Graphic file (type png)
+<use buncht1copy.png>
+Package pdftex.def Info: buncht1copy.png  used on input line 392.
+(pdftex.def)             Requested size: 370.2541pt x 148.54012pt.
+<lasert1copy.png, id=421, 854.19125pt x 287.0725pt>
+File: lasert1copy.png Graphic file (type png)
+<use lasert1copy.png>
+Package pdftex.def Info: lasert1copy.png  used on input line 393.
+(pdftex.def)             Requested size: 370.2541pt x 124.4331pt.
+<buncht2copy.png, id=422, 859.21pt x 342.27875pt>
+File: buncht2copy.png Graphic file (type png)
+<use buncht2copy.png>
+Package pdftex.def Info: buncht2copy.png  used on input line 399.
+(pdftex.def)             Requested size: 370.2541pt x 147.49556pt.
+<lasert2copy.png, id=423, 853.1875pt x 275.0275pt>
+File: lasert2copy.png Graphic file (type png)
+<use lasert2copy.png>
+Package pdftex.def Info: lasert2copy.png  used on input line 400.
+(pdftex.def)             Requested size: 370.2541pt x 119.35481pt.
+ (./PWFAResearchDiary.bbl [15 <./buncht1copy.png> <./lasert1copy.png> <./buncht
+2copy.png> <./lasert2copy.png>]) [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
+
+(./PWFAResearchDiary.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
 Package rerunfilecheck Info: File `PWFAResearchDiary.out' has not changed.
 (rerunfilecheck)             Checksum: 0AF3987FE3A61FCC9A158D3B0128C1DC;114.
  ) 
 Here is how much of TeX's memory you used:
- 38330 strings out of 492649
- 751101 string characters out of 6129622
+ 38353 strings out of 492649
+ 751502 string characters out of 6129622
  848287 words of memory out of 5000000
- 41570 multiletter control sequences out of 15000+600000
+ 41586 multiletter control sequences out of 15000+600000
  580565 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,80p,10412b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2640,10 +2663,10 @@ blic/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr
 r/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on PWFAResearchDiary.pdf (15 pages, 6880787 bytes).
+Output written on PWFAResearchDiary.pdf (16 pages, 6974132 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 501 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
