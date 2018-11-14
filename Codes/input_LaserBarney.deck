@@ -1,0 +1,142 @@
+begin:constant
+
+  # Laser Parameters ------------------------------------------------------------------------------------------------
+
+  las_lambda = 0.8*micro
+  las_t_peak = 80.0*femto
+  las_t_fwhm = 22*femto
+  las_spot_size = 15*micro
+  las_a0 = 4.0
+  las_intensity = las_a0^2 / (7.3e-19 * (las_lambda / micro)^2)#W/cm^2
+
+  las_trans_profile = gauss(y,0,las_spot_size)
+  las_t_w = las_t_fwhm / (sqrt((2*loge(2))))
+  las_t_prof = gauss(time,las_t_peak,las_t_w)
+  las_omega = 2.0*pi*c/las_lambda
+  las_phase = 0
+  
+  plas_n_crit = critical(las_omega)
+
+  # Plasma Parameters ------------------------------------------------------------------------------------------------
+
+  plasma_density_peak = 1e24
+  plateau_factor = 1.0
+  plasma_density_plateau = plateau_factor * plasma_density_peak
+  x_0 = 300*micro
+  sigma = 110*micro
+
+  plasma_upramp_length = 300*micro
+  plasma_plateau_length = 500*micro
+  plasma_downramp_length = 700*micro
+
+  plasma_upramp_start = 0
+  plasma_upramp_end = plasma_upramp_start + plasma_upramp_length
+  plasma_plateau_start = plasma_upramp_end
+  plasma_plateau_end = plasma_plateau_start + plasma_plateau_length
+  plasma_downramp_start = plasma_plateau_end
+  plasma_downramp_end = plasma_downramp_start + plasma_downramp_length
+
+  
+  plas_freq_max = sqrt((plasma_density_peak * qe^2)/(epsilon0 * me))
+  las_vg_min = c * sqrt(1-(plas_freq_max/las_omega)^2)
+
+  # Simulation Parameters ------------------------------------------------------------------------------------------------
+
+  part_per_cell = 2
+  cell_length = 0.05*micro
+  cell_width = 0.3*micro
+  half_width = 30*micro
+  length = 60*micro
+  offset_long = 0.0
+  offset_width = 0.0
+ 
+  prop_length =  plasma_upramp_length + plasma_flat_length + plasma_shock_length + plasma_plateau_length + plasma_downramp_length
+  end_time = prop_length /c
+
+  output_step = 100 * micro
+  output_timestep = output_step / c 
+  output_full_freq = 1
+  output_restart_freq=-1
+
+end:constant
+
+begin:control
+  dlb_threshold = 0.5
+  nx = nint(length / cell_length)
+  ny = nint((half_width * 2) / cell_width)
+  npart = part_per_cell * nx * ny
+  t_end = end_time
+  x_min = offset_long
+  x_max = offset_long + length
+  y_min = offset_width - half_width
+  y_max = offset_width + half_width
+  stdout_frequency = 10
+  use_random_seed = F
+end:control
+
+begin:boundaries
+  bc_x_min = simple_laser
+  bc_x_max = simple_outflow
+  bc_y_min = simple_outflow
+  bc_y_max = simple_outflow
+end:boundaries
+
+begin:species
+  name = electron
+  charge = -1.0
+  mass = 1.0
+  frac = 1.0
+  
+  #sets density to increasing linear ramp if within up-ramp region
+  #density = if(((x gt plasma_upramp_start) and (x lt plasma_flat_start),plasma_density_peak*(x-plasma_upramp_start)/plasma_upramp_length), density(electron))
+  density = if(((x gt plasma_upramp_start) and (x lt plasma_upramp_end),plasma_density_peak*gauss(x,x_0,sigma), density(electron)) 
+
+  #sets density constant if in plateau region
+  density = if((x gt plasma_plateau_start) and (x lt plasma_plateau_end), plasma_density_plateau, density(electron))
+
+  #set density to decreasing linear ramp if within downramp region
+  density = if((x gt plasma_downramp_start) and (x lt plasma_downramp_end), plasma_density_plateau*(1-((x-plasma_downramp_start)/plasma_downramp_length)), density(electron)) 
+
+  dumpmask = always
+end:species
+
+begin:laser
+  boundary = x_min
+  intensity_w_cm2 = las_intensity
+  lambda = las_lambda
+  t_profile = las_t_prof
+  profile = las_trans_profile
+end:laser
+
+begin:window
+  move_window = T
+  window_v_x = las_vg_min
+  window_start_time =  0.95*length / c    
+  bc_x_min_after_move = simple_outflow
+end:window
+
+begin:subset
+  name = ebunch
+  gamma_min = 10.0                      
+  include_species:electron
+end:subset
+
+begin:output
+
+name = main
+restartable = F
+dt_snapshot = output_timestep
+# restart_dump_every = 0
+
+grid = ebunch + always
+ex = always
+ey = always
+charge_density = ebunch + always + species + no_sum
+
+particles = ebunch + always
+px = ebunch + always
+py = ebunch + always
+gamma = ebunch + always
+particle_energy = ebunch + always
+particle_weight = ebunch + always
+end:output

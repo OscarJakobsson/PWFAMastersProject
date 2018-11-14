@@ -1,4 +1,5 @@
 \babel@toc {english}{}
+\contentsline {chapter}{List of Figures}{xi}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Conventional accelerators}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Plasma wakefield accelerators }{1}{section.1.2}
@@ -19,14 +20,18 @@
 \contentsline {subsection}{\numberline {2.3.4}Notes Bonatto}{12}{subsection.2.3.4}
 \contentsline {chapter}{\numberline {3}Simulations}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Particle-in-Cell Simulations}{13}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}EPOCH}{13}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Grid settings}{14}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Notes.}{16}{section.3.2}
-\contentsline {chapter}{\numberline {4}Preliminary Results}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Plasma deceleration - Uniform and varying density}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Hybrid Scheme - Feasibility study}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Initialising a decelerated bunch}{17}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Introduction of co-propagating laser}{17}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}
-\contentsline {chapter}{Bibliography}{21}{chapter.5}
+\contentsline {section}{\numberline {3.2}EPOCH}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Input deck and initial conditions}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Grid settings}{14}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Non-analytical bunch initialisation}{15}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Notes.}{16}{section.3.3}
+\contentsline {chapter}{\numberline {4}Simulation tests}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Plasma deceleration - Uniform density}{19}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Transverse instabilities in quasilinear regime}{19}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Hybrid Scheme - Feasibility study}{19}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Initialising a decelerated bunch}{19}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Introduction of co-propagating laser}{19}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Ongoing and future work}{21}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{23}{chapter.6}
+\contentsline {chapter}{Bibliography}{25}{chapter.6}
 \contentsline {chapter}{\numberline {A}Appendix: Input decks}{I}{appendix.A}

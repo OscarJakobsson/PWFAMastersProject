@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  7 NOV 2018 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  8 NOV 2018 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2040,6 +2040,9 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
@@ -2184,22 +2187,22 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box94
 \enitdp@description=\count317
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 73.
+Package hyperref Info: Option `colorlinks' set `true' on input line 85.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 77.
+less on input line 89.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 78.
+less on input line 90.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 79.
+less on input line 91.
 
 Class ltxutil Info: Unrecognized array package. Please update this document cla
-ss! (Proceeding with fingers crossed.) on input line 122.
+ss! (Proceeding with fingers crossed.) on input line 134.
 
 Class ltxutil Warning: Repair the float package.
 
@@ -2210,31 +2213,31 @@ LaTeX Warning: Unused global option(s):
 (./PWFAResearchDiary.aux)
 \openout1 = `PWFAResearchDiary.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 134.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 134.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 122.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 134.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2307,14 +2310,14 @@ ABD: EveryShipout initializing macros
 
 Package tikz-feynman Warning: LuaTeX is required if you wish to have vertices a
 utomatically placed. You can disable this warning by setting /tikzfeynman/warn 
-luatex=false on input line 122.
+luatex=false on input line 134.
 
 
 Package tikz-feynman Warning: The preamble requested version 1.0.0, but the sys
-tem version is 1.1.0. This may change some diagrams. on input line 122.
+tem version is 1.1.0. This may change some diagrams. on input line 134.
 
 \AtBeginShipoutBox=\box96
-Package hyperref Info: Link coloring ON on input line 122.
+Package hyperref Info: Link coloring ON on input line 134.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2323,9 +2326,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count324
 )
-LaTeX Info: Redefining \ref on input line 122.
-LaTeX Info: Redefining \pageref on input line 122.
-LaTeX Info: Redefining \nameref on input line 122.
+LaTeX Info: Redefining \ref on input line 134.
+LaTeX Info: Redefining \pageref on input line 134.
+LaTeX Info: Redefining \nameref on input line 134.
 
 (./PWFAResearchDiary.out) (./PWFAResearchDiary.out)
 \@outlinefile=\write4
@@ -2337,65 +2340,65 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \c@lstlisting=\count325
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--131
+Underfull \hbox (badness 10000) in paragraph at lines 140--143
 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 136.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 148.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 136.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 148.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 136
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 148
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 136
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 148
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 136.
+(Font)              <10> on input line 148.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 136.
+(Font)              <7> on input line 148.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 136.
-LaTeX Font Info:    Try loading font information for U+msa on input line 136.
+(Font)              <5> on input line 148.
+LaTeX Font Info:    Try loading font information for U+msa on input line 148.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 136.
+LaTeX Font Info:    Try loading font information for U+msb on input line 148.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<ManchesterCrest.pdf, id=15, 164.37741pt x 280.16078pt>
+<ManchesterCrest.pdf, id=19, 164.37741pt x 280.16078pt>
 File: ManchesterCrest.pdf Graphic file (type pdf)
 <use ManchesterCrest.pdf>
-Package pdftex.def Info: ManchesterCrest.pdf  used on input line 141.
+Package pdftex.def Info: ManchesterCrest.pdf  used on input line 153.
 (pdftex.def)             Requested size: 65.74979pt x 112.06232pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--147
+Underfull \hbox (badness 10000) in paragraph at lines 155--159
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 147.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 159.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 147.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 159.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
@@ -2403,19 +2406,19 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 197.
+less on input line 209.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 197.
+less on input line 209.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 197.
+less on input line 209.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 197.
+less on input line 209.
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/se-pdfdoc.def
 File: se-pdfdoc.def 2016/05/16 v1.11 stringenc: PDFDocEncoding
@@ -2423,73 +2426,73 @@ File: se-pdfdoc.def 2016/05/16 v1.11 stringenc: PDFDocEncoding
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./ManchesterCrest.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 200--203
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--218
+Underfull \hbox (badness 10000) in paragraph at lines 225--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
+Underfull \hbox (badness 10000) in paragraph at lines 273--275
 
  []
 
-<simulation30pc.png, id=120, 1283.79625pt x 688.5725pt>
+<simulation30pc.png, id=124, 1283.79625pt x 688.5725pt>
 File: simulation30pc.png Graphic file (type png)
 <use simulation30pc.png>
-Package pdftex.def Info: simulation30pc.png  used on input line 266.
+Package pdftex.def Info: simulation30pc.png  used on input line 278.
 (pdftex.def)             Requested size: 385.14185pt x 206.57333pt.
-<EnergyDecrease30pc.pdf, id=122, 462.52798pt x 346.89601pt>
+<EnergyDecrease30pc.pdf, id=126, 462.52798pt x 346.89601pt>
 File: EnergyDecrease30pc.pdf Graphic file (type pdf)
 <use EnergyDecrease30pc.pdf>
-Package pdftex.def Info: EnergyDecrease30pc.pdf  used on input line 271.
+Package pdftex.def Info: EnergyDecrease30pc.pdf  used on input line 283.
 (pdftex.def)             Requested size: 370.02287pt x 277.51718pt.
 [3 <./simulation30pc.png>] [4 <./EnergyDecrease30pc.pdf>]
-<Energy30pc_per_particle_past_sat_length.pdf, id=168, 462.52798pt x 346.89601pt
+<Energy30pc_per_particle_past_sat_length.pdf, id=172, 462.52798pt x 346.89601pt
 >
 File: Energy30pc_per_particle_past_sat_length.pdf Graphic file (type pdf)
 <use Energy30pc_per_particle_past_sat_length.pdf>
 Package pdftex.def Info: Energy30pc_per_particle_past_sat_length.pdf  used on i
-nput line 283.
+nput line 295.
 (pdftex.def)             Requested size: 396.70256pt x 297.54135pt.
-<Energy30pc_per_particle_lowres.pdf, id=169, 462.52798pt x 346.89601pt>
+<Energy30pc_per_particle_lowres.pdf, id=173, 462.52798pt x 346.89601pt>
 File: Energy30pc_per_particle_lowres.pdf Graphic file (type pdf)
 <use Energy30pc_per_particle_lowres.pdf>
 Package pdftex.def Info: Energy30pc_per_particle_lowres.pdf  used on input line
- 284.
+ 296.
 (pdftex.def)             Requested size: 396.70256pt x 297.54135pt.
-<Energies30pc_lowres.pdf, id=170, 462.52798pt x 346.89601pt>
+<Energies30pc_lowres.pdf, id=174, 462.52798pt x 346.89601pt>
 File: Energies30pc_lowres.pdf Graphic file (type pdf)
 <use Energies30pc_lowres.pdf>
-Package pdftex.def Info: Energies30pc_lowres.pdf  used on input line 288.
+Package pdftex.def Info: Energies30pc_lowres.pdf  used on input line 300.
 (pdftex.def)             Requested size: 412.57pt x 309.44046pt.
-<Particles30pc_lowres.pdf, id=171, 462.52798pt x 346.89601pt>
+<Particles30pc_lowres.pdf, id=175, 462.52798pt x 346.89601pt>
 File: Particles30pc_lowres.pdf Graphic file (type pdf)
 <use Particles30pc_lowres.pdf>
-Package pdftex.def Info: Particles30pc_lowres.pdf  used on input line 289.
+Package pdftex.def Info: Particles30pc_lowres.pdf  used on input line 301.
 (pdftex.def)             Requested size: 412.57pt x 309.44046pt.
-<visit0016.png, id=172, 1027.84pt x 940.51375pt>
+<visit0016.png, id=176, 1027.84pt x 940.51375pt>
 File: visit0016.png Graphic file (type png)
 <use visit0016.png>
-Package pdftex.def Info: visit0016.png  used on input line 296.
+Package pdftex.def Info: visit0016.png  used on input line 308.
 (pdftex.def)             Requested size: 259.1819pt x 237.16571pt.
-<visit0012.png, id=173, 1027.84pt x 940.51375pt>
+<visit0012.png, id=177, 1027.84pt x 940.51375pt>
 File: visit0012.png Graphic file (type png)
 <use visit0012.png>
-Package pdftex.def Info: visit0012.png  used on input line 297.
+Package pdftex.def Info: visit0012.png  used on input line 309.
 (pdftex.def)             Requested size: 259.1819pt x 237.16571pt.
-<visit0019.png, id=174, 828.09375pt x 512.91624pt>
+<visit0019.png, id=178, 828.09375pt x 512.91624pt>
 File: visit0019.png Graphic file (type png)
 <use visit0019.png>
-Package pdftex.def Info: visit0019.png  used on input line 302.
+Package pdftex.def Info: visit0019.png  used on input line 314.
 (pdftex.def)             Requested size: 476.03984pt x 294.86194pt.
  [5 <./Energy30pc_per_particle_past_sat_length.pdf> <./Energy30pc_per_particle_
 lowres.pdf
@@ -2502,151 +2505,159 @@ ge
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Particles30pc_lowres.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<quasi_energy_force.png, id=355, 1027.84pt x 940.51375pt>
+<quasi_energy_force.png, id=359, 1027.84pt x 940.51375pt>
 File: quasi_energy_force.png Graphic file (type png)
 <use quasi_energy_force.png>
-Package pdftex.def Info: quasi_energy_force.png  used on input line 309.
+Package pdftex.def Info: quasi_energy_force.png  used on input line 321.
 (pdftex.def)             Requested size: 317.36526pt x 290.40816pt.
-<linear_energy_force.png, id=356, 1027.84pt x 940.51375pt>
+<linear_energy_force.png, id=360, 1027.84pt x 940.51375pt>
 File: linear_energy_force.png Graphic file (type png)
 <use linear_energy_force.png>
-Package pdftex.def Info: linear_energy_force.png  used on input line 310.
+Package pdftex.def Info: linear_energy_force.png  used on input line 322.
 (pdftex.def)             Requested size: 317.36526pt x 290.40816pt.
  [7 <./visit0016.png (PNG copy)> <./visit0012.png (PNG copy)> <./visit0019.png>
 ] [8 <./quasi_energy_force.png (PNG copy)> <./linear_energy_force.png (PNG copy
 )>]
-<visit0035.png, id=370, 1027.84pt x 937.5025pt>
+<visit0035.png, id=374, 1027.84pt x 937.5025pt>
 File: visit0035.png Graphic file (type png)
 <use visit0035.png>
-Package pdftex.def Info: visit0035.png  used on input line 318.
+Package pdftex.def Info: visit0035.png  used on input line 330.
 (pdftex.def)             Requested size: 259.1819pt x 236.40637pt.
-<visit0033.png, id=371, 1027.84pt x 937.5025pt>
+<visit0033.png, id=375, 1027.84pt x 937.5025pt>
 File: visit0033.png Graphic file (type png)
 <use visit0033.png>
-Package pdftex.def Info: visit0033.png  used on input line 319.
+Package pdftex.def Info: visit0033.png  used on input line 331.
 (pdftex.def)             Requested size: 259.1819pt x 236.40637pt.
-<visit0037.png, id=372, 1027.84pt x 590.205pt>
+<visit0037.png, id=376, 1027.84pt x 590.205pt>
 File: visit0037.png Graphic file (type png)
 <use visit0037.png>
-Package pdftex.def Info: visit0037.png  used on input line 324.
+Package pdftex.def Info: visit0037.png  used on input line 336.
 (pdftex.def)             Requested size: 476.03984pt x 273.35278pt.
-<visit0038.png, id=373, 1027.84pt x 590.205pt>
+<visit0038.png, id=377, 1027.84pt x 590.205pt>
 File: visit0038.png Graphic file (type png)
 <use visit0038.png>
-Package pdftex.def Info: visit0038.png  used on input line 328.
+Package pdftex.def Info: visit0038.png  used on input line 340.
 (pdftex.def)             Requested size: 476.03984pt x 273.35278pt.
-<visit0040.png, id=374, 1027.84pt x 937.5025pt>
+<visit0040.png, id=378, 1027.84pt x 937.5025pt>
 File: visit0040.png Graphic file (type png)
 <use visit0040.png>
-Package pdftex.def Info: visit0040.png  used on input line 333.
+Package pdftex.def Info: visit0040.png  used on input line 345.
 (pdftex.def)             Requested size: 259.1819pt x 236.40637pt.
-<visit0042.png, id=375, 1027.84pt x 937.5025pt>
+<visit0042.png, id=379, 1027.84pt x 937.5025pt>
 File: visit0042.png Graphic file (type png)
 <use visit0042.png>
-Package pdftex.def Info: visit0042.png  used on input line 334.
+Package pdftex.def Info: visit0042.png  used on input line 346.
 (pdftex.def)             Requested size: 259.1819pt x 236.40637pt.
  [9 <./visit0035.png (PNG copy)> <./visit0033.png (PNG copy)> <./visit0037.png 
 (PNG copy)>] [10 <./visit0038.png (PNG copy)> <./visit0040.png> <./visit0042.pn
 g>]
 File: visit0035.png Graphic file (type png)
 <use visit0035.png>
-Package pdftex.def Info: visit0035.png  used on input line 341.
+Package pdftex.def Info: visit0035.png  used on input line 353.
 (pdftex.def)             Requested size: 259.1819pt x 236.40637pt.
 File: visit0033.png Graphic file (type png)
 <use visit0033.png>
-Package pdftex.def Info: visit0033.png  used on input line 342.
+Package pdftex.def Info: visit0033.png  used on input line 354.
 (pdftex.def)             Requested size: 259.1819pt x 236.40637pt.
 File: visit0037.png Graphic file (type png)
 <use visit0037.png>
-Package pdftex.def Info: visit0037.png  used on input line 347.
+Package pdftex.def Info: visit0037.png  used on input line 359.
 (pdftex.def)             Requested size: 476.03984pt x 273.35278pt.
  [11]
 File: Energy30pc_per_particle_lowres.pdf Graphic file (type pdf)
 <use Energy30pc_per_particle_lowres.pdf>
 Package pdftex.def Info: Energy30pc_per_particle_lowres.pdf  used on input line
- 354.
+ 366.
 (pdftex.def)             Requested size: 396.70256pt x 297.54135pt.
 File: visit0040.png Graphic file (type png)
 <use visit0040.png>
-Package pdftex.def Info: visit0040.png  used on input line 360.
+Package pdftex.def Info: visit0040.png  used on input line 372.
 (pdftex.def)             Requested size: 259.1819pt x 236.40637pt.
 File: visit0042.png Graphic file (type png)
 <use visit0042.png>
-Package pdftex.def Info: visit0042.png  used on input line 361.
+Package pdftex.def Info: visit0042.png  used on input line 373.
 (pdftex.def)             Requested size: 259.1819pt x 236.40637pt.
-<25cm_lengthdist_start_end.png, id=396, 1027.84pt x 940.51375pt>
+<25cm_lengthdist_start_end.png, id=400, 1027.84pt x 940.51375pt>
 File: 25cm_lengthdist_start_end.png Graphic file (type png)
 <use 25cm_lengthdist_start_end.png>
-Package pdftex.def Info: 25cm_lengthdist_start_end.png  used on input line 367.
+Package pdftex.def Info: 25cm_lengthdist_start_end.png  used on input line 379.
 
 (pdftex.def)             Requested size: 349.10019pt x 319.44037pt.
-<25cm_widthdist_start_end.png, id=397, 1027.84pt x 937.5025pt>
+<25cm_widthdist_start_end.png, id=401, 1027.84pt x 937.5025pt>
 File: 25cm_widthdist_start_end.png Graphic file (type png)
 <use 25cm_widthdist_start_end.png>
-Package pdftex.def Info: 25cm_widthdist_start_end.png  used on input line 368.
+Package pdftex.def Info: 25cm_widthdist_start_end.png  used on input line 380.
 (pdftex.def)             Requested size: 349.10019pt x 318.41762pt.
 
 
-LaTeX Warning: Float too large for page by 2.65176pt on input line 370.
+LaTeX Warning: Float too large for page by 2.65176pt on input line 382.
 
 [12] [13 <./25cm_lengthdist_start_end.png (PNG copy)> <./25cm_widthdist_start_e
 nd.png (PNG copy)>]
-<visit0002.png, id=410, 1027.84pt x 940.51375pt>
+<visit0002.png, id=414, 1027.84pt x 940.51375pt>
 File: visit0002.png Graphic file (type png)
 <use visit0002.png>
-Package pdftex.def Info: visit0002.png  used on input line 378.
+Package pdftex.def Info: visit0002.png  used on input line 390.
 (pdftex.def)             Requested size: 259.1819pt x 237.16571pt.
-<visit0007.png, id=411, 1027.84pt x 940.51375pt>
+<visit0007.png, id=415, 1027.84pt x 940.51375pt>
 File: visit0007.png Graphic file (type png)
 <use visit0007.png>
-Package pdftex.def Info: visit0007.png  used on input line 379.
+Package pdftex.def Info: visit0007.png  used on input line 391.
 (pdftex.def)             Requested size: 259.1819pt x 237.16571pt.
-<visit0004.png, id=412, 836.12375pt x 571.13374pt>
+<visit0004.png, id=416, 836.12375pt x 571.13374pt>
 File: visit0004.png Graphic file (type png)
 <use visit0004.png>
-Package pdftex.def Info: visit0004.png  used on input line 384.
+Package pdftex.def Info: visit0004.png  used on input line 396.
 (pdftex.def)             Requested size: 423.151pt x 289.05208pt.
  [14 <./visit0002.png (PNG copy)> <./visit0007.png (PNG copy)> <./visit0004.png
 >]
-<buncht1copy.png, id=420, 853.1875pt x 342.27875pt>
+<buncht1copy.png, id=424, 853.1875pt x 342.27875pt>
 File: buncht1copy.png Graphic file (type png)
 <use buncht1copy.png>
-Package pdftex.def Info: buncht1copy.png  used on input line 392.
+Package pdftex.def Info: buncht1copy.png  used on input line 404.
 (pdftex.def)             Requested size: 370.2541pt x 148.54012pt.
-<lasert1copy.png, id=421, 854.19125pt x 287.0725pt>
+<lasert1copy.png, id=425, 854.19125pt x 287.0725pt>
 File: lasert1copy.png Graphic file (type png)
 <use lasert1copy.png>
-Package pdftex.def Info: lasert1copy.png  used on input line 393.
+Package pdftex.def Info: lasert1copy.png  used on input line 405.
 (pdftex.def)             Requested size: 370.2541pt x 124.4331pt.
-<buncht2copy.png, id=422, 859.21pt x 342.27875pt>
+<buncht2copy.png, id=426, 859.21pt x 342.27875pt>
 File: buncht2copy.png Graphic file (type png)
 <use buncht2copy.png>
-Package pdftex.def Info: buncht2copy.png  used on input line 399.
+Package pdftex.def Info: buncht2copy.png  used on input line 411.
 (pdftex.def)             Requested size: 370.2541pt x 147.49556pt.
-<lasert2copy.png, id=423, 853.1875pt x 275.0275pt>
+<lasert2copy.png, id=427, 853.1875pt x 275.0275pt>
 File: lasert2copy.png Graphic file (type png)
 <use lasert2copy.png>
-Package pdftex.def Info: lasert2copy.png  used on input line 400.
+Package pdftex.def Info: lasert2copy.png  used on input line 412.
 (pdftex.def)             Requested size: 370.2541pt x 119.35481pt.
- (./PWFAResearchDiary.bbl [15 <./buncht1copy.png> <./lasert1copy.png> <./buncht
-2copy.png> <./lasert2copy.png>]) [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
+ [15 <./buncht1copy.png> <./lasert1copy.png> <./buncht2copy.png> <./lasert2copy
+.png>] [16]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 428.
 
-(./PWFAResearchDiary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
+Overfull \hbox (48.56157pt too wide) in paragraph at lines 462--463
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][] 
+ []
+
+(./PWFAResearchDiary.bbl [17]) [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 487.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 487.
+ (./PWFAResearchDiary.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 487.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 487.
 Package rerunfilecheck Info: File `PWFAResearchDiary.out' has not changed.
-(rerunfilecheck)             Checksum: 0AF3987FE3A61FCC9A158D3B0128C1DC;114.
+(rerunfilecheck)             Checksum: F892035DE95E88DDE8D9EF9F9B8A92D7;164.
  ) 
 Here is how much of TeX's memory you used:
- 38353 strings out of 492649
- 751502 string characters out of 6129622
- 848287 words of memory out of 5000000
- 41586 multiletter control sequences out of 15000+600000
- 580565 words of font info for 61 fonts, out of 8000000 for 9000
+ 38864 strings out of 492649
+ 756383 string characters out of 6129622
+ 876383 words of memory out of 5000000
+ 42045 multiletter control sequences out of 15000+600000
+ 581202 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,80p,10412b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,80p,10412b,1197s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
 18/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2018/texmf-d
@@ -2662,11 +2673,13 @@ blic/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr
 7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb></us
 r/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on PWFAResearchDiary.pdf (16 pages, 6974132 bytes).
+texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/lm/lmtti10.pfb>
+Output written on PWFAResearchDiary.pdf (18 pages, 7031430 bytes).
 PDF statistics:
- 501 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 164 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 574 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 

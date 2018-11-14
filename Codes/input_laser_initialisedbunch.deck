@@ -1,0 +1,233 @@
+begin:constant
+
+
+
+### basic parameters
+   lambda0=1*micro
+   plas_plat_n = 9.5e23 #3.0e17 cm^-3, the lowest elecron density in most of crystals
+   #1/kp=c/wp
+   lambdap=61*micro
+   plas_kp=9.71*micro 
+   length =150*micro
+   half_width = 7* plas_kp
+   lightspeed = 299792458.
+   boltzmann_constant=8.6e-5 #unit of eV/K
+   elec_mass_mev = ((me*lightspeed^2)/qe)/1.e6
+   energy_spread=0.01
+   ang_divergence=1e-5
+   energy=1   #electron energy in MeV
+   egamma = (energy/elec_mass_mev)+1.0
+   emomen = (egamma-1)*me*lightspeed
+   edrift_x=emomen  #momentum in kg*m*s^-1
+   edrift_y=0
+   etemp_x= energy_spread*energy*1e6/boltzmann_constant
+   etemp_y=me*(ang_divergence*lightspeed)^2/kb  # kb - Boltzmann’s constant=1.38064852(79)×10^−23 J/K.
+
+  # Laser Parameters ------------------------------------------------------------------------------------------------
+
+  las_lambda = 0.8*micro
+  las_t_peak = 0
+  las_t_fwhm = (22/80)*3e-13
+  las_spot_size = 15*micro
+  las_a0 = 4.0
+  las_intensity = las_a0^2 / (7.3e-19 * (las_lambda / micro)^2)#W/cm^2
+
+  las_trans_profile = gauss(y,0,las_spot_size)
+  las_t_w = las_t_fwhm / (sqrt((2*loge(2))))
+  las_t_prof = gauss(time,las_t_peak,las_t_w)
+  las_omega = 2.0*pi*c/las_lambda
+  las_phase = 0
+  
+
+
+
+###electron beam distribution
+   Np=1.87e8          #nb=1*np
+   sigmax=5*micro #0.5*plas_kp      #x is the propagation direction (it's x not xi, this is changed in python)
+   sigmay=5*micro #0.5*plas_kp
+   den_peak=Np/(sigmay^2)/sigmax/(2*pi)^1.5
+   rota_angle=0
+   x0=7*plas_kp
+   y0=0
+   consta=cos(rota_angle)^2/2/sigmax^2+sin(rota_angle)^2/2/sigmay^2
+   constb=-sin(2*rota_angle)/4/sigmax^2+sin(2*rota_angle)/4/sigmay^2
+   constc=sin(rota_angle)^2/2/sigmax^2+cos(rota_angle)^2/2/sigmay^2
+   edensity = den_peak*exp(-(consta*(x-x0)^2-2*constb*(x-x0)*(y-y0)+constc*(y-y0)^2))
+   
+###plasma density
+  plas_plat_x = 50000*micro
+  plas_ramp_start = 0
+  plas_n = if( x lt plas_ramp_start, 0, if(x lt plas_plat_x, plas_plat_n * (x - plas_ramp_start)/(plas_plat_x - plas_ramp_start), plas_plat_n ))
+  
+  part_per_cell = 8
+  cell_length = plas_kp/(24*3                 ################
+  cell_width = plas_kp/(18*3)                   ################
+
+  # Grid offset from origin
+  offset_long = 0.0*micro
+  offset_width = 0.0
+ 
+  prop_length =  150 * micro              ################
+  end_time = 2*prop_length / c / 1
+
+### Output parameters
+  output_step = 5* micro                  ################
+  output_timestep = output_step / c 
+  output_full_freq = 1
+  output_restart_freq=-1
+end:constant
+
+###### Control block ######
+
+begin:control
+  dlb_threshold = 0.5
+  #restart_snapshot=restart0020.sdf 
+  t_end = end_time
+### Grid parameters
+  nx = nint(length / cell_length)
+  ny = nint((half_width * 2) / cell_width)
+  npart = part_per_cell * nx * ny
+
+  x_min = offset_long
+  x_max = offset_long + length
+  y_min = offset_width - half_width
+  y_max = offset_width + half_width
+
+  stdout_frequency = 50
+  use_random_seed = T
+ 
+  particle_tstart = 3e-13  #change to 0
+
+end:control
+
+begin:boundaries
+  bc_x_min = simple_laser
+  bc_x_max = simple_outflow
+  bc_y_min = periodic
+  bc_y_max = periodic
+end:boundaries
+
+
+begin:laser
+  boundary = x_min
+  #id = 1
+  intensity_w_cm2 = las_intensity
+  lambda = las_lambda
+  profile =  las_trans_profile
+  #t_start = 0.0
+  #t_end = end
+  t_profile = las_t_prof
+  #t_profile = (if (time lt 6e-13,0,1))*gauss(time,7e-13,2e-13) # gauss(time,100e-6/299792458,100e-6/299792458) #if (time lt 3e-13,0,1)  #time doubled?
+end:laser
+
+begin:species
+  name = electron
+  charge = -1.0
+  mass = 1.0
+  npart_per_cell = 6
+  density = plas_plat_n 
+  temp = 0*ev
+  dumpmask = always
+end:species
+
+
+begin:species
+  name = Rubidium
+  immobile = T 
+  charge = 1.0
+  mass = 1836.2*85
+  npart_per_cell = 6
+  density = density(electron)
+end:species
+
+
+begin:species
+  name = edriver
+  density = edensity
+  charge = -1.0
+  mass = 1.0
+  npart = 5e2
+  drift_x = edrift_x 
+  temp_x=etemp_x           #this longitudinal one is the energy spread we usually say
+  temp_y=etemp_y           #this one corresponds to the angular divergence
+end:species
+
+
+begin:window
+  move_window = T
+  window_v_x = c
+  window_start_time = 4e-13
+  bc_x_min_after_move = simple_outflow
+end:window
+
+
+begin:output
+name=main
+dt_snapshot = output_timestep
+grid = always
+ex = always
+ey = always
+ez = never
+bx = never
+by = never
+bz = always
+jx = never
+jy = never
+charge_density = never
+ekbar=never
+number_density = always + species + no_sum
+temperature = never
+distribution_functions = always
+particle_probes = never
+particles = always
+px = never
+py = never
+pz = never
+vx = never
+vy = never
+vz = never
+gamma = never
+particle_weight =always
+particle_energy= always + species + no_sum
+end:output
+
+begin:output
+name = restart
+dt_snapshot = output_timestep * 5      #How often files are saved for restart
+restartable = T
+file_prefix = restart
+end:output
+
+begin:dist_fn
+name = x_py
+ndims = 2
+dumpmask = always
+direction1 = dir_x
+direction2 = dir_py
+resolution1 = 1
+resolution2 = 2000
+include_species:edriver
+end:dist_fn
+
+begin:dist_fn
+name = x_px
+ndims = 2
+dumpmask = always
+direction1 = dir_x
+direction2 = dir_px
+resolution1 = 1
+resolution2 = 2000
+include_species:edriver
+end:dist_fn
+
+begin:dist_fn
+name = y_py
+ndims = 2
+dumpmask = always
+direction1 = dir_y
+direction2 = dir_py
+resolution1 = 1
+resolution2 = 2000
+include_species:edriver
+end:dist_fn
+

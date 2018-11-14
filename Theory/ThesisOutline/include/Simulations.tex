@@ -8,7 +8,7 @@ The highly non-linear features present in the high-energy plasma wakefield pheno
 \textbf{Why use PIC? How Pic works.}\\
 The response of the plasma to the propagation of an electron beam could theoretically be simulated by, at time $t_0$, solving Maxwell's equations and calculating the combined electromagnetic fields acting on each particle in the plasma and beam, then by considering each particles velocity could calculate the new positions and velocities of all particles for a small time increase $t_0+\Delta t$. Repeating these computation would in theory lead us to find the approximate plasma response at any arbitrary time $t$. This approach is however computationally impossible if we attempt this approach is however computationally unattainable in most plasma simulations. For instance, if we consider that the plasma in a typical plasma wakefield accelerator [Hanahoe] is on the order of centimetres in extent, with a number density $~10^{20} m^{-3}$, we find that we have on the order of $10^{14}$ electrons in the plasma. All these electrons would have to be included in the simulation and stored with their associated 6-dimensional position and velocity data $(x,y,z,v_x,v_y,v_z)$. Each number would be stored as a 32-bit double precision floating point number, yielding the total data size required for the whole plasma simulation on the order of a petabyte ($10^{15}$ bytes).\\
 \indent To circumvent this computational road block we make use of Particle-In-Cell (PIC) codes. The key feature of PIC codes is to represent large collections of physical microscopic particles as smaller collections of macroscopic pseudo-particles, where each macroscopic particle carries the total charge and mass of the microscopic particles it represents. The behaviour of these macro particles is then calculated and used as a representation of the response of the actual plasma. 
-\subsection{EPOCH}
+\section{EPOCH}
 Is a second order (?) relativistic P.I.C. code\\
 1D,2D or 3D options.\\
 The simulations presented in this thesis are generated using the open-source plasma physics PIC simulation code \textsc{EPOCH}, which is based upon the particle push and field update
@@ -36,6 +36,10 @@ where, the electric fields are extrapolated (?) to the intermediate point $n+1/2
 &\vec{E}_{(n+1)}=\vec{E}_{(n+1/2)}+\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{B}_{(n+1)}-\frac{\vec{J}_{(n+1)}}{\epsilon_0}\right)
 \end{align}
 Using these fields when then calculate the new particles positions $\vec{x}_{(n)}$, we "push" the particles, thus completing the iteration step.
+
+
+\subsection{Input deck and initial conditions}
+
 \subsection{Grid settings}
 An important feature of PIC codes is the grid parameters. When setting up the resolution of the grid one has to make sure that the grid is sufficiently fine such that the smallest features of our physical system are resolved. This is to ensure that the simulation accurately models the physical system it is meant to represent, to the extent that missing small scale phenomena might alter the large scale outcome of the simulation. A finer grid however requires more macroparticles to fully populate the grid, which inevitably extents the computational time. In addition the time step $\Delta t$ aneeds to be suitably decreased as well. This is because of the so-called Courant-Friedrichs-Lewy (CFL) condition. 
 Any simulation introduces uncertainties in the final outcome due to the finite resolution. We need to make sure that the uncertainties introduces during each iteration do not build up and grow unbounded. \\
@@ -50,6 +54,50 @@ begin:boundaries
 end:boundaries
 \end{verbatim}
 $$n_b = \frac{1}{{\sigma_x\sigma_y^2 (2\pi)^{3/2 }  }}e^{{{ - \left( {x - x_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - x_0 } \right)^2 } {2\sigma_x ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_x^2 }}}e^{{{ - \left( {y - y_0} \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y- y_0 } \right)^2 } {2\sigma_y ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}e^{{{ - \left( {y - y_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y - y_0 } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}$$
+\subsection{Non-analytical bunch initialisation}
+\begin{itemize}
+\item Issue: restart not possible with laser. 
+\item EPOCH allows for a user to manually override particle-parameter distributions defined in the input deck, in which all functions must be defined analytically. By overriding this so-called autoloader, which takes the analytical distributions in the input deck and distributes the macro particles accordingly, this manual approach allows for the initialisation of a bunch with non-analytical density and momentum distributions. 
+\item Furthermore, even if the density distribution were to be easily described analytically, this method offers the advantage that it also overrides the maxwellian velocity distribution that epoch assigns to each bunch of particles in the input deck. This is fine for an initial bunch in thermal equilibrium, but as soon as plasma interaction occurs the velocity distribution of the electrons in the bunch is noticeably non-maxwellian
+\item VisIt - export data from .sdf file, convert to -csv, read with ic module when compiling epoch.
+\item (show below, it is possible to have a laser appear before the bunch at some time t, but the parameters of this laser could not be changed so testing several differnt laser intensities, distances etc. would take far too long if the bunhc was forced to propagate 20cm each time before the laser was ramped up )
+\end{itemize}
+
+
+
+
+\clearpage
+\begin{verbatim}
+ExportDBAtts = ExportDBAttributes()
+ExportDBAtts.allTimes = 0
+ExportDBAtts.dirname = "/Users/oscarjakobsson/Documents/epoch-4.14.4/epoch2d"
+ExportDBAtts.filename = "test"
+ExportDBAtts.timeStateFormat = "_%04d"
+ExportDBAtts.db_type = "Xmdv"
+ExportDBAtts.db_type_fullname = "Xmdv_1.0"
+ExportDBAtts.variables = ("Particles/Ek/edriver", "Particles/Weight/edriver")
+ExportDBAtts.writeUsingGroups = 0
+ExportDBAtts.groupSize = 48
+ExportDBAtts.opts.types = (0)
+ExportDBAtts.opts.help = ""
+ExportDatabase(ExportDBAtts)
+ExportDBAtts = ExportDBAttributes()
+ExportDBAtts.allTimes = 0
+ExportDBAtts.dirname = "/Users/oscarjakobsson/Documents/epoch-4.14.4/epoch2d"
+ExportDBAtts.filename = "test"
+ExportDBAtts.timeStateFormat = "_%04d"
+ExportDBAtts.db_type = "Xmdv"
+ExportDBAtts.db_type_fullname = "Xmdv_1.0"
+ExportDBAtts.variables = ("Particles/Ek/edriver", "Particles/Weight/edriver")
+ExportDBAtts.writeUsingGroups = 0
+ExportDBAtts.groupSize = 48
+ExportDBAtts.opts.types = (0)
+ExportDBAtts.opts.help = ""
+ExportDatabase(ExportDBAtts)
+
+\end{verbatim}
+
+
 \section{Notes.}
 Meeting Guoxing:
 \begin{itemize}

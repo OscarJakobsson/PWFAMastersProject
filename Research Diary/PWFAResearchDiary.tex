@@ -55,6 +55,18 @@ right  = 1.5cm]{geometry}
 
 \usepackage{moreverb}		
 \usepackage{listings}	
+\lstset{
+  language=Python,
+  %numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  numbersep=5pt,
+  tabsize=4,
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  keepspaces,
+}
+
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -400,11 +412,65 @@ $$1 ~\text{GeV beam} ~~\Rightarrow ~~ L_{sat}\sim 3.4 ~\text{cm}=3.4*10^4 \mu \t
 \includegraphics[width=0.7\textwidth]{lasert2copy.png}
 \caption{Time: $t_2$. (Upper) edriver density, (Lower) electron plasma density when laser has appeared at $\sim 120 \mu$m}
 \end{figure}
+\clearpage
+\section*{Laser tests}
+Use a time dependent laser bunch:
+\begin{equation}
+f(x,t)=\Theta\left(t-t_0\right)\exp\left\{\left(\frac{x-x_0}{w}\right)^2\right\}
+\end{equation}
 
 
 
+\clearpage
 
 
+\begin{lstlisting}
+    for i in list:
+        print i
+        # prints every entry in a list
+\end{lstlisting}
+
+
+\begin{lstlisting}
+begin:constant
+
+
+
+### basic parameters
+   lambda0=1*micro
+   plas_plat_n = 9.5e23 #3.0e17 cm^-3, the lowest elecron density in most of crystals
+   #1/kp=c/wp
+   lambdap=61*micro
+   plas_kp=9.71*micro 
+   length =250*micro
+   half_width = 3.5* plas_kp
+   lightspeed = 299792458.
+   boltzmann_constant=8.6e-5 #unit of eV/K
+   elec_mass_mev = ((me*lightspeed^2)/qe)/1.e6
+   energy_spread=0.01
+   ang_divergence=1e-5
+   energy=1000   #electron energy in MeV
+   egamma = (energy/elec_mass_mev)+1.0
+   emomen = (egamma-1)*me*lightspeed
+   edrift_x=emomen  #momentum in kg*m*s^-1
+   edrift_y=0
+   etemp_x= energy_spread*energy*1e6/boltzmann_constant
+
+
+###electron beam distribution
+   Np=1.87e8          #nb=1*np
+   sigmax=5*micro #0.5*plas_kp      #x is the propagation direction (it's x not xi, this is changed in python)
+   sigmay=5*micro #0.5*plas_kp
+   den_peak=Np/(sigmay^2)/sigmax/(2*pi)^1.5
+   rota_angle=0
+   x0=7*plas_kp
+   y0=0
+   consta=cos(rota_angle)^2/2/sigmax^2+sin(rota_angle)^2/2/sigmay^2
+   constb=-sin(2*rota_angle)/4/sigmax^2+sin(2*rota_angle)/4/sigmay^2
+   constc=sin(rota_angle)^2/2/sigmax^2+cos(rota_angle)^2/2/sigmay^2
+   edensity = den_peak*exp(-(consta*(x-x0)^2-2*constb*(x-x0)*(y-y0)+constc*(y-y0)^2))
+
+\end{lstlisting}
 
 
 
