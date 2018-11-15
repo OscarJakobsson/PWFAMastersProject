@@ -1,19 +1,22 @@
 \documentclass[8pt]{beamer}
 \usetheme{Madrid}
 \usepackage{xcolor}
+\usepackage{graphicx}
 
-\definecolor{MancPurple}{RGB}{107,44,145}    %{HTML}{660099}   
-%\definecolor{MancPurple}{RGB}{107,44,144}
+
+\definecolor{MancPurple}{RGB}{111,42,142}  %for adobe    %{HTML}{660099}    
+%\definecolor{MancPurple}{RGB}{92,42,121}   %for mac preview
 \definecolor{MancYellow}{RGB}{251,208,32}
 \setbeamertemplate{title page}[default][colsep=-4bp,rounded=true, shadow=false]
 \setbeamercolor{structure}{fg=MancPurple} 
 
-\title[Hybrid scheme]{\huge{Beam dump - hybrid scheme}}
+\title[Hybrid scheme]{\huge{\textcolor{white}{Beam dump - hybrid scheme}}}
 \author[Oscar Jakobsson]{Oscar Jakobsson}
+\institute[]{\small{The University of Manchester}}
 \date[]{\today}
 
 \titlegraphic{
-\includegraphics[width=2.1cm]{ManchesterCrest.pdf}
+\vspace{10pt}\includegraphics[width=1.8cm]{ManchesterCrest.pdf}  %width=2.1cm
 }
 
 
@@ -24,7 +27,10 @@
 \setbeamercolor{structure}{fg=MancPurple} % itemize, enumerate, etc
 \setbeamercolor{section in toc}{fg=MancPurple} % TOC sections
 
-
+\newcommand\itemshape[1]{%
+  \setbeamertemplate{itemize item}[#1]%
+  \usebeamertemplate{itemize item}%
+}
 
 \begin{document}
 
@@ -44,7 +50,7 @@
 \begin{minipage}{0.3\textwidth}
 \begin{itemize}
 \item \begin{center}
-Passive beam dump \\$\downarrow$\\ Saturation  ($\sim 30~$cm)
+Passive dump ($n_p=n_b$)\\$\downarrow$\\ Saturation  ($\sim 30~$cm) 
 \end{center} 
 \end{itemize}
 \end{minipage}\hspace{5pt} \begin{minipage}{0.2\textwidth}
@@ -55,7 +61,7 @@ Passive beam dump \\$\downarrow$\\ Saturation  ($\sim 30~$cm)
   \hspace{-15pt}\begin{minipage}{0.35\textwidth}
 \begin{itemize}
 \item \begin{center}
-Active beam dump \\$\downarrow$\\ Full dump  ($\sim$ a few cm?)
+Active dump \\$\downarrow$\\ Full dump  ($\sim$ a few cm) 
 \end{center} 
 \end{itemize}
 \end{minipage}
@@ -67,15 +73,16 @@ Active beam dump \\$\downarrow$\\ Full dump  ($\sim$ a few cm?)
 \vfill \begin{flushright}
 \begin{minipage}{0.51\textwidth}
 \begin{itemize}
-\item Aim to dump \textit{EuPRAXIA} beam
+\item \text{EuPRAXIA} beam
 \begin{itemize}
 \item 30 pC
 \item 1 GeV
+\item RMS energy spread $\sigma_E/E=1\%$
 \item Expand bunch \\
 $\left.\begin{aligned}
 &\sigma_{x}=0.3 \mu m ~\to~5\mu m\\
 &\sigma_{x}=0.3 \mu m ~\to~5\mu m
-\end{aligned}\right\} \Rightarrow n_p\sim10^{18}~\text{cm}^{-3}$ 
+\end{aligned}\right\} \Rightarrow n_b\sim10^{18}~\text{cm}^{-3}$ 
 \end{itemize}
 \end{itemize}
 \end{minipage}
@@ -85,7 +92,82 @@ $\left.\begin{aligned}
 \end{frame}
 
 
+\begin{frame}[t]
 
+
+
+\frametitle{\textcolor{white}{Hybrid scheme - Simulations} \vspace{-3pt}\vspace{-19pt}\begin{flushright}\includegraphics[height=0.5cm]{manclogo.pdf}\end{flushright}\vspace{-22pt}}
+
+\vspace{-7pt}
+\begin{itemize}
+\item EPOCH 
+\end{itemize}
+\hspace{20pt}
+\begin{minipage}{\textwidth}
+\begin{itemize}
+\item[\itemshape{triangle}]  Simulation 1: Initial bunch + passive dump $\to$ saturation $\to$ export bunch data %\vspace{-10pt}
+\item[\itemshape{triangle}] Simulation 2: Import bunch data $\to$ saturated bunch + active dump\vspace{-30pt} \\\hfill\rotatebox{30}{\textcolor{MancPurple}{\textbf{{We're here!}}}\hspace{25pt}}
+\end{itemize}\vspace{-10pt}
+\end{minipage}
+
+\begin{itemize}
+\item Need to find optimal 
+\end{itemize}
+\hspace{20pt}
+\begin{minipage}{\textwidth}
+
+\begin{itemize}
+\item[\itemshape{triangle}] Initial conditions
+\end{itemize}
+\hspace{20pt}
+\begin{minipage}{\textwidth}
+\begin{itemize}
+\item[\itemshape{square}]  $\sigma_x, \sigma_y$
+\item[\itemshape{square}] $n_p/n_b$
+\end{itemize}
+\end{minipage}
+
+\begin{itemize}
+\item[\itemshape{triangle}] Simulation parameters vs. computational cost
+\end{itemize}
+\hspace{20pt}
+\begin{minipage}{\textwidth}
+\begin{itemize}
+\item[\itemshape{square}] Grid resolution
+\item[\itemshape{square}] Number of macro-particles
+\end{itemize}
+\end{minipage}
+
+\begin{itemize}
+\item[\itemshape{triangle}] Active dump scheme - laser parameters
+\end{itemize}
+\hspace{20pt}
+\begin{minipage}{\textwidth}
+\begin{itemize}
+\item[\itemshape{square}] $t({\text{laser}}) $ - Introduce at saturation?
+\item[\itemshape{square}]Distance from bunch
+\item[\itemshape{square}] Pulse length
+\item[\itemshape{square}]Intensity
+\item[\itemshape{square}]Laser ramp
+
+\end{itemize}
+\end{minipage}
+
+\end{minipage}
+
+\begin{itemize}
+\item Multiple active dumps
+\end{itemize}
+\hspace{20pt}
+\begin{minipage}{\textwidth}
+\begin{itemize}
+\item[\itemshape{triangle}] Consecutive low intensity lasers
+\end{itemize}
+\end{minipage}
+
+
+
+\end{frame}
 
 
 \end{document}
