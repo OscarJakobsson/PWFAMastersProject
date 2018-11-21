@@ -2,6 +2,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Plot corresponding to Dawson's derivation of the wave-breaking field [ref. Sahai].\relax }}{10}{figure.caption.4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Non-linear regime, plasma density perturbations. Added custom legend with density=number of electrons / grid-square size. \relax }}{12}{figure.caption.5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Should these three plots be in results or here? OR PUT SIMUALTIONS CHAPTER BEFORE THEORY CHAPTER. Then theory can be used to also verify that simulations work. Probably not, better explain everything to motivate what simulations to be done \relax }}{13}{figure.caption.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

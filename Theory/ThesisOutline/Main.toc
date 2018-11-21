@@ -16,22 +16,23 @@
 \contentsline {section}{\numberline {2.3}Particle interactions with matter}{11}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Bohr-Fermi-Bethe-Bloch Theory}{11}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Collective Plasma Deceleration -- Non-Linear regime }{11}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Collective Plasma Deceleration -- Linear regime }{11}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Notes Bonatto}{12}{subsection.2.3.4}
-\contentsline {chapter}{\numberline {3}Simulations}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Particle-in-Cell Simulations}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}EPOCH}{13}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Input deck and initial conditions}{14}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Grid settings}{14}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Non-analytical bunch initialisation}{15}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Notes.}{16}{section.3.3}
-\contentsline {chapter}{\numberline {4}Simulation tests}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Plasma deceleration - Uniform density}{19}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Transverse instabilities in quasilinear regime}{19}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Hybrid Scheme - Feasibility study}{19}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Initialising a decelerated bunch}{19}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Introduction of co-propagating laser}{19}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Ongoing and future work}{21}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{23}{chapter.6}
-\contentsline {chapter}{Bibliography}{25}{chapter.6}
+\contentsline {subsection}{\numberline {2.3.3}Collective Plasma Deceleration -- Linear regime }{12}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Notes Bonatto}{14}{subsection.2.3.4}
+\contentsline {chapter}{\numberline {3}Simulations}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Plasma simulations}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Particle-in-Cell Codes }{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}EPOCH}{17}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Input deck and initial conditions}{17}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Grid settings}{17}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Non-analytical bunch initialisation}{18}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Notes.}{19}{section.3.4}
+\contentsline {chapter}{\numberline {4}Simulation tests}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Plasma deceleration - Uniform density}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Transverse instabilities in quasilinear regime}{21}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Hybrid Scheme - Feasibility study}{21}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Initialising a decelerated bunch}{21}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Introduction of co-propagating laser}{21}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Ongoing and future work}{23}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{25}{chapter.6}
+\contentsline {chapter}{Bibliography}{27}{chapter.6}
 \contentsline {chapter}{\numberline {A}Appendix: Input decks}{I}{appendix.A}

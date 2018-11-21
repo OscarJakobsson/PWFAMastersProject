@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  15 NOV 2018 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  16 NOV 2018 10:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -878,11 +878,11 @@ File: frame1.png Graphic file (type png)
 <use frame1.png>
 Package pdftex.def Info: frame1.png  used on input line 92.
 (pdftex.def)             Requested size: 167.44757pt x 85.35826pt.
-<energy_uniform2.png, id=108, 872.25874pt x 712.6625pt>
-File: energy_uniform2.png Graphic file (type png)
-<use energy_uniform2.png>
-Package pdftex.def Info: energy_uniform2.png  used on input line 92.
-(pdftex.def)             Requested size: 107.954pt x 88.2037pt.
+<energy.png, id=108, 857.2025pt x 709.65125pt>
+File: energy.png Graphic file (type png)
+<use energy.png>
+Package pdftex.def Info: energy.png  used on input line 92.
+(pdftex.def)             Requested size: 108.24875pt x 89.626pt.
 <laserpulse.jpeg, id=109, 303.1325pt x 310.15875pt>
 File: laserpulse.jpeg Graphic file (type jpg)
 <use laserpulse.jpeg>
@@ -895,44 +895,61 @@ Package pdftex.def Info: manclogo.pdf  used on input line 92.
 (pdftex.def)             Requested size: 70.31915pt x 14.22636pt.
  [2
 
- <./manclogo.pdf> <./frame3.png> <./frame1.png> <./energy_uniform2.png> <./lase
-rpulse.jpeg>]
-Overfull \hbox (21.88892pt too wide) in paragraph at lines 170--170
+ <./manclogo.pdf> <./frame3.png> <./frame1.png> <./energy.png> <./laserpulse.jp
+eg>]
+Overfull \hbox (21.88892pt too wide) in paragraph at lines 173--173
   $[]$  
  []
 
 
-Overfull \hbox (21.88892pt too wide) in paragraph at lines 170--170
+Overfull \hbox (21.88892pt too wide) in paragraph at lines 173--173
   $[]$ 
  []
 
 
-Overfull \hbox (21.88892pt too wide) in paragraph at lines 170--170
+Overfull \hbox (21.88892pt too wide) in paragraph at lines 173--173
   $[]$ 
  []
 
+<energy_notes.png, id=154, 862.22125pt x 709.65125pt>
+File: energy_notes.png Graphic file (type png)
+<use energy_notes.png>
+Package pdftex.def Info: energy_notes.png  used on input line 173.
+(pdftex.def)             Requested size: 112.0927pt x 92.25789pt.
 
-Overfull \hbox (21.88892pt too wide) in paragraph at lines 170--170
-  $[]$ 
- []
-
-
-Overfull \hbox (21.88892pt too wide) in paragraph at lines 170--170
+Overfull \hbox (21.88892pt too wide) in paragraph at lines 173--173
   $[]$  
  []
 
 
-Overfull \hbox (21.88892pt too wide) in paragraph at lines 170--170
+Overfull \hbox (21.88892pt too wide) in paragraph at lines 173--173
   $[]$  
  []
 
 File: manclogo.pdf Graphic file (type pdf)
 <use manclogo.pdf>
-Package pdftex.def Info: manclogo.pdf  used on input line 170.
+Package pdftex.def Info: manclogo.pdf  used on input line 173.
 (pdftex.def)             Requested size: 70.31915pt x 14.22636pt.
 [3
 
-]
+ <./energy_notes.png>]
+<visit0058.png, id=184, 858.20625pt x 796.9775pt>
+File: visit0058.png Graphic file (type png)
+<use visit0058.png>
+Package pdftex.def Info: visit0058.png  used on input line 201.
+(pdftex.def)             Requested size: 156.23674pt x 145.07932pt.
+<visit0063.png, id=185, 858.20625pt x 793.96625pt>
+File: visit0063.png Graphic file (type png)
+<use visit0063.png>
+Package pdftex.def Info: visit0063.png  used on input line 201.
+(pdftex.def)             Requested size: 156.23674pt x 144.53116pt.
+File: manclogo.pdf Graphic file (type pdf)
+<use manclogo.pdf>
+Package pdftex.def Info: manclogo.pdf  used on input line 201.
+(pdftex.def)             Requested size: 70.31915pt x 14.22636pt.
+ [4
+
+ <./visit0058.png> <./visit0063.png>]
 \tf@nav=\write6
 \openout6 = `presentation_hybrid_1.nav'.
 
@@ -942,19 +959,20 @@ Package pdftex.def Info: manclogo.pdf  used on input line 170.
 \tf@snm=\write8
 \openout8 = `presentation_hybrid_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
- (./presentation_hybrid_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
+
+(./presentation_hybrid_1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
 Package rerunfilecheck Info: File `presentation_hybrid_1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17022 strings out of 492649
- 327281 string characters out of 6129622
- 406914 words of memory out of 5000000
- 20501 multiletter control sequences out of 15000+600000
+ 17041 strings out of 492649
+ 327536 string characters out of 6129622
+ 407914 words of memory out of 5000000
+ 20515 multiletter control sequences out of 15000+600000
  11716 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,57p,805b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -970,10 +988,10 @@ sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr
 /local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/l
 ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
 al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on presentation_hybrid_1.pdf (3 pages, 6105695 bytes).
+Output written on presentation_hybrid_1.pdf (4 pages, 6195323 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 7 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 9 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 

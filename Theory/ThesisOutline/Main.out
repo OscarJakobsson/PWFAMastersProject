@@ -18,19 +18,20 @@
 \BOOKMARK [2][-]{subsection.2.3.3}{Collective Plasma Deceleration \205 Linear regime }{section.2.3}% 18
 \BOOKMARK [2][-]{subsection.2.3.4}{Notes Bonatto}{section.2.3}% 19
 \BOOKMARK [0][-]{chapter.3}{Simulations}{}% 20
-\BOOKMARK [1][-]{section.3.1}{Particle-in-Cell Simulations}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.2}{EPOCH}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.2.1}{Input deck and initial conditions}{section.3.2}% 23
-\BOOKMARK [2][-]{subsection.3.2.2}{Grid settings}{section.3.2}% 24
-\BOOKMARK [2][-]{subsection.3.2.3}{Non-analytical bunch initialisation}{section.3.2}% 25
-\BOOKMARK [1][-]{section.3.3}{Notes.}{chapter.3}% 26
-\BOOKMARK [0][-]{chapter.4}{Simulation tests}{}% 27
-\BOOKMARK [1][-]{section.4.1}{Plasma deceleration - Uniform density}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.1.1}{Transverse instabilities in quasilinear regime}{section.4.1}% 29
-\BOOKMARK [1][-]{section.4.2}{Hybrid Scheme - Feasibility study}{chapter.4}% 30
-\BOOKMARK [2][-]{subsection.4.2.1}{Initialising a decelerated bunch}{section.4.2}% 31
-\BOOKMARK [2][-]{subsection.4.2.2}{Introduction of co-propagating laser}{section.4.2}% 32
-\BOOKMARK [0][-]{chapter.5}{Ongoing and future work}{}% 33
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 34
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 35
-\BOOKMARK [0][-]{appendix.A}{Appendix: Input decks}{}% 36
+\BOOKMARK [1][-]{section.3.1}{Plasma simulations}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.2}{Particle-in-Cell Codes }{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.3}{EPOCH}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.1}{Input deck and initial conditions}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.2}{Grid settings}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.3}{Non-analytical bunch initialisation}{section.3.3}% 26
+\BOOKMARK [1][-]{section.3.4}{Notes.}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Simulation tests}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Plasma deceleration - Uniform density}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.1.1}{Transverse instabilities in quasilinear regime}{section.4.1}% 30
+\BOOKMARK [1][-]{section.4.2}{Hybrid Scheme - Feasibility study}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.2.1}{Initialising a decelerated bunch}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.2}{Introduction of co-propagating laser}{section.4.2}% 33
+\BOOKMARK [0][-]{chapter.5}{Ongoing and future work}{}% 34
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 35
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 36
+\BOOKMARK [0][-]{appendix.A}{Appendix: Input decks}{}% 37
