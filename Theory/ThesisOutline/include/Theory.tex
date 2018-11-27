@@ -1,70 +1,80 @@
 \chapter{Theory}
-
-
-\section{PWFA - Linear-Fluid Wakefield Theory}
-\subsection{Plasma Dynamics - fluid model}
-\textcolor{red}{What is the wave-breaking field $E_Z$, why is it the maximum possible acceleration/deceleration field? Is it always reached?}
+\section{Introduction}
+In this chapter we introduce the linear fluid model of plasma wakefield acceleration and derive the equations governing the response of a plasma to an electron bunch propagating through. This model assumes that the bunch is ultra-relativistic and that the plasma density is much higher than the bunch density, which will allow us to treat the plasma response as a first order perturbation to the background density.  We also discuss the non-linear, so-called "blowout", regime which can not be treated perturbatively and is characterised by the expulsion of plasma electrons in a volume behind the bunch. 
+\section{Linear fluid model }
+In this section, we derive the response of a plasma to an electron bunch by considering the plasma electrons as a fluid. We shall make the assumptions;  (i) the initial plasma is uniform and electrically neutral everywhere; (ii) the plasma  ions can be considered stationary since for all plasmas the mass of the ions is much larger than the electron mass, $m_{\text{ion}}>>m_{e}$; (iii) the electron bunch is ultra-relativistic, $v/c=1$, such that the density distribution of the bunch does not evolve as it interacts with the plasma; (iv) the bunch density is much less than the plasma electron density, $n_b<<n_p$. The dynamics of the plasma electrons is governed by the continuity equation
 \begin{equation}
-\omega_p=\sqrt{\frac{4\pi e^2n_0}{me}}
+\frac{\partial n_p}{\partial t}=-\mathbf{\nabla}\cdot (n_p\vec{v}_p)
 \end{equation}
-\subsection{Density perturbations}
-Continuity equation
-\begin{equation}
-\frac{\partial n}{\partial t}=-\mathbf{\nabla}\cdot (n\vec{v})
-\end{equation}
-where $n$ is the plasma density and $\vec{v}$ the plasma fluid velocity. Charge conservation.\\
-Lorentz force law:
-\begin{equation}
-m_e\frac{\partial n\vec{v}}{\partial t}=en\left(\vec{E}+\frac{\vec{v}\times \vec{B}}{c}\right)
-\end{equation}
-Treating the plasma response to a particle beam perturbatively we have $n(r,z,t)=n_0+n_1(r,z,t)$ where $n_0$ is the ion density and $n_1$ the plasma perturbation. We let $\vec{v}, \vec{E}, \vec{B}$ be perturbative responses to the beam. From continuity equation we have
-\begin{equation}
-\frac{\partial n_0}{\partial t}+\frac{\partial n_1}{\partial t}=-\mathbf{\nabla}\cdot (n_0\vec{v})-\mathbf{\nabla}\cdot (n_1\vec{v}) \quad \Rightarrow \quad \frac{\partial n_1}{\partial t}\approx -n_0\mathbf{\nabla}(\vec{v})
-\end{equation}
-From the Lorentz force law have
-\begin{equation}
-m_en_0\frac{\partial (1+n_1/n_0)\vec{v}}{\partial t}\approx en_0(1+n_1/n_0)\vec{E} \quad \Rightarrow \quad  m_e\frac{\partial \vec{v}}{\partial t}\approx e\vec{E}
-\end{equation}
-which, using Gauss's law, gives
-\begin{equation}
-\frac{\partial (\mathbf{\nabla}\cdot\vec{v})}{\partial t}\approx \frac{e}{m_e}\mathbf{\nabla}\cdot\vec{E}= \frac{e^2}{m_e}4\pi (n_1+n_b)
-\end{equation}
-where $n_1+n_b$ is the free charge. Hence
-\begin{equation}
-\frac{\partial^2 n_1}{\partial t^2}= -n_0\frac{\partial (\mathbf{\nabla}\cdot\vec{v})}{\partial t}=-\frac{ 4\pi n_0e^2}{m_e} (n_1+n_b) 
-\end{equation}
-which gives
-\begin{equation}
-\frac{\partial^2 n_1}{\partial t^2}+\omega_p^2n_1=-\omega_p^2n_b
-\end{equation}
-where the $\omega_p=(4\pi e^2n_0/m_e)^{1/2}$ is the plasma frequency. We can rewrite this expression in the reference frame of the beam.\\
-Perturbation due to beam $n\left(r,\xi \right)\to n\left(r,\xi \right)+n_1\left(r,\xi \right)$, use Maxwell's equations and continuity equation.
-\begin{equation}
--\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)n_1\left(r,\xi \right)=n_b\left(r,\xi \right) ~,~~n_1\left(r,\xi<0 \right)=0
-\end{equation}
-\begin{equation}
-\mathcal{L}_{\xi}n_1\left(r,\xi \right)=n_b\left(r,\xi \right) \quad \Rightarrow \quad \mathcal{L}_{\xi}G\left(\xi,\xi'\right)=\delta\left(\xi-\xi'\right)
-\end{equation}
-\begin{equation}
-G\left(\xi,\xi'\right)=\left\{ \begin{array}{ll}
-0 &,~ -\infty<\xi<\xi'\\
-A\sin\left(k_p\xi \right) + B\cos\left(k_p\xi \right) &,~ \xi'<\xi<\infty
-\end{array}\right.
-\end{equation}
-where the Green's function obeys the same b.c as the density perturbation, i.e it is continuous across the boundary with a discontinuous derivative across the boundary.
-Integrate across discontinuity at $\xi=0$
-\begin{equation}
-\lim_{\epsilon\to 0}\int_{\xi'-\epsilon}^{\xi'+\epsilon} \mathcal{L}_{\xi}G\left(\xi,\xi'\right)\mathrm{d}\xi=\lim_{\epsilon\to 0}\int_{\xi'-\epsilon}^{\xi'+\epsilon}\delta\left(\xi\right)\mathrm{d}\xi=1 \quad \Rightarrow \quad \lim_{\epsilon\to 0}\left[-\frac{1}{k_p^2}\frac{\partial G}{\partial \xi}\right]^{\xi'+\epsilon}_{\xi'-\epsilon}=1
-\end{equation}
-Without loss of generality we may set the arrival of the beam to be at $t=0$, such that $\xi'=0$.
-\begin{equation}
-G\left(\xi,\xi'\right)=-k_p\sin\left(k_p\xi \right)\Theta\left(\xi \right) \quad \Rightarrow \quad n_1\left(r,\xi \right)=\int_{-\infty}^{\infty}G\left(\xi,\xi'\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'
-\end{equation}
-\subsection{Longitudinal Accelerating Field} 
+where $n_p$ is the plasma electron density density and $\vec{v}_p$ the plasma fluid velocity. This simply ensures charge conservation by imposing that the plasma electron density change in a given volume is due to plasma electrons flowing in or out. The evolution of the electromagnetic fields in the plasma is governed by Maxwell's laws:
 \begin{align}
 &\boldsymbol{\nabla}\times \vec{E}=-\frac{1}{c}\frac{\partial \vec{B}}{\partial t} \\
 &\boldsymbol{\nabla}\times \vec{B}=\frac{4\pi}{c}\vec{J}+\frac{1}{c}\frac{\partial \vec{B}}{\partial t}
 \end{align}
+which in term determine the response of the plasma fluid through the Lorentz force law:
+\begin{equation}
+m_e\frac{\partial n_p\vec{v}_p}{\partial t}=en_p\left(\vec{E}+\frac{\vec{v}_p\times \vec{B}}{c}\right)~.
+\end{equation}
+We now make use of assumption (iv)
+which allows us to treat the plasma response to a particle beam perturbatively such that  $n_p=n_0+n_1$, where $n_0$ is the unperturbed uniform electron density and $n_1\ll n_0$ is the perturbation from interacting with the electron bunch. This perturbation also requires that the change in fluid velocity upon interacting with the bunch is small, such that $v_p\ll c$. Substitution into the continuity equation yields 
+
+%Treating the plasma response to a particle beam perturbatively we have $n(r,z,t)=n_0+n_1(r,z,t)$ where $n_0$ is the ion density and $n_1$ the plasma perturbation. We let $\vec{v}, \vec{E}, \vec{B}$ be perturbative responses to the beam. From continuity equation we have
+\begin{equation}
+\frac{\partial n_1}{\partial t}= -n_0\left( 1- \frac{n_1}{n_0}\right)\mathbf{\nabla}\cdot \vec{v}_p
+\end{equation}
+Taking the time differential and neglecting terms $\mathcal{O}(n_1/n_0)$ then gives
+\begin{equation}
+\frac{\partial^2 n_1}{\partial t^2}= -n_0\frac{\partial (\mathbf{\nabla}\cdot\vec{v})}{\partial t}
+\label{n''}
+\end{equation}
+Similarly, substitution into the Lorentz force law gives to first-order
+\begin{equation}
+ m_e\frac{\partial \vec{v}}{\partial t}= e\vec{E}
+\end{equation} %m_en_0\frac{\partial (1+n_1/n_0)\vec{v}}{\partial t}\approx en_0(1+n_1/n_0)\vec{E} \quad \Rightarrow \quad 
+which, using Gauss's law, gives
+\begin{equation}
+\frac{\partial (\mathbf{\nabla}\cdot\vec{v})}{\partial t}= \frac{e^2}{m_e}4\pi (n_1+n_b)
+\label{n''2}
+\end{equation}
+where $n_b$ is the charge density of the electron bunch. Equations (\ref{n''}) and (\ref{n''2}) hence give
+\begin{equation}
+\frac{\partial^2 n_1}{\partial t^2}+\omega_p^2n_1=-\omega_p^2n_b
+\label{ndotdot}
+\end{equation}
+where $\omega_p=(4\pi e^2n_0/m_e)^{1/2}$ is the plasma frequency. Hence the plasma density perturbation is described by a second-order differential equation with the bunch acting as a source term. We proceed to solve this for a radially symmetric bunch by evaluating equation (\ref{ndotdot}) in a reference frame co-moving with the electron bunch, where the coordinate $\xi=x-ct$ represents the position along the bunch as it travels in the $x$-direction. Doing this yields
+\begin{equation}
+-\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)n_1\left(r,\xi \right)=n_b\left(r,\xi \right) 
+\end{equation}
+where $k_p=\omega_p/c$ is the wavenumber and causality demands that $n_1\left(r,\xi<0 \right)=0$. We evaluate this by finding the Green's function $G\left(\xi,\xi'\right)$, which by definition obeys 
+\begin{equation}
+-\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)G\left(\xi,\xi'\right)=\delta\left(\xi-\xi'\right)
+\label{density_greens}
+\end{equation}
+which gives
+\begin{equation}
+G\left(\xi,\xi'\right)=\left\{ \begin{array}{ll}
+0 &,~ -\infty<\xi<\xi'\\
+A(\xi')\sin\left(k_p\xi \right) + B(\xi')\cos\left(k_p\xi \right) &,~ \xi'<\xi<\infty
+\end{array}\right.
+\end{equation}
+where  the constant $A(\xi')$ and $B(\xi')$ are determined by by requiring continuity at $\xi=\xi'$ and by integrating equation (\ref{density_greens}) across this same boundary. This yields 
+\begin{equation}
+G\left(\xi,\xi'\right)=k_p\Theta(\xi-\xi')\left(\cos(k_p\xi)\sin(k_p\xi')-\cos(k_p\xi')\sin(k_p\xi)\right)
+\end{equation}
+and the resulting plasma perturbation is
+%\begin{equation}
+%\lim_{\epsilon\to 0}\int_{\xi'-\epsilon}^{\xi'+\epsilon} \mathcal{L}_{\xi}G\left(\xi,\xi'\right)\mathrm{d}\xi=\lim_{\epsilon\to 0}\int_{\xi'-\epsilon}^{\xi'+\epsilon}\delta\left(\xi\right)\mathrm{d}\xi=1 \quad \Rightarrow \quad \lim_{\epsilon\to 0}\left[-\frac{1}{k_p^2}\frac{\partial G}{\partial \xi}\right]^{\xi'+\epsilon}_{\xi'-\epsilon}=1
+%\end{equation}
+%Without loss of generality we may set the arrival of the beam to be at $t=0$, such that $\xi'=0$.
+\begin{equation}
+\begin{aligned}
+n_1\left(r,\xi \right)&=\int_{-\infty}^{\infty}G\left(\xi,\xi'\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'\\
+&=\int_{-\infty}^{\xi}\sin\left(k_p(\xi-\xi')\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'
+\end{aligned}
+\end{equation}
+where we have used the trigonometric identify for $\sin\left(k_p(\xi-\xi'\right))$. Hence the electron bunch induces oscillatory density perturbations in the plasma with a wavelength given by $\lambda_p=2\pi/k_p$.
+\subsection{Longitudinal Accelerating Field} 
+
 gives
 \begin{equation}
 \nabla^2\vec{E}-\frac{1}{c^2}\frac{\partial^2 \vec{E}}{\partial t^2}=\frac{4\pi}{c^2}\frac{\partial \vec{J}}{\partial t}+4\pi\boldsymbol{\nabla}\rho
@@ -155,7 +165,7 @@ This equality must hold for all values of $r'$. Hence, following an approach by 
 \begin{equation}
 I_0(k_pr')\to \frac{1}{\sqrt{2\pi k_pr'}}e^{k_pr'} \quad \text{and} \quad K_0(k_pr')\to \sqrt{\frac{\pi}{2k_pr'}}e^{-k_pr'}
 \end{equation}
-which implies that $A_0=-1$. \textcolor{purple}{Here Gessner gets $A=4\pi$ because of Jackson but I don't see why.} 
+which implies that $A_0=-1$. %\textcolor{purple}{Here Gessner gets $A=4\pi$ because of Jackson but I don't see why.} 
 \begin{equation}
 G\left(r,r'\right)=- I_0(k_pr)K_0(k_pr')\Theta(r'-r)-I_0(k_pr')K_0(k_pr)\Theta(r-r')
 \end{equation}
@@ -169,33 +179,56 @@ E_z(r,\xi)=\frac{1}{2\pi}\int_ {-\infty}^{\infty}\wtilde{E}_z\left(r,k\right)e^{
 \end{equation}
 Doing this yields 
 \begin{align}
-E_z(r,\xi)&=\frac{4\pi ik_p^2}{2\pi}\int_{-\infty}^{\infty}\frac{ke^{ik\xi}}{k^2-k_p^2}\mathrm{d}k\int_0^{\infty}G\left(r,r'\right)\wtilde{\rho}_b(r')r'\mathrm{d}r'\\
-&=-2\pi k_p^2\cos(k_p\xi)\Theta(\xi)\int_0^{\infty}G\left(r,r'\right)\wtilde{\rho}_b(r')r'\mathrm{d}r'
+E_z(r,\xi)&=-{2ik_p^2}\int_{-\infty}^{\infty}\frac{ke^{ik\xi}}{k^2-k_p^2}\mathrm{d}k\int_0^{\infty}\left( I_0(k_pr)K_0(k_pr')\Theta(r'-r)+I_0(k_pr')K_0(k_pr)\Theta(r-r') \right)\wtilde{\rho}_b(r')r'\mathrm{d}r'
+\label{e_z}
 \end{align}
-Where the $\Theta(\xi)$ has been added due to causality.\\
-Now lets solve this for a bi-Gaussian beam charge distribution. To do this, we may compute the electric field from the Green's function directly and then carrying out the inverse Fourier transform, or we could choose to first compute the field due to a point-particle and then convolving it with the bi-Gaussian distribution. We proceed by doing the latter by choosing a charge distribution with radial symmetry and a delta function in the $z$-direction to match our Green's function.
+For a known beam distribution $rho_b(r,\xi)$ (add $\xi$ in all previous expressions?) this expression can be used to compute the resulting longitudinal electric field. We shall now proceed by calculating this for a bi-Gaussian bunch distribution. To do this, we could compute the electric field from the Green's function directly and then carrying out the inverse Fourier transform, or we could choose to first compute the field due to a point-particle and then convolving it with the bi-Gaussian distribution. We proceed by doing the latter by following the approach of Dawson; we choose a charge distribution with radial symmetry and a delta function in the $z$-direction to match our Green's function.
 \begin{align}
 {\rho}_{b_0}(r,\xi)=\frac{e}{2\pi r}\delta(r-r_0)\delta(\xi) \quad \Rightarrow\quad  \wtilde{\rho}_{b_0}(r,k)=\int_ {-\infty}^{\infty}\rho_b(r,\xi)e^{-ik\xi}\mathrm{d}\xi=\frac{e}{2\pi r}\delta(r-r_0)
 \end{align}
-which gives 
+Substituing this into equation (\ref{e_z}) and performing a contour integrating in k-space yields 
 \begin{equation}
-\wtilde{E}_z(r,k)=-2eik_p^2\frac{k}{k^2-k_p2}G\left(r,r_0\right)
+E_z(r,\xi)=-2ek_p^2\cos(k_p\xi)G\left(r,r_0\right)\Theta(\xi)~,
+\label{singe-particle-wake}
 \end{equation}
-which satisfies (\ref{diffeq_in_transformspace}), as can be shown by integrating across the discontinuity and taking the limit to zero, and then gives
-\begin{equation}
-E_z(r,\xi)=-ek_p^2\cos(k_p\xi)G\left(r,r_0\right)\Theta(\xi)
-\end{equation}
-\textcolor{red}{But my Green's function has a $A=-1$ as constant and not $A=4\pi$ as Bonatto and Gessner}\\
-This is refer to as the single-particle wake function \citep{Gessner2016}. The longitudinal electric field resulting from an arbitrary source distribution $n_b(r,\xi)$ is given by the convolution of the source by the single-particle wake function:
+where $\Theta(\xi)$ ensures causality is preserved. This is the so called single-particle wake function [Dawson]. The longitudinal electric field resulting from an arbitrary radially-symmetric source distribution $n_b(r,\xi)$ is now given by convolving the source by the single-particle wake function:
+%\begin{equation}
+%\wtilde{E}_z(r,k)=-2eik_p^2\frac{k}{k^2-k_p2}G\left(r,r_0\right)
+%\end{equation}
+%which satisfies (\ref{diffeq_in_transformspace}), as can be shown by integrating across the discontinuity and taking the limit to zero, and then gives
+
+%\textcolor{red}{But my Green's function has a $A=-1$ as constant and not $A=4\pi$ as Bonatto and Gessner}\\
+%This is refer to as the single-particle wake function \citep{Gessner2016}. 
 \begin{align}
-E_z(r,\xi)&=-ek_p^2 \int_{-\infty}^{\infty} \cos(k_p(\xi-\xi'))\Theta(\xi-\xi')\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r_0\right) n_b(r_0,\xi')r'\mathrm{d}r'\\
-&=-ek_p^2 \int_{-\infty}^{\xi} \cos(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r_0\right) n_b(r_0,\xi')r_0\mathrm{d}r_0
+E_z(r,\xi)&=-2ek_p^2\int_0^{2\pi}\mathrm{d}\phi  \int_{-\infty}^{\infty} \cos(k_p(\xi-\xi'))\Theta(\xi-\xi')\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r_0\right) n_b(r_0,\xi')r'\mathrm{d}r'\\
+&=-4\pi e k_p^2 \int_{-\infty}^{\xi} \cos(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r_0\right) n_b(r_0,\xi')r_0\mathrm{d}r_0
 \end{align}
-\textcolor{red}{which is not the same as Bonatto/Gessner/Schroeder, the limits are different, they have from xi to infity  , is this not how to do a convolution? Why don't we have somethign like $r-r'$ from a radial convolution or something? Bonatto, Schroder has the integral from infinity to xi, why? \\ These expressions with $-4\pi$ does not satisfy the diff.eq that I am trying to solve in transform space, so why do they use them if they don't solve their original diff. equations?\\ Mira's thesis also has $4\pi$ if converting to cgs.}
+The electric force is thus $F_z(r,\xi)=-eE_z(r,\xi)$. To compare with simulations and experiments we now choose to convert from CGS to SI units by having $e^{\text{CGS}}\to e^{SI}/\sqrt{4\pi\epsilon_0}$. The electric force in SI units (J/m) is thus
+\begin{equation}
+F_z(r,\xi)=\frac{e^2 k_p^2}{\epsilon_0} \int_{-\infty}^{\xi} \cos(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r_0\right) n_b(r_0,\xi')r_0\mathrm{d}r_0
+\end{equation}
+This expression can be calculated numerically to ; fig. \ref{ex}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{ex2.pdf}
+\includegraphics[width=0.85\textwidth]{visit0000.pdf}
+\label{ex}
+\end{figure}
+
+%\textcolor{red}{which is not the same as Bonatto/Gessner/Schroeder, the limits are different, they have from xi to infity  , is this not how to do a convolution? Why don't we have somethign like $r-r'$ from a radial convolution or something? Bonatto, Schroder has the integral from infinity to xi, why? \\ These expressions with $-4\pi$ does not satisfy the diff.eq that I am trying to solve in transform space, so why do they use them if they don't solve their original diff. equations?\\ Mira's thesis also has $4\pi$ if converting to cgs.}
 \subsection{Transverse Focusing Field} 
-Use Panofsky-Wenzel theorem
-
-
+An ultrarelativisitic electron bunch will be highly contracted in the direction of propagation relative to the plasma electrons in the 'lab' frame. Assuming $\beta=1$ as before the electric field due to the bunch is purely radial, $E_r$. In addition, the magnetic field due to the charge is azimuthal, $B_{\theta}$. The resulting transverse wakefield $W_{\perp}=E_r-B_{\theta}$ experienced by a realtivisit particle due to the wake is given by the \textit{Panofsky-Wenzel theorem}, which says that the transverse wakefield at a position $\xi$ behind the head of the bunch is related to the longtiduinal wakefield $W_{\parallel}$ via
+\begin{equation}
+\frac{\partial W_{\perp} }{\partial \xi}=\frac{\partial W_{\parallel} }{\partial r}~.
+\end{equation} 
+Since $W_{\parallel} =E_z$ this gives a transverse wakefield
+\begin{equation}
+W_{\perp}(\xi)=\int \frac{\partial W_{\parallel} }{\partial r}\mathrm{d}\xi~.
+\end{equation}
+The transverse force on a bi-Gaussian bunch can now by found by applying this expression to on the longitudinal single-particle wakefield (\ref{singe-particle-wake}) and then performing the same convolution as above, which yields 
+\begin{equation}
+F_r(r,\xi)=\frac{e^2 k_p^2}{\epsilon_0} \int_{-\infty}^{\xi} \sin(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}\frac{1}{k_p}\frac{\partial G\left(r,r_0\right)}{\partial r}  n_b(r_0,\xi')r_0\mathrm{d}r_0
+\end{equation}
 \clearpage
 \section{Non-linear Regime} 
 \subsection{Wave-breaking field}

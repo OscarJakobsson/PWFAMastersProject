@@ -12,7 +12,8 @@ Simulations because: Cheaper than experiments, more readily available to anyone,
 
 %The behaviour of these macro particles is then calculated and used as a representation of the response of the actual plasma.  where each macroscopic particle carries the total charge and mass of the microscopic particles it represents. 
 
-\section{Particle-in-Cell Codes }
+\section{Particle-in-Cell Codes}
+\label{sec:Particle-in-Cell Codes}
 Starting from EM fields $\vec{E}_{(n)},\vec{B}_{(n)}$ and charge current $\vec{J}_{(n)}$ present at iteration $n$ [at a specific position, middle of Yee grid?] we obtained the fields at the next time step $n+1$ by computing the resulting fields and currents at an intermediate half-way step $n+1/2$. We do this by first computing the change in the electric field, using Ampere's law, $\Delta \vec{E}_{(n)}$ which we add to our current field such that
 \begin{equation}
 \vec{E}_{(n+1/2)}=\vec{E}_{(n)}+\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{B}_{(n)}-\frac{\vec{J}_{(n)}}{\epsilon_0}\right)
@@ -39,17 +40,31 @@ Using these fields when then calculate the new particles positions $\vec{x}_{(n)
 
 \section{EPOCH}
 %The simulations presented in this thesis are generated using the open-source plasma physics PIC simulation code \textsc{EPOCH},
-The Extensible PIC Open Collaboration project (EPOCH) is an advance relativistic electromagnetic PIC code developed at the University of Warwick by XXX et al. [ref.user-manual]. EPOCH is now maintained and developed through the Collaborative Computational Project in Plasma Physics (CCP-Plasma), from which access to the code is granted to non-profit research laboratories and Universities [CCP website]. Simulations using EPOCH simply require users to specify the parameters and initial conditions of the simulations without the need to interact with the underlying PIC code. This code is written in Fortran and allows for simulations to be run on multiple parallel processors via MPI, enabling large 1D, 2D or 3D simulations to be run on remote computing clusters. The core PIC in EPOCH is based upon the field update and particle push algorithm of the Plasma Simulation Code (PSC) written by H. Ruhl []. This approach follows closely the  \\
-algorithms of the SRC code [ref]. [compare with fig3.1 hanahoe thesis]\\
-
-
-\subsection{Input deck and initial conditions}
-
-\subsection{Grid settings}
-An important feature of PIC codes is the grid parameters. When setting up the resolution of the grid one has to make sure that the grid is sufficiently fine such that the smallest features of our physical system are resolved. This is to ensure that the simulation accurately models the physical system it is meant to represent, to the extent that missing small scale phenomena might alter the large scale outcome of the simulation. A finer grid however requires more macroparticles to fully populate the grid, which inevitably extents the computational time. In addition the time step $\Delta t$ aneeds to be suitably decreased as well. This is because of the so-called Courant-Friedrichs-Lewy (CFL) condition. 
-Any simulation introduces uncertainties in the final outcome due to the finite resolution. We need to make sure that the uncertainties introduces during each iteration do not build up and grow unbounded. \\
-\vfill
-Parameters and initial conditions are defined using an \textit{input.deck} file.
+The Extensible PIC Open Collaboration project (EPOCH) is an advance relativistic electromagnetic PIC code developed at the University of Warwick by XXX et al. [ref.user-manual]. EPOCH is now maintained and developed through the Collaborative Computational Project in Plasma Physics (CCP-Plasma), from which access to the code is granted to non-profit research laboratories and Universities [CCP website]. 
+%Simulations  using EPOCH simply require users to specify the parameters and initial conditions of the simulations without the need to interact with the underlying PIC code.
+The underlying code is written in Fortran and allows for simulations to be run on multiple parallel processors via MPI; this enables time-consuming simulations to be run on remote computing clusters. The core PIC code in EPOCH is based upon the field update and particle push algorithms of the Plasma Simulation Code (PSC) written by H. Ruhl []. This follows closely the standard PIC method outline in section \ref{sec:Particle-in-Cell Codes}. The main difference being in how the FTDT method is implemented and the inclusion of additional functionality to allow for more advanced features such as collisions, ionisation and quantum electrodynamic radiation to be simulated [epoch manual].  \\
+\indent EPOCH is highly user-friendly; setting up simulations simply requires users to specify the parameters and initial conditions of the simulations without the need to interact with the underlying PIC code. Likewise, analysing and visualising data from a simulations is made easier through file-compatibility with Python, Matlab, IDL and VisIt, the details of which will be covered in this section.
+\subsection{Input deck}
+Once EPOCH has been downloaded and compiled the so-called input deck is essentially EPOCH's user interface. This is a file in which users specify the details of a simulations and it is this file that gets read by EPOCH and passed onto the core PIC algorithm. The input deck consists of blocks which define parameters for different features of the simulation. \\
+\textbf{Explain control block first}, and what the restart does.
+\begin{verbatim}
+begin:control
+  dlb_threshold = 0.5
+  restart_snapshot=restartXXXX.sdf
+  t_end = end_time
+  nx = nint(length / cell_length)
+  ny = nint((half_width * 2) / cell_width)
+  npart = part_per_cell * nx * ny
+  stdout_frequency = 50
+  use_random_seed = T
+end:control
+\end{verbatim}
+This specifies the grid that the simulations is to run on. We then populate this grid with plasma particles.
+\textbf{Species block}, with explanation about analytical density distributions for plasma, and specify ppc.\\
+The control and species blocks together define the resolution of the simulation. When setting up the resolution of the grid one has to make sure that the grid is sufficiently fine such that the smallest features of our physical system are resolved. This is to ensure that the simulation accurately models the physical system it is meant to represent, to the extent that missing small scale phenomena might alter the large scale outcome of the simulation. A finer grid however requires more macroparticles to fully populate the grid, which inevitably extents the computational time. In addition the time step $\Delta t$ aneeds to be suitably decreased as well. This is because of the so-called Courant-Friedrichs-Lewy (CFL) condition.  Any simulation introduces uncertainties in the final outcome due to the finite resolution. We need to make sure that the uncertainties introduces during each iteration do not build up and grow unbounded. \\
+\\
+\textbf{edriver} with analytical distribution, and laser, followed by boundaries
+\begin{center}
 \begin{verbatim}
 begin:boundaries
   bc_x_min = simple_laser
@@ -58,16 +73,20 @@ begin:boundaries
   bc_y_max = simple_outflow
 end:boundaries
 \end{verbatim}
-$$n_b = \frac{1}{{\sigma_x\sigma_y^2 (2\pi)^{3/2 }  }}e^{{{ - \left( {x - x_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - x_0 } \right)^2 } {2\sigma_x ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_x^2 }}}e^{{{ - \left( {y - y_0} \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y- y_0 } \right)^2 } {2\sigma_y ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}e^{{{ - \left( {y - y_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y - y_0 } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}$$
+\end{center}
+\textbf{output block} and the sdf file visualisation with VisIT
+
+%Parameters and initial conditions are defined using an \textit{input.deck} file.
+
+%$$n_b = \frac{1}{{\sigma_x\sigma_y^2 (2\pi)^{3/2 }  }}e^{{{ - \left( {x - x_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - x_0 } \right)^2 } {2\sigma_x ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_x^2 }}}e^{{{ - \left( {y - y_0} \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y- y_0 } \right)^2 } {2\sigma_y ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}e^{{{ - \left( {y - y_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y - y_0 } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}$$
 \subsection{Non-analytical bunch initialisation}
 \begin{itemize}
 \item Issue: restart not possible with laser. 
 \item EPOCH allows for a user to manually override particle-parameter distributions defined in the input deck, in which all functions must be defined analytically. By overriding this so-called autoloader, which takes the analytical distributions in the input deck and distributes the macro particles accordingly, this manual approach allows for the initialisation of a bunch with non-analytical density and momentum distributions. 
 \item Furthermore, even if the density distribution were to be easily described analytically, this method offers the advantage that it also overrides the maxwellian velocity distribution that epoch assigns to each bunch of particles in the input deck. This is fine for an initial bunch in thermal equilibrium, but as soon as plasma interaction occurs the velocity distribution of the electrons in the bunch is noticeably non-maxwellian
 \item VisIt - export data from .sdf file, convert to -csv, read with ic module when compiling epoch.
-\item (show below, it is possible to have a laser appear before the bunch at some time t, but the parameters of this laser could not be changed so testing several differnt laser intensities, distances etc. would take far too long if the bunhc was forced to propagate 20cm each time before the laser was ramped up )
+\item (show below, it is possible to have a laser appear before the bunch at some time t, but the parameters of this laser could not be changed so testing several differnt laser intensities, distances etc. would take far too long if the bunch was forced to propagate 20cm each time before the laser was ramped up )
 \end{itemize}
-
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  21 NOV 2018 23:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  26 NOV 2018 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2242,7 +2242,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
-<frontpage2.pdf, id=154, 597.50829pt x 845.0471pt>
+<frontpage2.pdf, id=146, 597.50829pt x 845.0471pt>
 File: frontpage2.pdf Graphic file (type pdf)
 <use frontpage2.pdf>
 Package pdftex.def Info: frontpage2.pdf  used on input line 42.
@@ -2287,7 +2287,7 @@ page2.pdf>]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<figure/auxiliary/ManchesterCrest.pdf, id=201, 164.37741pt x 280.16078pt>
+<figure/auxiliary/ManchesterCrest.pdf, id=193, 164.37741pt x 280.16078pt>
 File: figure/auxiliary/ManchesterCrest.pdf Graphic file (type pdf)
 <use figure/auxiliary/ManchesterCrest.pdf>
 Package pdftex.def Info: figure/auxiliary/ManchesterCrest.pdf  used on input li
@@ -2402,114 +2402,127 @@ Chapter 2.
 ] [4]
 
 Package natbib Warning: Citation `Gessner2016' on page 5 undefined on input lin
-e 102.
+e 112.
 
 [5] [6]
+Overfull \hbox (44.5004pt too wide) detected at line 184
+[]
+ []
 
-Package natbib Warning: Citation `Gessner2016' on page 7 undefined on input lin
-e 189.
 
-[7] [8
+Package caption Warning: \label without proper reference on input line 214.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `ex' on page 7 undefined on input line 210.
+
+<ex2.pdf, id=423, 578.16pt x 289.08pt>
+File: ex2.pdf Graphic file (type pdf)
+<use ex2.pdf>
+Package pdftex.def Info: ex2.pdf  used on input line 213.
+(pdftex.def)             Requested size: 469.47049pt x 234.73576pt.
+<visit0000.pdf, id=424, 485.88812pt x 291.81496pt>
+File: visit0000.pdf Graphic file (type pdf)
+<use visit0000.pdf>
+Package pdftex.def Info: visit0000.pdf  used on input line 214.
+(pdftex.def)             Requested size: 399.05278pt x 239.66829pt.
+[7] [8] [9 <./ex2.pdf> <./visit0000.pdf>] [10
 
 ]
-<SahaiThesisPlot.png, id=468, 373.8768pt x 287.6346pt>
+<SahaiThesisPlot.png, id=518, 373.8768pt x 287.6346pt>
 File: SahaiThesisPlot.png Graphic file (type png)
 <use SahaiThesisPlot.png>
-Package pdftex.def Info: SahaiThesisPlot.png  used on input line 265.
+Package pdftex.def Info: SahaiThesisPlot.png  used on input line 298.
 (pdftex.def)             Requested size: 373.87589pt x 287.63388pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--269
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
 
  []
 
-[9] [10 <./SahaiThesisPlot.png>] [11
+[11] [12 <./SahaiThesisPlot.png>] [13
 
 ]
-<visit0098.pdf, id=490, 583.17876pt x 335.2525pt>
+<visit0098.pdf, id=541, 583.17876pt x 335.2525pt>
 File: visit0098.pdf Graphic file (type pdf)
 <use visit0098.pdf>
-Package pdftex.def Info: visit0098.pdf  used on input line 283.
+Package pdftex.def Info: visit0098.pdf  used on input line 316.
 (pdftex.def)             Requested size: 539.88818pt x 310.39017pt.
 
-Overfull \hbox (70.4177pt too wide) in paragraph at lines 283--284
+Overfull \hbox (70.4177pt too wide) in paragraph at lines 316--317
  [][] 
  []
 
-<Ex_nonlinear.png, id=491, 1027.84pt x 554.07pt>
+<Ex_nonlinear.png, id=542, 1027.84pt x 554.07pt>
 File: Ex_nonlinear.png Graphic file (type png)
 <use Ex_nonlinear.png>
-Package pdftex.def Info: Ex_nonlinear.png  used on input line 289.
+Package pdftex.def Info: Ex_nonlinear.png  used on input line 322.
 (pdftex.def)             Requested size: 469.47049pt x 253.0745pt.
-<Ey_nonlinear.png, id=492, 2569.6pt x 1387.1825pt>
+<Ey_nonlinear.png, id=543, 2569.6pt x 1387.1825pt>
 File: Ey_nonlinear.png Graphic file (type png)
 <use Ey_nonlinear.png>
-Package pdftex.def Info: Ey_nonlinear.png  used on input line 293.
+Package pdftex.def Info: Ey_nonlinear.png  used on input line 326.
 (pdftex.def)             Requested size: 469.47049pt x 253.42857pt.
-[12
+[14
 
- <./visit0098.pdf>] [13 <./Ex_nonlinear.png> <./Ey_nonlinear.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 320--326
+ <./visit0098.pdf>] [15 <./Ex_nonlinear.png> <./Ey_nonlinear.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 353--359
 
  []
 
-) (./include/Simulations.tex [14]
+) (./include/Simulations.tex [16]
 Chapter 3.
-[15
+[17
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
-
- []
-
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 53.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
+] [18]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 50.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [17] [18]
-Overfull \hbox (6.00475pt too wide) in paragraph at lines 78--78
+)
+Underfull \hbox (badness 10000) in paragraph at lines 62--67
+
+ []
+
+[19] [20]
+Overfull \hbox (6.00475pt too wide) in paragraph at lines 97--97
 []\T1/lmtt/m/n/12 ExportDBAtts.dirname = "/Users/oscarjakobsson/Documents/epoch
 -4.14.4/epoch2d"[] 
  []
 
 
-Overfull \hbox (6.00475pt too wide) in paragraph at lines 83--83
+Overfull \hbox (6.00475pt too wide) in paragraph at lines 102--102
 []\T1/lmtt/m/n/12 ExportDBAtts.variables = ("Particles/Ek/edriver", "Particles/
 Weight/edriver")[] 
  []
 
 
-Overfull \hbox (6.00475pt too wide) in paragraph at lines 91--91
+Overfull \hbox (6.00475pt too wide) in paragraph at lines 110--110
 []\T1/lmtt/m/n/12 ExportDBAtts.dirname = "/Users/oscarjakobsson/Documents/epoch
 -4.14.4/epoch2d"[] 
  []
 
 
-Overfull \hbox (6.00475pt too wide) in paragraph at lines 96--96
+Overfull \hbox (6.00475pt too wide) in paragraph at lines 115--115
 []\T1/lmtt/m/n/12 ExportDBAtts.variables = ("Particles/Ek/edriver", "Particles/
 Weight/edriver")[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--116
+Underfull \hbox (badness 10000) in paragraph at lines 130--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[19
+[21
 
-]) (./include/Results.tex [20]
+]) (./include/Results.tex [22]
 Chapter 4.
-) (./include/Future_Work.tex [21
+) (./include/Future_Work.tex [23
 
-] [22
+] [24
 
 ]
 Chapter 5.
@@ -2518,17 +2531,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-[23]) (./include/Conclusion.tex [24
+[25]) (./include/Conclusion.tex [26
 
 ]
 Chapter 6.
-) [25
-
-] [26
-
-] (./include/backmatter/References.tex (./Main.bbl)) [27
+) [27
 
 ] [28
+
+] (./include/backmatter/References.tex (./Main.bbl)) [29
+
+] [30
 
 ]
 (./include/backmatter/Appendix_1.tex
@@ -2546,14 +2559,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 48105BB4B51C00AD1825A7DA9ECE834C;2615.
+(rerunfilecheck)             Checksum: 75FDC5B446A652410747EE1FE5FB0EC9;2408.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 31605 strings out of 492649
- 587202 string characters out of 6129622
- 655247 words of memory out of 5000000
- 34790 multiletter control sequences out of 15000+600000
+ 31623 strings out of 492649
+ 587449 string characters out of 6129622
+ 656710 words of memory out of 5000000
+ 34804 multiletter control sequences out of 15000+600000
  607642 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,13n,67p,10414b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2582,10 +2602,10 @@ live/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
 /texlive/2018/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive
 /2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/t
 exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Main.pdf (41 pages, 36187653 bytes).
+Output written on Main.pdf (43 pages, 36517734 bytes).
 PDF statistics:
- 708 PDF objects out of 1000 (max. 8388607)
- 606 compressed objects within 7 object streams
- 162 named destinations out of 1000 (max. 500000)
- 339 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 761 PDF objects out of 1000 (max. 8388607)
+ 630 compressed objects within 7 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 333 words of extra memory for PDF output out of 10000 (max. 10000000)
 
