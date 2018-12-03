@@ -1,15 +1,19 @@
-\chapter{Theory}
+\chapter{Theoretical foundations}
 \section{Introduction}
-In this chapter we introduce the linear fluid model of plasma wakefield acceleration and derive the equations governing the response of a plasma to an electron bunch propagating through. This model assumes that the bunch is ultra-relativistic and that the plasma density is much higher than the bunch density, which will allow us to treat the plasma response as a first order perturbation to the background density.  We also discuss the non-linear, so-called "blowout", regime which can not be treated perturbatively and is characterised by the expulsion of plasma electrons in a volume behind the bunch. 
+In this chapter we introduce the linear fluid model of plasma wakefield acceleration and derive the equations governing the response of a plasma to an electron bunch propagating through. This model assumes that the bunch is ultra-relativistic and that the plasma density is much higher than the bunch density, which will allow us to treat the plasma response as a first order perturbation to the background density.  We also discuss the non-linear, so-called "blowout", regime which can not be treated perturbatively and is characterised by the expulsion of plasma electrons in a volume behind the bunch. The response to a laser being driven through the plasma, the so-called pondermotive force response, shares many similar features to the theory presented in this chapter but presents other issues such as dissipation and de-phasing in the plasma which will need to be address in the context of the active beam dump. For this reason the theory of laser-plasma interactions will be covered in a subsequent report. 
 \section{Linear fluid model }
-In this section, we derive the response of a plasma to an electron bunch by considering the plasma electrons as a fluid. We shall make the assumptions;  (i) the initial plasma is uniform and electrically neutral everywhere; (ii) the plasma  ions can be considered stationary since for all plasmas the mass of the ions is much larger than the electron mass, $m_{\text{ion}}>>m_{e}$; (iii) the electron bunch is ultra-relativistic, $v/c=1$, such that the density distribution of the bunch does not evolve as it interacts with the plasma; (iv) the bunch density is much less than the plasma electron density, $n_b<<n_p$. The dynamics of the plasma electrons is governed by the continuity equation
+In this section, we derive the response of a plasma to an electron bunch by considering the plasma electrons as a fluid. We shall make the assumptions;  (i) the initial plasma is uniform and electrically neutral everywhere; (ii) the plasma ions can be considered stationary since for all plasmas the mass of the ions is much larger than the electron mass, $m_{\text{ion}}>>m_{e}$; (iii) the electron bunch is ultra-relativistic, $v/c\approx 1$, such that the density distribution of the bunch does not evolve as it interacts with the plasma; (iv) the bunch density is much less than the plasma electron density, $n_b<<n_p$.  A beam propagating through a plasma satisfying these conditions is said to be in the \textit{linear regime}. The dynamics of the plasma electrons is governed by the continuity equation
 \begin{equation}
 \frac{\partial n_p}{\partial t}=-\mathbf{\nabla}\cdot (n_p\vec{v}_p)
 \end{equation}
 where $n_p$ is the plasma electron density density and $\vec{v}_p$ the plasma fluid velocity. This simply ensures charge conservation by imposing that the plasma electron density change in a given volume is due to plasma electrons flowing in or out. The evolution of the electromagnetic fields in the plasma is governed by Maxwell's laws:
 \begin{align}
+\label{Maxwell1}
+&\boldsymbol{\nabla}\cdot \vec{E}=4\pi \rho\\
+&\boldsymbol{\nabla}\cdot \vec{B}=0\\
 &\boldsymbol{\nabla}\times \vec{E}=-\frac{1}{c}\frac{\partial \vec{B}}{\partial t} \\
 &\boldsymbol{\nabla}\times \vec{B}=\frac{4\pi}{c}\vec{J}+\frac{1}{c}\frac{\partial \vec{B}}{\partial t}
+\label{Maxwell4}
 \end{align}
 which in term determine the response of the plasma fluid through the Lorentz force law:
 \begin{equation}
@@ -30,6 +34,7 @@ Taking the time differential and neglecting terms $\mathcal{O}(n_1/n_0)$ then gi
 Similarly, substitution into the Lorentz force law gives to first-order
 \begin{equation}
  m_e\frac{\partial \vec{v}}{\partial t}= e\vec{E}
+ \label{lorentz_force_plasma}
 \end{equation} %m_en_0\frac{\partial (1+n_1/n_0)\vec{v}}{\partial t}\approx en_0(1+n_1/n_0)\vec{E} \quad \Rightarrow \quad 
 which, using Gauss's law, gives
 \begin{equation}
@@ -41,7 +46,12 @@ where $n_b$ is the charge density of the electron bunch. Equations (\ref{n''}) a
 \frac{\partial^2 n_1}{\partial t^2}+\omega_p^2n_1=-\omega_p^2n_b
 \label{ndotdot}
 \end{equation}
-where $\omega_p=(4\pi e^2n_0/m_e)^{1/2}$ is the plasma frequency. Hence the plasma density perturbation is described by a second-order differential equation with the bunch acting as a source term. We proceed to solve this for a radially symmetric bunch by evaluating equation (\ref{ndotdot}) in a reference frame co-moving with the electron bunch, where the coordinate $\xi=x-ct$ represents the position along the bunch as it travels in the $x$-direction. Doing this yields
+where 
+\begin{equation}
+\omega_p=\sqrt{\frac{4\pi e^2n_0}{m_e} }
+\label{plasma_frequency}
+\end{equation}
+is the plasma frequency. Hence the plasma density perturbation is described by a second-order differential equation with the bunch acting as a source term. We proceed to solve this for a radially symmetric bunch by evaluating equation (\ref{ndotdot}) in a reference frame co-moving with the electron bunch, where the coordinate $\xi=x-ct$ represents the position along the bunch as it travels in the $x$-direction. Doing this yields
 \begin{equation}
 -\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)n_1\left(r,\xi \right)=n_b\left(r,\xi \right) 
 \end{equation}
@@ -72,58 +82,64 @@ n_1\left(r,\xi \right)&=\int_{-\infty}^{\infty}G\left(\xi,\xi'\right)n_b\left(r,
 &=\int_{-\infty}^{\xi}\sin\left(k_p(\xi-\xi')\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'
 \end{aligned}
 \end{equation}
-where we have used the trigonometric identify for $\sin\left(k_p(\xi-\xi'\right))$. Hence the electron bunch induces oscillatory density perturbations in the plasma with a wavelength given by $\lambda_p=2\pi/k_p$.
+where we have used the trigonometric identify for $\sin\left(k_p(\xi-\xi'\right))$. Hence the electron bunch induces oscillatory density perturbations in the plasma with a wavelength given by $\lambda_p=2\pi/k_p$. In addition, the magnitude of these perturbation scales linearly with $n_b$, the density of the beam driver. Equation (\ref{plasma_frequency}) further shows that these perturbations scale as $n_0^(1/2)$, the square root of the plasma density. These perturbations set up electromagnetic fields in the plasma behind the beam driver. An understanding of these fields is crucial in order to design a functioning plasma wakefield experiment.
 \subsection{Longitudinal Accelerating Field} 
-
-gives
+The electric field parallel to the propagation of the beam driver is what drives particles to either accelerate or decelerate. This is called the longitudinal plasma wakefield and in this section we proceed to derive an expression for it in the linear regime considered above. 
+From Maxwell's equations (\ref{Maxwell1}-\ref{Maxwell4}) it is straightforward to show that the electric field in the plasma obeys a wave equation:
 \begin{equation}
 \nabla^2\vec{E}-\frac{1}{c^2}\frac{\partial^2 \vec{E}}{\partial t^2}=\frac{4\pi}{c^2}\frac{\partial \vec{J}}{\partial t}+4\pi\boldsymbol{\nabla}\rho
+\label{E_wave_equation}
 \end{equation}
-Lorentz for law ($\vec{v}$ is the velocity of the plasma):
+where the change in current and variations in the charge density act as source terms. Letting $\rho=\rho_b+\rho_p$ be the total charge density and $\vec{J}=\vec{J}_b+\vec{J}_p$ be the total charge current, where $b$ and $p$ denote the beam and plasma respectively, we have from equation (\ref{lorentz_force_plasma}) that 
 \begin{equation}
-m\frac{\partial n\vec{v}}{\partial t}=en\left(\vec{E}+\frac{\vec{v}\times\vec{B}}{c} \right)\approx en\vec{E} \quad \Rightarrow \quad
 \frac{\partial \vec{J}_p}{\partial t}=\frac{e^2 n}{m}\vec{E}
 \end{equation}
-Letting $\rho=\rho_b+\rho_p$ and $\vec{J}=\vec{J}_b+\vec{J}_p$ for the beam and plasma respectively, and $\vec{J}_b=c\rho_b\hat{\vec{z}}$, gives
-\begin{equation}
-\left(\nabla^2-\frac{1}{c^2}\frac{\partial^2}{\partial t^2}-k_p^2\right)\vec{E}=\frac{4\pi}{c}\frac{\partial \rho_b}{\partial t}\hat{\vec{z}}+4\pi\boldsymbol{\nabla}\left(\rho_b+\rho_p\right)
-\end{equation}
-where $k_p=\omega_p/c$ is the plasma wave number. To find the electric field along the beam, z-direction, we proceed by solving
+Substituting this into equation (\ref{Ex_wave_equation}), together with $\vec{J}_b=c\rho_b\hat{\vec{z}}$, and taking the z-component gives
+%\begin{equation}
+%\left(\nabla^2-\frac{1}{c^2}\frac{\partial^2}{\partial t^2}-k_p^2\right)\vec{E}=\frac{4\pi}{c}\frac{\partial \rho_b}{\partial t}\hat{\vec{z}}+4\pi\boldsymbol{\nabla}\left(\rho_b+\rho_p\right)
+%\end{equation}
 \begin{equation}
 \left(\nabla^2-\frac{1}{c^2}\frac{\partial^2}{\partial t^2}-k_p^2\right)E_z=\frac{4\pi}{c}\frac{\partial \rho_b}{\partial t}+4\pi\frac{\partial}{\partial z}\left(\rho_b+\rho_p\right)
+\label{Ez_wave_equation}
 \end{equation}
-using $\nabla^2=\nabla^2_{\perp}+\partial^2_z$, in Fourier transform space, where\\
-\textcolor{purple}{change this to E=integral tilde E, then substitute that into the following equations, since the RHS of 2.14 is not correct, fourier transform of the derivative acting on the function is not the same as the derivative acting on the transformed function}
+where $k_p=\omega_p/c$ is the plasma wave number and $E_z$ is the longitudinal electrical field. To solve this we write $\nabla^2=\nabla^2_{\perp}+\partial^2_z$ in  transverse and longitudinal components. Furthermore, we proceed to work in Fourier transform space, where
+%\textcolor{purple}{change this to E=integral tilde E, then substitute that into the following equations, since the RHS of 2.14 is not correct, fourier transform of the derivative acting on the function is not the same as the derivative acting on the transformed function}
 \begin{equation}
-E_z(\xi)\left(k\right)=\int_ {-\infty}^{\infty}\wtilde{E}_z(k)e^{ik\xi}\mathrm{d}k~~,~~~\left(\rho_b(k)+\rho_b(k)\right)=\int_ {-\infty}^{\infty}\left(\wtilde{\rho}_b\left(\xi\right)+\wtilde{\rho}_p\right)\left(\xi\right)e^{ik\xi}\mathrm{d}\xi
+E_z(\xi)=\frac{1}{2\pi}\int_ {-\infty}^{\infty}\wtilde{E}_z(k)e^{ik\xi}\mathrm{d}k
 \end{equation}
-such that 
-\begin{equation}
-\left(\frac{\partial^2 }{\partial z^2}-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\right)E_z(\xi)=0
-\end{equation}
-and
-\begin{equation}
-\frac{4\pi}{c}\frac{\partial {\rho}_b}{\partial t}+4\pi\frac{\partial }{\partial z}\left({\rho}_b+{\rho}_p\right)=-4\pi i k\wtilde{\rho}_b+4i k\pi\wtilde{\rho}_b+4i k\pi\wtilde{\rho}_p=4i k\pi\wtilde{\rho}_p
-\end{equation}
-which gives 
+and similarly for $\rho_b$ and $\rho_p$. Equation (\ref{Ez_wave_equation}) now simplifies to
+%\begin{equation}
+%\left(\frac{\partial^2 }{\partial z^2}-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\right)E_z(\xi)=0
+%\end{equation}
+%and
+%\begin{equation}
+%\frac{4\pi}{c}\frac{\partial {\rho}_b}{\partial t}+4\pi\frac{\partial }{\partial z}\left({\rho}_b+{\rho}_p\right)=-4\pi i k\wtilde{\rho}_b+4i k\pi\wtilde{\rho}_b+4i k\pi\wtilde{\rho}_p=4i k\pi\wtilde{\rho}_p
+%\end{equation}
+%which gives 
 \begin{equation}
 \left(\nabla^2_{\perp}-k^2_p\right)\wtilde{E}_z\left(\xi\right)=4\pi i k\wtilde{\rho}_p
 \end{equation}
-We note that the two contributions from the beam cancel each other out, this is because of relativistic effects (?) \citep{Gessner2016}.
-From eq. XXX we have
+We note that the two contributions from the beam cancel each other out, this is because of relativistic effects (?) \citep{Gessner2016}. The effect of the beam is however represented in the plasma modulations. Write equation () in Fourier transform space gives
+%\begin{equation}
+%\frac{\partial^2{\rho}_p}{\partial t^2}+\omega_p^2{\rho}_p=-\omega_p^2{\rho}_b \quad \Rightarrow\quad
+%-k^2\wtilde{\rho}_p+k_p^2\wtilde{\rho}_p=-k_p^2\wtilde{\rho}_b 
+%\end{equation}
+%which gives 
 \begin{equation}
-\frac{\partial^2{\rho}_p}{\partial t^2}+\omega_p^2{\rho}_p=-\omega_p^2{\rho}_b \quad \Rightarrow\quad
--k^2\wtilde{\rho}_p+k_p^2\wtilde{\rho}_p=-k_p^2\wtilde{\rho}_b \quad \Rightarrow\quad \wtilde{\rho}_p=\frac{k_p^2}{k^2-k_p^2}\wtilde{\rho}_b
+\wtilde{\rho}_p=\frac{k_p^2}{k^2-k_p^2}\wtilde{\rho}_b
 \end{equation}
-
+which together with the cylindrical representation of the Laplacian
 \begin{equation}
 \nabla_{\perp}^2=\frac{1}{r}\frac{\partial }{\partial r}r\frac{\partial }{\partial r} +\frac{1}{r^2}\frac{\partial^2 }{\partial \phi^2} 
 \end{equation}
+gives
 \begin{equation}
  \left(\frac{\partial^2 }{\partial r^2}+\frac{1}{r}\frac{\partial }{\partial r} -k^2_p\right)\wtilde{E}_z
 =4\pi ik_p^2 \frac{k}{k^2-k_p^2}\wtilde{\rho}_b
 \label{diffeq_in_transformspace}
 \end{equation}
+where we have assumed that the longitudinal field is radially symmetric. It should be noted that a setting the beam velocity to $\beta=1$ before solving this equation, as we have done here, is technically not valid. Lu et al. []......\\
+However, the effect of this is altogether negligible in our case (calc extra term from their paper).
 We now rewrite this equation as
 \begin{equation}
 \mathscr{L}\wtilde{E}_z= \wtilde{f}(r)
@@ -182,7 +198,7 @@ Doing this yields
 E_z(r,\xi)&=-{2ik_p^2}\int_{-\infty}^{\infty}\frac{ke^{ik\xi}}{k^2-k_p^2}\mathrm{d}k\int_0^{\infty}\left( I_0(k_pr)K_0(k_pr')\Theta(r'-r)+I_0(k_pr')K_0(k_pr)\Theta(r-r') \right)\wtilde{\rho}_b(r')r'\mathrm{d}r'
 \label{e_z}
 \end{align}
-For a known beam distribution $rho_b(r,\xi)$ (add $\xi$ in all previous expressions?) this expression can be used to compute the resulting longitudinal electric field. We shall now proceed by calculating this for a bi-Gaussian bunch distribution. To do this, we could compute the electric field from the Green's function directly and then carrying out the inverse Fourier transform, or we could choose to first compute the field due to a point-particle and then convolving it with the bi-Gaussian distribution. We proceed by doing the latter by following the approach of Dawson; we choose a charge distribution with radial symmetry and a delta function in the $z$-direction to match our Green's function.
+For a known beam distribution $rho_b(r,\xi)$ (add $\xi$ in all previous expressions?) this expression can be used to compute the resulting longitudinal electric field. We shall now proceed by calculating this for a bi-Gaussian bunch distribution. To do this, we could compute the electric field from the Green's function directly and then carrying out the inverse Fourier transform, or we could choose to first compute the field due to a point-particle and then convolving it with the bi-Gaussian distribution. We proceed by doing the latter by following the approach of Dawson \cite{Katsouleas1987} ; we choose a charge distribution with radial symmetry and a delta function in the $z$-direction to match our Green's function.
 \begin{align}
 {\rho}_{b_0}(r,\xi)=\frac{e}{2\pi r}\delta(r-r_0)\delta(\xi) \quad \Rightarrow\quad  \wtilde{\rho}_{b_0}(r,k)=\int_ {-\infty}^{\infty}\rho_b(r,\xi)e^{-ik\xi}\mathrm{d}\xi=\frac{e}{2\pi r}\delta(r-r_0)
 \end{align}
@@ -208,22 +224,25 @@ The electric force is thus $F_z(r,\xi)=-eE_z(r,\xi)$. To compare with simulation
 F_z(r,\xi)=\frac{e^2 k_p^2}{\epsilon_0} \int_{-\infty}^{\xi} \cos(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r_0\right) n_b(r_0,\xi')r_0\mathrm{d}r_0
 \end{equation}
 This expression can be calculated numerically to ; fig. \ref{ex}
+%\begin{figure}
+%\centering
+%\includegraphics[width=\textwidth]{ex2.pdf}
+%\includegraphics[width=0.85\textwidth]{visit0000.pdf}
+%\label{ex}
+%\end{figure}
 \begin{figure}
-\centering
-\includegraphics[width=\textwidth]{ex2.pdf}
-\includegraphics[width=0.85\textwidth]{visit0000.pdf}
-\label{ex}
+\includegraphics[width=\textwidth]{linear_SimVsTheory.pdf}
+\caption{Simulation vs. theory for linear regime with $n_p/n_b=100$. }
 \end{figure}
-
 %\textcolor{red}{which is not the same as Bonatto/Gessner/Schroeder, the limits are different, they have from xi to infity  , is this not how to do a convolution? Why don't we have somethign like $r-r'$ from a radial convolution or something? Bonatto, Schroder has the integral from infinity to xi, why? \\ These expressions with $-4\pi$ does not satisfy the diff.eq that I am trying to solve in transform space, so why do they use them if they don't solve their original diff. equations?\\ Mira's thesis also has $4\pi$ if converting to cgs.}
 \subsection{Transverse Focusing Field} 
-An ultrarelativisitic electron bunch will be highly contracted in the direction of propagation relative to the plasma electrons in the 'lab' frame. Assuming $\beta=1$ as before the electric field due to the bunch is purely radial, $E_r$. In addition, the magnetic field due to the charge is azimuthal, $B_{\theta}$. The resulting transverse wakefield $W_{\perp}=E_r-B_{\theta}$ experienced by a realtivisit particle due to the wake is given by the \textit{Panofsky-Wenzel theorem}, which says that the transverse wakefield at a position $\xi$ behind the head of the bunch is related to the longtiduinal wakefield $W_{\parallel}$ via
+An ultrarelativisitic electron bunch will be highly contracted in the direction of propagation relative to the plasma electrons in the 'lab' frame. Assuming $\beta=1$ as before the electric field due to the bunch is purely radial, $E_r$. In addition, the magnetic field due to the charge is azimuthal, $B_{\theta}$. The resulting transverse wakefield $W_{\perp}=E_r-B_{\theta}$ experienced by a realtivisit particle due to the wake is given by the \textit{Panofsky-Wenzel theorem}\cite{Vaganian1995}, which says that the transverse wakefield at a position $\xi$ behind the head of the bunch is related to the longtiduinal wakefield $W_{\parallel}$ via
 \begin{equation}
 \frac{\partial W_{\perp} }{\partial \xi}=\frac{\partial W_{\parallel} }{\partial r}~.
 \end{equation} 
 Since $W_{\parallel} =E_z$ this gives a transverse wakefield
 \begin{equation}
-W_{\perp}(\xi)=\int \frac{\partial W_{\parallel} }{\partial r}\mathrm{d}\xi~.
+W_{\perp}(\xi)=\int \frac{\partial E_z }{\partial r}\mathrm{d}\xi~.
 \end{equation}
 The transverse force on a bi-Gaussian bunch can now by found by applying this expression to on the longitudinal single-particle wakefield (\ref{singe-particle-wake}) and then performing the same convolution as above, which yields 
 \begin{equation}
@@ -231,6 +250,7 @@ F_r(r,\xi)=\frac{e^2 k_p^2}{\epsilon_0} \int_{-\infty}^{\xi} \sin(k_p(\xi-\xi'))
 \end{equation}
 \clearpage
 \section{Non-linear Regime} 
+What is the self-injection threshold
 \subsection{Wave-breaking field}
 \underline{Dawson's derivation} [Note: The wave-breaking field does not represent the onset of the non-linear regime but the highest achievable field in the non-linear regime.]
 We consider a simple 1D linear non-relativistic electron sheet model first used by Dawson \citep{Dawson1959} to show the breakdown of the linear model (\textcolor{red}{correct?}). Consider the plasma being made up of thin sheets of ions and electrons. A sheet at equilibrium position $z=z_0$ is then displaced by $\eta_0(z_0)$, where the displacement is set as function of the equilibrium position for full generality, to a new position $z=z_0+\eta_0$. The displaced sheet reveals a positive surface charge density $\sigma=en_0\eta_0$, where $n_0$ is the electron charge density in the plasma. This sets up a restoring electric field which we find using Gauss's law to be $E_{\text{res}}=4\pi n_0e\eta_0$ which yields a restoring force
@@ -373,3 +393,4 @@ We will proceed by calculating the gamma factor of a given particle in the beam 
 \begin{equation}
 \gamma(s,\xi)=\gamma_0-esE_z(\xi)
 \end{equation}
+$\Lambda\text{anja}$

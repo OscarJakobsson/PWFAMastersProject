@@ -1,8 +1,57 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{xfel}
+{The Technical Design Report (TDR) of the European XFEL}.
+
+\bibitem{LEP_dump}
+G~Schrgder, U~Jansson, R~Jung, G~R Stevenson, and E~B Vossenberg.
+\newblock {The LEP Beam Dumping System}.
+\newblock pages 2429--2431.
+
+\bibitem{Satyamurthy2012}
+Polepalle Satyamurthy, Pravin Rai, Vikas Tiwari, Kiran Kulkarni, John Amann,
+  Raymond~G. Arnold, Dieter Walz, Andrei Seryi, Tristan Davenne, Ottone
+  Caretta, Chris Densham, and Robert~B. Appleby.
+\newblock {Design of an 18 MW vortex flow water beam dump for 500 GeV
+  electrons/positrons of an international linear collider}.
+\newblock {\em Nuclear Instruments and Methods in Physics Research, Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, 679:67--81,
+  2012.
+
+\bibitem{Wu2010}
+H.~C. Wu, T.~Tajima, D.~Habs, A.~W. Chao, and J.~Meyer-ter Vehn.
+\newblock {Collective deceleration: Toward a compact beam dump}.
+\newblock {\em Physical Review Special Topics - Accelerators and Beams},
+  13(10):1--8, 2010.
+
+\bibitem{Bonatto2015}
+A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~G.R. Geddes, C.~Benedetti,
+  E.~Esarey, and W.~P. Leemans.
+\newblock {Passive and active plasma deceleration for the compact disposal of
+  electron beams}.
+\newblock {\em Physics of Plasmas}, 22(8), 2015.
+
+\bibitem{Hanahoe2017}
+Kieran Hanahoe, Guoxing Xia, Mohammad Islam, Yangmei Li, {\"{O}}znur
+  Mete-Apsimon, Bernhard Hidding, and Jonathan Smith.
+\newblock {Simulation study of a passive plasma beam dump using varying plasma
+  density}.
+\newblock {\em Physics of Plasmas}, 24(2), 2017.
 
 \bibitem{Jackson1962}
 John~David Jackson.
 \newblock {Jackson - Classical Electrodynamics (3rd Ed.).pdf}, 1962.
+
+\bibitem{Katsouleas1987}
+T~Katsouleas, S~Wilks, P~Chen, J~M Dawson, and J~J Su.
+\newblock {BEAM LOADING IN PLASMA ACCELERATORS}.
+\newblock Technical report, 1987.
+
+\bibitem{Vaganian1995}
+S~Vaganian and H~Henke.
+\newblock {THE PANOFSKY-WENZEL THEOREM AND GENERAL RELATIONS FOR THE WAKE
+  POTENTIAL}.
+\newblock Technical report, 1995.
 
 \bibitem{Dawson1959}
 John~M Dawson.

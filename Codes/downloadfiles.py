@@ -1,4 +1,4 @@
-for i in range(101,201):
+for i in range(250,486):
 	if (i<10):
 		print('000%d.sdf,'%i, end ="")
 	if (i<100 and i>9):
