@@ -38,6 +38,19 @@ Kieran Hanahoe, Guoxing Xia, Mohammad Islam, Yangmei Li, {\"{O}}znur
   density}.
 \newblock {\em Physics of Plasmas}, 24(2), 2017.
 
+\bibitem{Dawson1959}
+John~M Dawson.
+\newblock {Electron Oscillations in a Cold Plasma}.
+\newblock Technical Report~2, 1959.
+
+\bibitem{Gessner2016}
+Spencer~J Gessner.
+\newblock {DEMONSTRATION OF THE HOLLOW CHANNEL PLASMA WAKEFIELD ACCELERATOR A
+  DISSERTATION SUBMITTED TO THE DEPARTMENT OF PHYSICS AND THE COMMITTEE ON
+  GRADUATE STUDIES OF STANFORD UNIVERSITY IN PARTIAL FULFILLMENT OF THE
+  REQUIREMENTS FOR THE DEGREE OF DOCTOR OF PHILOSOPHY}.
+\newblock Technical report, 2016.
+
 \bibitem{Jackson1962}
 John~David Jackson.
 \newblock {Jackson - Classical Electrodynamics (3rd Ed.).pdf}, 1962.
@@ -52,11 +65,6 @@ S~Vaganian and H~Henke.
 \newblock {THE PANOFSKY-WENZEL THEOREM AND GENERAL RELATIONS FOR THE WAKE
   POTENTIAL}.
 \newblock Technical report, 1995.
-
-\bibitem{Dawson1959}
-John~M Dawson.
-\newblock {Electron Oscillations in a Cold Plasma}.
-\newblock Technical Report~2, 1959.
 
 \bibitem{Lu2006}
 W.~Lu, C.~Huang, M.~Zhou, M.~Tzoufras, F.~S. Tsung, W.~B. Mori, and

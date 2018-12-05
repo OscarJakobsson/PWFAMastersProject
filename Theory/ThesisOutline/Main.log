@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  3 DEC 2018 23:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  5 DEC 2018 00:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2257,7 +2257,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
-<frontpage4.pdf, id=146, 597.50829pt x 845.0471pt>
+<frontpage4.pdf, id=142, 597.50829pt x 845.0471pt>
 File: frontpage4.pdf Graphic file (type pdf)
 <use frontpage4.pdf>
 Package pdftex.def Info: frontpage4.pdf  used on input line 42.
@@ -2302,7 +2302,7 @@ page4.pdf>]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<figure/auxiliary/ManchesterCrest.pdf, id=191, 164.37741pt x 280.16078pt>
+<figure/auxiliary/ManchesterCrest.pdf, id=186, 164.37741pt x 280.16078pt>
 File: figure/auxiliary/ManchesterCrest.pdf Graphic file (type pdf)
 <use figure/auxiliary/ManchesterCrest.pdf>
 Package pdftex.def Info: figure/auxiliary/ManchesterCrest.pdf  used on input li
@@ -2401,7 +2401,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 11.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 11.
-<Wu_energy_uniform.pdf, id=365, 340.26141pt x 123.66974pt>
+<Wu_energy_uniform.pdf, id=362, 340.26141pt x 123.66974pt>
 File: Wu_energy_uniform.pdf Graphic file (type pdf)
 <use Wu_energy_uniform.pdf>
 Package pdftex.def Info: Wu_energy_uniform.pdf  used on input line 21.
@@ -2422,75 +2422,82 @@ Underfull \vbox (badness 2799) has occurred while \output is active []
 [6]
 
 LaTeX Warning: Reference `Ex_wave_equation' on page 7 undefined on input line 9
-7.
+8.
 
-[7]
-
-Package natbib Warning: Citation `Gessner2016' on page 8 undefined on input lin
-e 122.
-
-[8]
-Overfull \hbox (44.5004pt too wide) detected at line 199
+[7] [8]
+Overfull \hbox (44.5004pt too wide) detected at line 206
 []
  []
 
 [9]
+<linear_SimVsTheory_bunch.pdf, id=523, 524.51262pt x 279.17801pt>
+File: linear_SimVsTheory_bunch.pdf Graphic file (type pdf)
+<use linear_SimVsTheory_bunch.pdf>
+Package pdftex.def Info: linear_SimVsTheory_bunch.pdf  used on input line 241.
+(pdftex.def)             Requested size: 469.47049pt x 249.88618pt.
+ [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `ex' on page 10 undefined on input line 225.
+ [11 <./linear_SimVsTheory_bunch.pdf>]
 
-<linear_SimVsTheory.pdf, id=519, 578.16pt x 289.08pt>
-File: linear_SimVsTheory.pdf Graphic file (type pdf)
-<use linear_SimVsTheory.pdf>
-Package pdftex.def Info: linear_SimVsTheory.pdf  used on input line 233.
-(pdftex.def)             Requested size: 469.47049pt x 234.73576pt.
-[10 <./linear_SimVsTheory.pdf>] [11] [12
+Package caption Warning: \label without proper reference on input line 270.
+See the caption package documentation for explanation.
 
-]
-<SahaiThesisPlot.png, id=590, 373.8768pt x 287.6346pt>
-File: SahaiThesisPlot.png Graphic file (type png)
-<use SahaiThesisPlot.png>
-Package pdftex.def Info: SahaiThesisPlot.png  used on input line 317.
-(pdftex.def)             Requested size: 373.87589pt x 287.63388pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--321
+LaTeX Warning: Reference `transverse_plot' on page 12 undefined on input line 2
+58.
+
+<transverseforce3.pdf, id=552, 578.56906pt x 506.59503pt>
+File: transverseforce3.pdf Graphic file (type pdf)
+<use transverseforce3.pdf>
+Package pdftex.def Info: transverseforce3.pdf  used on input line 269.
+(pdftex.def)             Requested size: 281.68515pt x 246.64136pt.
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 286--307
 
  []
 
-[13] [14 <./SahaiThesisPlot.png>] [15
+[13 <./transverseforce3.pdf>] [14]
+<SahaiThesisPlot.png, id=610, 373.8768pt x 287.6346pt>
+File: SahaiThesisPlot.png Graphic file (type png)
+<use SahaiThesisPlot.png>
+Package pdftex.def Info: SahaiThesisPlot.png  used on input line 382.
+(pdftex.def)             Requested size: 373.87589pt x 287.63388pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--386
+
+ []
+
+[15] [16 <./SahaiThesisPlot.png>] [17
 
 ]
-<visit0098.pdf, id=615, 583.17876pt x 335.2525pt>
+<visit0098.pdf, id=630, 583.17876pt x 335.2525pt>
 File: visit0098.pdf Graphic file (type pdf)
 <use visit0098.pdf>
-Package pdftex.def Info: visit0098.pdf  used on input line 335.
+Package pdftex.def Info: visit0098.pdf  used on input line 400.
 (pdftex.def)             Requested size: 539.88818pt x 310.39017pt.
 
-Overfull \hbox (70.4177pt too wide) in paragraph at lines 335--336
+Overfull \hbox (70.4177pt too wide) in paragraph at lines 400--401
  [][] 
  []
 
-<Ex_nonlinear.png, id=616, 1027.84pt x 554.07pt>
+<Ex_nonlinear.png, id=631, 1027.84pt x 554.07pt>
 File: Ex_nonlinear.png Graphic file (type png)
 <use Ex_nonlinear.png>
-Package pdftex.def Info: Ex_nonlinear.png  used on input line 341.
+Package pdftex.def Info: Ex_nonlinear.png  used on input line 406.
 (pdftex.def)             Requested size: 469.47049pt x 253.0745pt.
-<Ey_nonlinear.png, id=617, 2569.6pt x 1387.1825pt>
+<Ey_nonlinear.png, id=632, 2569.6pt x 1387.1825pt>
 File: Ey_nonlinear.png Graphic file (type png)
 <use Ey_nonlinear.png>
-Package pdftex.def Info: Ey_nonlinear.png  used on input line 345.
+Package pdftex.def Info: Ey_nonlinear.png  used on input line 410.
 (pdftex.def)             Requested size: 469.47049pt x 253.42857pt.
-[16
+) (./include/Simulations.tex [18
 
- <./visit0098.pdf>] [17 <./Ex_nonlinear.png> <./Ey_nonlinear.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 372--378
+ <./visit0098.pdf>] [19 <./Ex_nonlinear.png> <./Ey_nonlinear.png>] [20
 
- []
-
-) (./include/Simulations.tex [18]
+]
 Chapter 3.
-[19
-
-] [20]
+[21] [22]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 50.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2499,7 +2506,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--67
 
  []
 
-[21] [22]
+[23] [24]
 Overfull \hbox (6.00475pt too wide) in paragraph at lines 97--97
 []\T1/lmtt/m/n/12 ExportDBAtts.dirname = "/Users/oscarjakobsson/Documents/epoch
 -4.14.4/epoch2d"[] 
@@ -2533,13 +2540,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[23
+[25
 
-]) (./include/Results.tex [24]
+]) (./include/Results.tex [26]
 Chapter 4.
-) (./include/Future_Work.tex [25
+) (./include/Future_Work.tex [27
 
-] [26
+] [28
 
 ]
 Chapter 5.
@@ -2548,26 +2555,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-[27]) (./include/Conclusion.tex [28
+[29]) (./include/Conclusion.tex [30
 
 ]
 Chapter 6.
-) [29
-
-] [30
-
-] (./include/backmatter/References.tex (./Main.bbl)) [31
+) [31
 
 ] [32
 
-]
+] (./include/backmatter/References.tex (./Main.bbl [33
+
+])) [34]
 (./include/backmatter/Appendix_1.tex
 Appendix A.
-)
+) [1
 
-Package natbib Warning: There were undefined citations.
-
-[1
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
@@ -2576,21 +2578,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 8FFE5444B6A0C52000EC84F2ED410186;2429.
+(rerunfilecheck)             Checksum: EEE9E586C4514F06DAC22C87762D781F;2353.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 31767 strings out of 492649
- 589475 string characters out of 6129622
- 658187 words of memory out of 5000000
- 34911 multiletter control sequences out of 15000+600000
+ 31778 strings out of 492649
+ 589762 string characters out of 6129622
+ 658621 words of memory out of 5000000
+ 34922 multiletter control sequences out of 15000+600000
  629112 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,13n,67p,10414b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,13n,67p,10414b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/t
 exmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/
@@ -2618,10 +2623,10 @@ nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
 type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/u
 rw/helvetic/uhvr8a.pfb>
-Output written on Main.pdf (45 pages, 36919870 bytes).
+Output written on Main.pdf (47 pages, 40753021 bytes).
 PDF statistics:
- 842 PDF objects out of 1000 (max. 8388607)
- 697 compressed objects within 7 object streams
- 176 named destinations out of 1000 (max. 500000)
- 333 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 848 PDF objects out of 1000 (max. 8388607)
+ 719 compressed objects within 8 object streams
+ 175 named destinations out of 1000 (max. 500000)
+ 330 words of extra memory for PDF output out of 10000 (max. 10000000)
 

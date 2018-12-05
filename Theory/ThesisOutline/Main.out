@@ -8,28 +8,27 @@
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.2}{Linear fluid model }{chapter.2}% 9
 \BOOKMARK [2][-]{subsection.2.2.1}{Longitudinal Accelerating Field}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.2}{Transverse Focusing Field}{section.2.2}% 11
-\BOOKMARK [1][-]{section.2.3}{Non-linear Regime}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.3.1}{Wave-breaking field}{section.2.3}% 13
-\BOOKMARK [1][-]{section.2.4}{Particle interactions with matter}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.4.1}{Bohr-Fermi-Bethe-Bloch Theory}{section.2.4}% 15
-\BOOKMARK [2][-]{subsection.2.4.2}{Collective Plasma Deceleration \205 Non-Linear regime }{section.2.4}% 16
-\BOOKMARK [2][-]{subsection.2.4.3}{Collective Plasma Deceleration \205 Linear regime }{section.2.4}% 17
-\BOOKMARK [2][-]{subsection.2.4.4}{Notes Bonatto}{section.2.4}% 18
-\BOOKMARK [0][-]{chapter.3}{Simulations}{}% 19
-\BOOKMARK [1][-]{section.3.1}{Plasma simulations}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.2}{Particle-in-Cell Codes}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.3}{EPOCH}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.1}{Input deck}{section.3.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.2}{Non-analytical bunch initialisation}{section.3.3}% 24
-\BOOKMARK [1][-]{section.3.4}{Notes.}{chapter.3}% 25
-\BOOKMARK [0][-]{chapter.4}{Simulation tests}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Plasma deceleration - Uniform density}{chapter.4}% 27
-\BOOKMARK [2][-]{subsection.4.1.1}{Transverse instabilities in quasilinear regime}{section.4.1}% 28
-\BOOKMARK [1][-]{section.4.2}{Hybrid Scheme - Feasibility study}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.2.1}{Initialising a decelerated bunch}{section.4.2}% 30
-\BOOKMARK [2][-]{subsection.4.2.2}{Introduction of co-propagating laser}{section.4.2}% 31
-\BOOKMARK [0][-]{chapter.5}{Ongoing and future work}{}% 32
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 33
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 34
-\BOOKMARK [0][-]{appendix.A}{Appendix: Input decks}{}% 35
+\BOOKMARK [2][-]{subsection.2.2.2}{Transverse Field}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{Collective Plasma Deceleration \205 Linear regime }{section.2.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Non-linear Regime}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.3.1}{Wave-breaking field}{section.2.3}% 14
+\BOOKMARK [1][-]{section.2.4}{Particle interactions with matter}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{Bohr-Fermi-Bethe-Bloch Theory}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.2}{Collective Plasma Deceleration \205 Non-Linear regime }{section.2.4}% 17
+\BOOKMARK [0][-]{chapter.3}{Simulations}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Plasma simulations}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Particle-in-Cell Codes}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.3}{EPOCH}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.1}{Input deck}{section.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.2}{Non-analytical bunch initialisation}{section.3.3}% 23
+\BOOKMARK [1][-]{section.3.4}{Notes.}{chapter.3}% 24
+\BOOKMARK [0][-]{chapter.4}{Simulation tests}{}% 25
+\BOOKMARK [1][-]{section.4.1}{Plasma deceleration - Uniform density}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.1.1}{Transverse instabilities in quasilinear regime}{section.4.1}% 27
+\BOOKMARK [1][-]{section.4.2}{Hybrid Scheme - Feasibility study}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.2.1}{Initialising a decelerated bunch}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.2}{Introduction of co-propagating laser}{section.4.2}% 30
+\BOOKMARK [0][-]{chapter.5}{Ongoing and future work}{}% 31
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 32
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 33
+\BOOKMARK [0][-]{appendix.A}{Appendix: Input decks}{}% 34
