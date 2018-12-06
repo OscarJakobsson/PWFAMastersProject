@@ -48,7 +48,7 @@ Spencer~J Gessner.
 \newblock {DEMONSTRATION OF THE HOLLOW CHANNEL PLASMA WAKEFIELD ACCELERATOR A
   DISSERTATION SUBMITTED TO THE DEPARTMENT OF PHYSICS AND THE COMMITTEE ON
   GRADUATE STUDIES OF STANFORD UNIVERSITY IN PARTIAL FULFILLMENT OF THE
-  REQUIREMENTS FOR THE DEGREE OF DOCTOR OF PHILOSOPHY}.
+  REQUIREMENTS FOR THE DEGREE OF DOCTOR OF PHIL}.
 \newblock Technical report, 2016.
 
 \bibitem{Jackson1962}
@@ -66,12 +66,11 @@ S~Vaganian and H~Henke.
   POTENTIAL}.
 \newblock Technical report, 1995.
 
-\bibitem{Lu2006}
-W.~Lu, C.~Huang, M.~Zhou, M.~Tzoufras, F.~S. Tsung, W.~B. Mori, and
-  T.~Katsouleas.
-\newblock {A nonlinear theory for multidimensional relativistic plasma wave
-  wakefields}.
-\newblock {\em Physics of Plasmas}, 13(5), 2006.
+\bibitem{Mira2017}
+Francesco Mira and Thesis Advisor.
+\newblock {Self Injection of High Brightness electron beams via Wakefield
+  Ionization in beam-driven Plasma Ac- celeration}.
+\newblock (October), 2017.
 
 \bibitem{Bonatto2016}
 A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~R. Geddes, C.~Benedetti, E.~Esarey,
@@ -79,5 +78,10 @@ A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~R. Geddes, C.~Benedetti, E.~Esarey,
 \newblock {Compact disposal of high-energy electron beams using passive or
   laser-driven plasma decelerating stage}.
 \newblock {\em AIP Conference Proceedings}, 1777(1):0--5, 2016.
+
+\bibitem{Schmid2012}
+K~Schmid and L~Veisz.
+\newblock {Supersonic gas jets for laser-plasma experiments}.
+\newblock {\em Citation: Review of Scientific Instruments}, 83:53304, 2012.
 
 \end{thebibliography}

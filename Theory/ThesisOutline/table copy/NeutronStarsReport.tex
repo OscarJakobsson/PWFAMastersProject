@@ -1,0 +1,96 @@
+\documentclass[%
+ onecolumn,notitlepage,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%showpacs,preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+ longbibliography
+%prl,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-1}
+\usepackage{float}
+\usepackage{graphicx}% Include figure files
+\usepackage{epstopdf}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\def\dbar{{\mathchar'26\mkern-12mu \mathrm{d}}} 
+\usepackage{amsmath}
+\usepackage{physics}
+
+\makeatletter
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[LE,RO]{Share\LaTeX}
+\fancyhead[RE,LO]{Neutron Stars}
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+
+
+\fancypagestyle{firstpage}{%
+  \fancyhf{}
+  \fancyhead[LE,RO]{Second Year Theory Computing Project}
+\fancyhead[RE,LO]{Neutron Stars}
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+}
+ 
+\renewcommand{\headrulewidth}{1.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\newcommand{\squeezeup}{\vspace{-2.5mm}}
+
+  
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+\begin{center}
+\begin{minipage}[t]{0.7\textwidth}
+\begin{table}[H]
+\begin{ruledtabular}
+\begin{tabular}{ccllc}
+&\hspace{-12pt}{EuPRAXIA bunch parameters}\vspace{1pt} \\
+\hline
+Parameter&Case 1 &\hspace{-35pt} Case 2 & Simulations\\
+\hline
+Energy&5 GeV  &\hspace{-35pt} 3 GeV &1 GeV  \\
+Charge&100 pC &\hspace{-35pt} 30pC& 30pC \\
+Bunch length (RMS)& 1.5 $mu$m  &\hspace{-35pt}  0.9 $\mu$m &1.5 $\mu m$ \\
+Bunch width (RMS)&0.3 $\mu$m & \hspace{-35pt} 0.3 $\mu$m&0.3 $\mu$m   \\
+Energy spread (RMS)& 5\%& \hspace{-35pt} 5\%  &1\% \\
+Transverse divergence (RMS) & 0.32 mrad  &  \hspace{-35pt} 0.41 mrad &10 $\mu$rad \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+\end{minipage}
+\end{center}
+
+\end{document}
