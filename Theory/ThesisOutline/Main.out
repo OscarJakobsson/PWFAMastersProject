@@ -19,11 +19,12 @@
 \BOOKMARK [2][-]{subsection.3.3.2}{Non-analytical bunch initialisation}{section.3.3}% 19
 \BOOKMARK [0][-]{chapter.4}{Simulation tests}{}% 20
 \BOOKMARK [1][-]{section.4.1}{Plasma deceleration - Uniform density}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.1.1}{Transverse instabilities in quasilinear regime}{section.4.1}% 22
-\BOOKMARK [1][-]{section.4.2}{Hybrid Scheme - Feasibility study}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.2.1}{Initialising a decelerated bunch}{section.4.2}% 24
-\BOOKMARK [2][-]{subsection.4.2.2}{Introduction of co-propagating laser}{section.4.2}% 25
-\BOOKMARK [0][-]{chapter.5}{Ongoing and future work}{}% 26
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 27
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 28
-\BOOKMARK [0][-]{appendix.A}{Appendix: Input decks}{}% 29
+\BOOKMARK [1][-]{section.4.2}{Larger bunch}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.2.1}{Transverse instabilities in quasilinear regime}{section.4.2}% 23
+\BOOKMARK [1][-]{section.4.3}{Hybrid Scheme - Feasibility study}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.3.1}{Initialising a decelerated bunch}{section.4.3}% 25
+\BOOKMARK [2][-]{subsection.4.3.2}{Introduction of co-propagating laser}{section.4.3}% 26
+\BOOKMARK [0][-]{chapter.5}{Ongoing and future work}{}% 27
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 28
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 29
+\BOOKMARK [0][-]{appendix.A}{Appendix: Input decks}{}% 30

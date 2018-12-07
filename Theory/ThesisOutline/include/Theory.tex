@@ -238,6 +238,12 @@ where $N_b$ is the number of electrons in the bunch and $\sigma_{\xi}$ and $\sig
  We may furthermore predict that this method can not fully deplete the energy of the beam on its own. For, assuming that the electric field maintains its form as the beam propagates, as soon as particles lose enough energy and fall behind the rest of the bunch, they will end up in a region of positive electric field and subsequently get reaccelerated. One method for dealing with this was described in chapter 1, whereby Wu et al. simulated the use of foils to prevent particles reaching the reacceleration region. The other method, proposed by Hanahoe et al. was to let the beam propagate through an increasing plasma density. Although this method has not been simulated so far, if the proposed experiment at FLASHForward at DESY in 2019 include the possibility to test this proposal this method will need to be explored further in the upcoming report. This method utilizes the transverse wakefields and we cover them below for completeness. 
 %For this reason this is referred to as collective deceleration. 
 \begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{longitudinal_2d_plot}
+\label{transverse_plot}
+\caption{•}
+\end{figure}
+\begin{figure}
 \includegraphics[width=\textwidth]{linear_SimVsTheory_bunch.pdf}
 \caption{Simulation vs. theory for linear regime with $n_p/n_b=100$. }
 \label{theory_vs_simulation}
@@ -256,6 +262,22 @@ The transverse force on a bi-Gaussian bunch can now by found by applying this ex
 F_r(r,\xi)=-\frac{e^2 k_p}{\epsilon_0} \int_{-\infty}^{\xi} \sin(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}\frac{\partial G\left(r,r'\right)}{\partial r} \frac{n_b(r',\xi')}{\partial r'}
 r'\mathrm{d}r'
 \end{equation}
+%where 
+%\begin{equation}
+%n_b(r,\xi)=\frac{N_b}{(2\pi)^{3/2}\sigma_r^2\sigma_{\xi}}e^{-\xi/(2\sigma_{\xi}^2)-r/%(2\sigma_{r}^2)}
+%\label{bigaussian}
+%\end{equation}
+%and 
+%\begin{equation}
+%G\left(r,r'\right)=- I_0(k_pr)K_0(k_pr')\Theta(r'-r)-I_0(k_pr')K_0(k_pr)\Theta(r-r')~.
+%\end{equation}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{transverse_2d_plot}
+\label{transverse_plot}
+\caption{•}
+\end{figure}
+
 From this we note that the radial field exhibits the same oscillatory behaviour that we have seen before and that the phase of the transverse and longitudinal fields differ by $\pi/2$. This is of particular importance to plasma wakefield accelration experiments, since it implies that there will be a region which is simultaneously accelrating and focusing, enabling high acceleration of narrow beams. Hanahoe et al. was able to use a similar appraoch to show that by employing a varying density one could find that reaccelration of particles that had fallen behind the bunch occurred in a defocusing region. Thereby forcing the particles outwards, where they were subsequently decelerated through ordinary scattering. Figure \ref{transverse_plot}.\\
 ADD TRANSVERSE FIELD ON AXIS AS ALEX DID. 
 %Firstly, the radial field at $r=0$ is zero since 
@@ -267,10 +289,10 @@ ADD TRANSVERSE FIELD ON AXIS AS ALEX DID.
 %\end{figure}
 \begin{figure}
 \centering
-\includegraphics[width=0.6\textwidth]{transverseforce3}
-\label{transverse_plot}
-\caption{•}
+\includegraphics[width=\textwidth]{transverse_theory_vs_sim4.pdf}
+\caption{Transverse force - theory vs. simulation}
 \end{figure}
+
 \subsection{Collective Plasma Deceleration -- Linear regime }
 As described above parts of the electron bunch can be in either accelerating or decelerating regions. The parts of the bunch that are in a decelerating region will lose energy; this is the general idea behind a plasma beam dump. Since we can calculate the electric field at any position ($\xi,r$) along the bunch we can estimate the energy loss by calculating the work carried out by the longitudinal electric field. Since the beam is assumed to be rigid in the linear regime this does not take into account accelerated particles. This is the approach taken by Bonatto et al. to estimate the distance required to dump various beams in passive or active plasma beam dumps \citep{Bonatto2016}, and as we shall see in section XXX this approach provides good agreement with simulations.\\
 The rate of energy change with propagation distance of a particle at position $(r,\xi)$ in the bunch after travelling is given by the force exerted on the particle by the longitudinal electric field:

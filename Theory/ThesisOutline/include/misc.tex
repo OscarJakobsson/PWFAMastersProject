@@ -183,3 +183,38 @@ ExportDatabase(ExportDBAtts)
 \item (show below, it is possible to have a laser appear before the bunch at some time t, but the parameters of this laser could not be changed so testing several differnt laser intensities, distances etc. would take far too long if the bunch was forced to propagate 20cm each time before the laser was ramped up )
 \end{itemize}
 
+\subsection{Input deck}
+Once EPOCH has been downloaded and compiled the so-called input deck is essentially EPOCH's user interface. This is a file in which users specify the details of a simulations and it is this file that gets read by EPOCH and passed onto the core PIC algorithm. The input deck consists of blocks which define parameters for different features of the simulation. \\
+\textbf{Explain control block first}, and what the restart does.
+\begin{verbatim}
+begin:control
+  dlb_threshold = 0.5
+  restart_snapshot=restartXXXX.sdf
+  t_end = end_time
+  nx = nint(length / cell_length)
+  ny = nint((half_width * 2) / cell_width)
+  npart = part_per_cell * nx * ny
+  stdout_frequency = 50
+  use_random_seed = T
+end:control
+\end{verbatim}
+This specifies the grid that the simulations is to run on. We then populate this grid with plasma particles.
+\textbf{Species block}, with explanation about analytical density distributions for plasma, and specify ppc.\\
+The control and species blocks together define the resolution of the simulation. When setting up the resolution of the grid one has to make sure that the grid is sufficiently fine such that the smallest features of our physical system are resolved. This is to ensure that the simulation accurately models the physical system it is meant to represent, to the extent that missing small scale phenomena might alter the large scale outcome of the simulation. A finer grid however requires more macroparticles to fully populate the grid, which inevitably extents the computational time. In addition the time step $\Delta t$ aneeds to be suitably decreased as well. This is because of the so-called Courant-Friedrichs-Lewy (CFL) condition.  Any simulation introduces uncertainties in the final outcome due to the finite resolution. We need to make sure that the uncertainties introduces during each iteration do not build up and grow unbounded. \\
+\\
+\textbf{edriver} with analytical distribution, and laser, followed by boundaries
+\begin{center}
+\begin{verbatim}
+begin:boundaries
+  bc_x_min = simple_laser
+  bc_x_max = simple_outflow
+  bc_y_min = simple_outflow
+  bc_y_max = simple_outflow
+end:boundaries
+\end{verbatim}
+\end{center}
+\textbf{output block} and the sdf file visualisation with VisIT
+
+%Parameters and initial conditions are defined using an \textit{input.deck} file.
+
+%$$n_b = \frac{1}{{\sigma_x\sigma_y^2 (2\pi)^{3/2 }  }}e^{{{ - \left( {x - x_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - x_0 } \right)^2 } {2\sigma_x ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_x^2 }}}e^{{{ - \left( {y - y_0} \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y- y_0 } \right)^2 } {2\sigma_y ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}e^{{{ - \left( {y - y_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y - y_0 } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}$$
