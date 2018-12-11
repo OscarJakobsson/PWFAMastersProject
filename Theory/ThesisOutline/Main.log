@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  10 DEC 2018 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  11 DEC 2018 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2418,22 +2418,27 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 11.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 11.
-<Wu_energy_uniform.pdf, id=335, 340.26141pt x 123.66974pt>
+<Wu_energy_uniform.pdf, id=342, 340.26141pt x 123.66974pt>
 File: Wu_energy_uniform.pdf Graphic file (type pdf)
 <use Wu_energy_uniform.pdf>
-Package pdftex.def Info: Wu_energy_uniform.pdf  used on input line 21.
+Package pdftex.def Info: Wu_energy_uniform.pdf  used on input line 19.
 (pdftex.def)             Requested size: 422.52057pt x 153.57153pt.
-<hybrid_outline3.pdf, id=338, 722.7pt x 406.51875pt>
-File: hybrid_outline3.pdf Graphic file (type pdf)
-<use hybrid_outline3.pdf>
-Package pdftex.def Info: hybrid_outline3.pdf  used on input line 30.
+ [2] [3 <./Wu_energy_uniform.pdf>]
+
+LaTeX Warning: Reference `hybrid_outline' on page 4 undefined on input line 29.
+
+
+<hybrid_outline5.pdf, id=408, 722.7pt x 406.51875pt>
+File: hybrid_outline5.pdf Graphic file (type pdf)
+<use hybrid_outline5.pdf>
+Package pdftex.def Info: hybrid_outline5.pdf  used on input line 44.
 (pdftex.def)             Requested size: 469.47049pt x 264.07896pt.
- [2] [3 <./Wu_energy_uniform.pdf>])
-Underfull \hbox (badness 10000) in paragraph at lines 34--45
+)
+Underfull \hbox (badness 10000) in paragraph at lines 49--45
 
  []
 
-[4 <./hybrid_outline3.pdf>] (./include/Simulations.tex [5] [6
+(./include/Simulations.tex [4] [5 <./hybrid_outline5.pdf>] [6
 
 ]
 Chapter 2.
@@ -2465,12 +2470,12 @@ Overfull \hbox (44.5004pt too wide) detected at line 206
  []
 
 [15]
-<longitudinal_2d_plot.pdf, id=546, 583.17876pt x 335.2525pt>
+<longitudinal_2d_plot.pdf, id=554, 583.17876pt x 335.2525pt>
 File: longitudinal_2d_plot.pdf Graphic file (type pdf)
 <use longitudinal_2d_plot.pdf>
 Package pdftex.def Info: longitudinal_2d_plot.pdf  used on input line 242.
 (pdftex.def)             Requested size: 445.99553pt x 256.3957pt.
-<test2.pdf, id=547, 578.16pt x 289.08pt>
+<test2.pdf, id=555, 578.16pt x 289.08pt>
 File: test2.pdf Graphic file (type pdf)
 <use test2.pdf>
 Package pdftex.def Info: test2.pdf  used on input line 247.
@@ -2479,7 +2484,7 @@ Package pdftex.def Info: test2.pdf  used on input line 247.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17 <./longitudinal_2d_plot.pdf>]
-<transverse_2d_plot.pdf, id=571, 583.17876pt x 335.2525pt>
+<transverse_2d_plot.pdf, id=580, 583.17876pt x 335.2525pt>
 File: transverse_2d_plot.pdf Graphic file (type pdf)
 <use transverse_2d_plot.pdf>
 Package pdftex.def Info: transverse_2d_plot.pdf  used on input line 276.
@@ -2493,7 +2498,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `transverse_plot' on page 18 undefined on input line 2
 81.
 
-<test.pdf, id=573, 578.16pt x 289.08pt>
+<test.pdf, id=582, 578.16pt x 289.08pt>
 File: test.pdf Graphic file (type pdf)
 <use test.pdf>
 Package pdftex.def Info: test.pdf  used on input line 291.
@@ -2501,7 +2506,7 @@ Package pdftex.def Info: test.pdf  used on input line 291.
 [18 <./test2.pdf>] [19 <./transverse_2d_plot.pdf>]) (./include/Results.tex
 [20 <./test.pdf>]
 Chapter 4.
-<table.pdf, id=676, 363.27902pt x 103.60628pt>
+<table.pdf, id=684, 363.27902pt x 103.60628pt>
 File: table.pdf Graphic file (type pdf)
 <use table.pdf>
 Package pdftex.def Info: table.pdf  used on input line 5.
@@ -2509,23 +2514,23 @@ Package pdftex.def Info: table.pdf  used on input line 5.
 [21
 
  <./table.pdf>]
-<Energies30pc_lowres.pdf, id=705, 462.52798pt x 346.89601pt>
+<Energies30pc_lowres.pdf, id=713, 462.52798pt x 346.89601pt>
 File: Energies30pc_lowres.pdf Graphic file (type pdf)
 <use Energies30pc_lowres.pdf>
 Package pdftex.def Info: Energies30pc_lowres.pdf  used on input line 17.
 (pdftex.def)             Requested size: 230.0431pt x 172.53185pt.
-<Energy30pc_per_particle_lowres.pdf, id=706, 462.52798pt x 346.89601pt>
+<Energy30pc_per_particle_lowres.pdf, id=714, 462.52798pt x 346.89601pt>
 File: Energy30pc_per_particle_lowres.pdf Graphic file (type pdf)
 <use Energy30pc_per_particle_lowres.pdf>
 Package pdftex.def Info: Energy30pc_per_particle_lowres.pdf  used on input line
  18.
 (pdftex.def)             Requested size: 230.0431pt x 172.53185pt.
-<bunch_and_energy_48cm.pdf, id=707, 422.45732pt x 300.0322pt>
+<bunch_and_energy_48cm.pdf, id=715, 422.45732pt x 300.0322pt>
 File: bunch_and_energy_48cm.pdf Graphic file (type pdf)
 <use bunch_and_energy_48cm.pdf>
 Package pdftex.def Info: bunch_and_energy_48cm.pdf  used on input line 24.
 (pdftex.def)             Requested size: 399.05278pt x 283.42204pt.
-<cherenkov_instability.png, id=708, 1702.36pt x 589.20125pt>
+<cherenkov_instability.png, id=716, 1702.36pt x 589.20125pt>
 File: cherenkov_instability.png Graphic file (type png)
 <use cherenkov_instability.png>
 Package pdftex.def Info: cherenkov_instability.png  used on input line 29.
@@ -2536,31 +2541,40 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Energy30pc_per_particle_lo
 wres.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >] [23 <./bunch_and_energy_48cm.pdf> <./cherenkov_instability.png>] [24]
-<visit0021.pdf, id=828, 583.12772pt x 69.76776pt>
+<visit0021.pdf, id=836, 583.12772pt x 69.76776pt>
 File: visit0021.pdf Graphic file (type pdf)
 <use visit0021.pdf>
 Package pdftex.def Info: visit0021.pdf  used on input line 39.
 (pdftex.def)             Requested size: 469.47049pt x 56.16876pt.
-<visit0019.pdf, id=829, 583.17876pt x 304.4014pt>
+<visit0019.pdf, id=837, 583.17876pt x 304.4014pt>
 File: visit0019.pdf Graphic file (type pdf)
 <use visit0019.pdf>
 Package pdftex.def Info: visit0019.pdf  used on input line 40.
 (pdftex.def)             Requested size: 469.47049pt x 245.05421pt.
 
+Overfull \hbox (12.0pt too wide) in paragraph at lines 39--41
+[][] 
+ []
+
 [25
 
  <./visit0021.pdf> <./visit0019.pdf>]
-<visit0022.pdf, id=853, 583.17876pt x 68.87662pt>
+<visit0022.pdf, id=861, 583.17876pt x 68.87662pt>
 File: visit0022.pdf Graphic file (type pdf)
 <use visit0022.pdf>
 Package pdftex.def Info: visit0022.pdf  used on input line 42.
 (pdftex.def)             Requested size: 469.47049pt x 55.44817pt.
-<visit0020.pdf, id=854, 583.17876pt x 305.94896pt>
+<visit0020.pdf, id=862, 583.17876pt x 305.94896pt>
 File: visit0020.pdf Graphic file (type pdf)
 <use visit0020.pdf>
 Package pdftex.def Info: visit0020.pdf  used on input line 43.
 (pdftex.def)             Requested size: 469.47049pt x 246.30005pt.
 )
+Overfull \hbox (12.0pt too wide) in paragraph at lines 42--56
+[][] 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 42--56
 
  []
@@ -2610,13 +2624,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 31815 strings out of 492649
- 590686 string characters out of 6129622
+ 31817 strings out of 492649
+ 590718 string characters out of 6129622
  661067 words of memory out of 5000000
- 34975 multiletter control sequences out of 15000+600000
- 628794 words of font info for 101 fonts, out of 8000000 for 9000
+ 34977 multiletter control sequences out of 15000+600000
+ 631784 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,13n,67p,10458b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,13n,67p,10458b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
 texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
 18/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2018/texmf-d
@@ -2645,10 +2659,10 @@ exlive/2018/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2018
 /fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/ur
 w/helvetic/uhvr8a.pfb>
-Output written on Main.pdf (45 pages, 66964245 bytes).
+Output written on Main.pdf (45 pages, 66970953 bytes).
 PDF statistics:
- 1022 PDF objects out of 1200 (max. 8388607)
- 752 compressed objects within 8 object streams
+ 1030 PDF objects out of 1200 (max. 8388607)
+ 760 compressed objects within 8 object streams
  151 named destinations out of 1000 (max. 500000)
  330 words of extra memory for PDF output out of 10000 (max. 10000000)
 
