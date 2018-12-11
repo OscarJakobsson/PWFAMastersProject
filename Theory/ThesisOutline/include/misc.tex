@@ -218,3 +218,38 @@ end:boundaries
 %Parameters and initial conditions are defined using an \textit{input.deck} file.
 
 %$$n_b = \frac{1}{{\sigma_x\sigma_y^2 (2\pi)^{3/2 }  }}e^{{{ - \left( {x - x_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - x_0 } \right)^2 } {2\sigma_x ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_x^2 }}}e^{{{ - \left( {y - y_0} \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y- y_0 } \right)^2 } {2\sigma_y ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}e^{{{ - \left( {y - y_0 } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {y - y_0 } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma_y ^2 }}}$$
+
+
+
+
+\indent Given that a plasma is no more than electrons and ions interacting electromagnetically, the response of such a plasma to the propagation of an electron bunch or laser pulse could in theory be simulated by solving Maxwell's equations for a set of initial conditions. This would involve solving Maxwell's equations at time an initial time $t_0$ and calculating the combined electromagnetic fields acting on each particle in the plasma. Then, by considering each particles velocity, one could calculate the new positions and velocities of all particles for a small time increase $t_0+\Delta t$. Repeating these computation would  lead us to find the approximate plasma response at any arbitrary time $t>t_0$. However, this approach is computationally intractable. Since if we attempt this approach in most plasma simulations. For instance, if we consider that the plasma in a typical plasma wakefield accelerator [Hanahoe] is on the order of centimetres in extent, with a number density $~10^{20} m^{-3}$, we find that we have on the order of $10^{14}$ electrons in the plasma. All these electrons would have to be included in the simulation and stored with their associated 6-dimensional position and velocity data $(x,y,z,v_x,v_y,v_z)$. Each number would be stored as a 32-bit double precision floating point number, yielding the total data size required for the whole plasma simulation on the order of a petabyte ($10^{15}$ bytes).\\
+
+
+
+
+
+\section{Particle-in-Cell Codes}
+\label{sec:Particle-in-Cell Codes}
+Starting from EM fields $\vec{E}_{(n)},\vec{B}_{(n)}$ and charge current $\vec{J}_{(n)}$ present at iteration $n$ [at a specific position, middle of Yee grid?] we obtained the fields at the next time step $n+1$ by computing the resulting fields and currents at an intermediate half-way step $n+1/2$. We do this by first computing the change in the electric field, using Ampere's law, $\Delta \vec{E}_{(n)}$ which we add to our current field such that
+\begin{equation}
+\vec{E}_{(n+1/2)}=\vec{E}_{(n)}+\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{B}_{(n)}-\frac{\vec{J}_{(n)}}{\epsilon_0}\right)
+\end{equation}
+from this the magnetic field is given by
+\begin{equation}
+\vec{B}_{(n+1/2)}=\vec{B}_{(n)}-\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{E}_{(n+1/2)}\right)
+\end{equation}
+(at which point the particle pusher, detailed below, updates the current to $\vec{J}_{(n+1)}$)\\
+at which point we need to update the current to $\vec{J}_{(n+1)}$ in order to proceed finding the fields at time step $n+1$. This is done using the particle pusher. We update the position of each particle 
+\begin{equation}
+\vec{x}_{(n+1/2)}=\vec{x}_{(n)}+\frac{\Delta t}{2}\vec{v}_{(n)}
+\end{equation}
+from which we also obtain the intermediate velocity $\vec{v}_{(n)}$ [correct?]. Using the Lorentz force law we then compute the force $\vec{F}_{(n)}=\Delta p/\Delta t$ which gives the momentum at $n+1$ as
+\begin{equation}
+\vec{p}_{(n+1)}=\vec{p}_{(n)}+q\Delta t\left[\vec{E}_{(n+1/2)}\left(\vec{x}_{(n+1/2)}\right)+\vec{x}_{(n+1/2)}\times\vec{B}_{(n+1/2)}\left(\vec{x}_{(n+1/2)}\right) \right]
+\end{equation}
+where, the electric fields are extrapolated (?) to the intermediate point $n+1/2$. Then, using $\vec{p}=\gamma m \vec{v}$, we can find the velocity at $n+1$, from which we then have the current $\vec{J}_{(n+1)}$. We then reverse the order of computing such that the magnetic field is calculated prior to the electric field,
+\begin{align}
+&\vec{B}_{(n+1)}=\vec{B}_{(n+1/2)}-\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{E}_{(n+1/2)}\right)\\
+&\vec{E}_{(n+1)}=\vec{E}_{(n+1/2)}+\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{B}_{(n+1)}-\frac{\vec{J}_{(n+1)}}{\epsilon_0}\right)
+\end{align}
+Using these fields when then calculate the new particles positions $\vec{x}_{(n)}$, we "push" the particles, thus completing the iteration step.

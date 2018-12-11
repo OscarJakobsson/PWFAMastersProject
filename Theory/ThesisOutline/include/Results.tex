@@ -8,13 +8,14 @@ The intil phase of this project involved simulating beam dumping of the proposed
 \end{table}
 \section{Plasma deceleration - Uniform density}
 The EuPRAXIA project endeavours to explore what is achieve in a compact plasma wakefield accelerator with current and expected future technologies. For this reason it is interesting to explore the beam dumping quality that the current plasma technologies can achieve. Working with the simualtion beam in table \ref{eupraxia_parameters} we know from equations \ref{energy_loss_bonatto} and \ref{longitudinalforce} that the shortest beam dumping distance is achieved with the highest possible plasma density, provided that the beam is contained within the decelerating region as shown in figure \ref{theory_vs_simulation}. Most plasma wakefiled experiemnts use plasma densities $<10^18 \text{cm}^{-3}$ [ref...]. These are achieved using plasma discharge tubes.... These can provide highly uniform plasmas over several meters.\\
-Higher densities, up to $<10^20 \text{cm}^{-3}$, are however achievable using supersonic gas jets \cite{Schmid2012}. This technique forces gas through a thin nozzel from a high-pressure region into a vacuum container creating a high-density gas jet. This jet can then be ionised using a laser to generated the desired high-density plasma. Currently these techniques are used to generate plasmas up to a centimetre in length. The result of letting our 1 GeV electron bunch propagate through a plasma of $10^20 \text{cm}^{-3}$ is shown in figures 1a-c. These show the average energy of particles with respect to their position in the bunch.  
+Higher densities, up to $\sim 10^20 \text{cm}^{-3}$, are however achievable using supersonic gas jets \cite{Schmid2012}. This technique forces gas through a thin nozzel from a high-pressure region into a vacuum container creating a high-density gas jet. This jet can then be ionised using a laser to generated the desired high-density plasma. Currently these techniques are used to generate plasmas up to a centimetre in length. The result of letting our 1 GeV electron bunch propagate through a plasma of $10^20 \text{cm}^{-3}$ is shown in figures 1a-c. These show the average energy of particles with respect to their position in the bunch.  
 \section{Larger bunch}
-using more realistic bunch parameters we here present two simulations. 
-
+The ideal bunch parameters for the EuPRAXIA beam outlined in table \ref{eupraxia_parameters} lead to bunch densities in excess of $10^{20} \text{cm}^{-3}$, making neither linear nor quasilinear regimes accessible for beam dumps. An alternative approach is to let the bunch expand, thereby lowering its density, before entering the plasma. Expansion in the radial direction could be achieved by simply letting the bunch propagate freely in a vaccuum, which would case the bunch to expand due to the space-charge force of the electron bunch. Longitudinal streching could be achieved using a magnetic .... \\
+We choose here to expand the dimensions of the bunch to $sigma_z=\sigma_r=5~\mu\text{m}$. This is chosen in part to give a more workable bunch density, $10^{17} \text{cm}^{-3}$, as well as to allow for comparisons with existing plasma wakefield experiments which tend to have bunch dimensions in the single to tens of micrometer range. 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{Energy30pc_per_particle_lowres.pdf}
+\includegraphics[width=0.49\textwidth]{Energies30pc_lowres.pdf}
+\includegraphics[width=0.49\textwidth]{Energy30pc_per_particle_lowres.pdf}
 \caption{•}
 \end{figure}
 
@@ -34,6 +35,9 @@ using more realistic bunch parameters we here present two simulations.
 - Results with respect to laser intensity/amplitude/wavelength as well as distance from bunch.
 
 
-%\clearpage
-%\includegraphics[width=\textwidth]{bunch_linear_48cm}\vspace{-1pt}\\
-%\includegraphics[width=\textwidth]{energy_linear_48cm}
+\clearpage
+\includegraphics[width=\textwidth]{visit0021}\vspace{-1pt}\\
+\includegraphics[width=\textwidth]{visit0019}
+\clearpage
+\includegraphics[width=\textwidth]{visit0022}\vspace{-1pt}\\
+\includegraphics[width=\textwidth]{visit0020}

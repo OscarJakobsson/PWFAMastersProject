@@ -244,7 +244,7 @@ where $N_b$ is the number of electrons in the bunch and $\sigma_{\xi}$ and $\sig
 \caption{•}
 \end{figure}
 \begin{figure}
-\includegraphics[width=\textwidth]{linear_SimVsTheory_bunch.pdf}
+\includegraphics[width=\textwidth]{test2.pdf}
 \caption{Simulation vs. theory for linear regime with $n_p/n_b=100$. }
 \label{theory_vs_simulation}
 \end{figure}
@@ -279,7 +279,6 @@ r'\mathrm{d}r'
 \end{figure}
 
 From this we note that the radial field exhibits the same oscillatory behaviour that we have seen before and that the phase of the transverse and longitudinal fields differ by $\pi/2$. This is of particular importance to plasma wakefield accelration experiments, since it implies that there will be a region which is simultaneously accelrating and focusing, enabling high acceleration of narrow beams. Hanahoe et al. was able to use a similar appraoch to show that by employing a varying density one could find that reaccelration of particles that had fallen behind the bunch occurred in a defocusing region. Thereby forcing the particles outwards, where they were subsequently decelerated through ordinary scattering. Figure \ref{transverse_plot}.\\
-ADD TRANSVERSE FIELD ON AXIS AS ALEX DID. 
 %Firstly, the radial field at $r=0$ is zero since 
 %begin{equation}
 %\left.\frac{\partial G\left(r,r'\right)}{\partial r} \right|_{r=0}=\frac{k_p}{2} I_1(0)K_0(k_pr')=0
@@ -289,7 +288,7 @@ ADD TRANSVERSE FIELD ON AXIS AS ALEX DID.
 %\end{figure}
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{transverse_theory_vs_sim4.pdf}
+\includegraphics[width=\textwidth]{test.pdf}
 \caption{Transverse force - theory vs. simulation}
 \end{figure}
 
@@ -308,7 +307,7 @@ from which multiplication by the beam number density $n_b(r,\xi)$ and integratio
 U(s)=\int  U_e(r,\xi,0)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi-se\int E_z(r,\xi)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi
 \label{energy_loss_bonatto}
 \end{equation}
-where $E_z$ and $n_b$ are found from equations (\ref{longitudinalforce}) and (\ref{bigaussian}). A propgram to caluclate this numerically has not yet been implement, but we endevaour to do so in the second part of this project to allow for comaprisons between the linear theory with simulations and eventually with experiments at the FLASHForward facility at DESY.
+where $E_z$ and $n_b$ are found from equations (\ref{longitudinalforce}) and (\ref{bigaussian}). A program to compute this numerically has not yet been implement, but we endeavour to do so in the latter part of this project to allow for comparisons between the linear theory, simulations and hopefully with experimental data from the FLASHForward facility at DESY.
 %\subsection{Notes Bonatto}
 %Rate of change due to the longitudinal electric field acting on an electron beam, i.e position beam in the decelerating region of the wakefield.\\
 %"the beam only experiences its self-excited wakefield."\\
@@ -336,3 +335,5 @@ where $E_z$ and $n_b$ are found from equations (\ref{longitudinalforce}) and (\r
 %Based on the work of Lu et. al \citep{Lu2006}, wherein it was shown that the predictions from the linear models perform well even in the non-linear regime, it is of interest to compute the energy loss in the linear regime. 
 
 \section{Non-linear Regime} 
+Lower density, larger plasma response, not possible to describe perturbatively. Hamiltonian approach taken by Lu. et al []\\
+Self-injection?

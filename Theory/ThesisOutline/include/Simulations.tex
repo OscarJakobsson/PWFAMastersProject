@@ -1,42 +1,13 @@
 \chapter{Simulations}
-\begin{itemize}
-\item Ways to simulate plasmas, different techniques/codes etc.
-\end{itemize}
 \section{Plasma simulations}
 \textbf{Why simulations}\\
 Simulations because: Cheaper than experiments, more readily available to anyone, simulations allow us to study, understand and exploit these phenomena without the need to repeatedly perform expensive and intricate experiments...Furthermore, by having a simulated rather than physical experiment, one may avoid the uncertainties and noise present in the real world and may therefore investigate and even discover physical phenomena that are too sensitive to be detected in noisy data samples. To take advantage of simulations it is however crucial to know the accuracy by which the simulations model the physical situation and to understand the limitations that this imposes. For instance, as will be shown in section XXX, failing to model the experiment with high enough resolution can lead to phenomena emerging from purely numerical features in the simulations. One must therefore be confident that the results seen in simulations accurately represent the physics at hand, either by comparing the simulations to experimental data or theoretical calculations if available. The non-linear nature of the high-energy plasma wakefield phenomena that we wish to model in this project do not lend themselves easily to analytical treatments. To investigate these phenomena and provide useful results for future experiments we will make extensive use of simulations in this project.\\ 
-\indent Given that a plasma is no more than electrons and ions interacting electromagnetically, the response of such a plasma to the propagation of an electron bunch or laser pulse could in theory be simulated by solving Maxwell's equations for a set of initial conditions. This would involve solving Maxwell's equations at time an initial time $t_0$ and calculating the combined electromagnetic fields acting on each particle in the plasma. Then, by considering each particles velocity, one could calculate the new positions and velocities of all particles for a small time increase $t_0+\Delta t$. Repeating these computation would  lead us to find the approximate plasma response at any arbitrary time $t>t_0$. However, this approach is computationally intractable. Since if we attempt this approach in most plasma simulations. For instance, if we consider that the plasma in a typical plasma wakefield accelerator [Hanahoe] is on the order of centimetres in extent, with a number density $~10^{20} m^{-3}$, we find that we have on the order of $10^{14}$ electrons in the plasma. All these electrons would have to be included in the simulation and stored with their associated 6-dimensional position and velocity data $(x,y,z,v_x,v_y,v_z)$. Each number would be stored as a 32-bit double precision floating point number, yielding the total data size required for the whole plasma simulation on the order of a petabyte ($10^{15}$ bytes).\\
-\indent To circumvent this computational road block we make use of so-called Particle-In-Cell (PIC) codes, in which a large collections of physical microscopic particles are represented as smaller collections of macroscopic pseudo-particles on a grid. In this chapter we outline the general PIC approach and introduce the plasma physics PIC code EPOCH, which is used throughout this project. We further detail the modifications necessary to allow the hybrid beam dump scheme to be simulated on EPOCH. 
+Given that a plasma is no more than electrons and ions interacting electromagnetically, the response of such a plasma to the propagation of an electron bunch or laser pulse could in theory be simulated by solving Maxwell's equations for a set of initial conditions. This approach is however computationally intractable due to vast number, $>10^{15}$, of particles present in the simulations we need to perform. To circumvent this computational road block we make use of so-called Particle-In-Cell (PIC) codes, in which a large collections of physical microscopic particles are represented as smaller collections of macroscopic pseudo-particles on a grid. In this chapter we outline the general PIC approach and introduce the plasma physics PIC code EPOCH, which is used throughout this project. We further detail the modifications necessary to allow the hybrid beam dump scheme to be simulated on EPOCH. 
 
 %In this chapter we introduce the plasma physics PIC code EPOCH, which is used throughout this project, and detail the modifications necessary to allow the hybrid beam dump scheme to be simulated. 
 
 %The behaviour of these macro particles is then calculated and used as a representation of the response of the actual plasma.  where each macroscopic particle carries the total charge and mass of the microscopic particles it represents. 
 
-\section{Particle-in-Cell Codes}
-\label{sec:Particle-in-Cell Codes}
-Starting from EM fields $\vec{E}_{(n)},\vec{B}_{(n)}$ and charge current $\vec{J}_{(n)}$ present at iteration $n$ [at a specific position, middle of Yee grid?] we obtained the fields at the next time step $n+1$ by computing the resulting fields and currents at an intermediate half-way step $n+1/2$. We do this by first computing the change in the electric field, using Ampere's law, $\Delta \vec{E}_{(n)}$ which we add to our current field such that
-\begin{equation}
-\vec{E}_{(n+1/2)}=\vec{E}_{(n)}+\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{B}_{(n)}-\frac{\vec{J}_{(n)}}{\epsilon_0}\right)
-\end{equation}
-from this the magnetic field is given by
-\begin{equation}
-\vec{B}_{(n+1/2)}=\vec{B}_{(n)}-\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{E}_{(n+1/2)}\right)
-\end{equation}
-(at which point the particle pusher, detailed below, updates the current to $\vec{J}_{(n+1)}$)\\
-at which point we need to update the current to $\vec{J}_{(n+1)}$ in order to proceed finding the fields at time step $n+1$. This is done using the particle pusher. We update the position of each particle 
-\begin{equation}
-\vec{x}_{(n+1/2)}=\vec{x}_{(n)}+\frac{\Delta t}{2}\vec{v}_{(n)}
-\end{equation}
-from which we also obtain the intermediate velocity $\vec{v}_{(n)}$ [correct?]. Using the Lorentz force law we then compute the force $\vec{F}_{(n)}=\Delta p/\Delta t$ which gives the momentum at $n+1$ as
-\begin{equation}
-\vec{p}_{(n+1)}=\vec{p}_{(n)}+q\Delta t\left[\vec{E}_{(n+1/2)}\left(\vec{x}_{(n+1/2)}\right)+\vec{x}_{(n+1/2)}\times\vec{B}_{(n+1/2)}\left(\vec{x}_{(n+1/2)}\right) \right]
-\end{equation}
-where, the electric fields are extrapolated (?) to the intermediate point $n+1/2$. Then, using $\vec{p}=\gamma m \vec{v}$, we can find the velocity at $n+1$, from which we then have the current $\vec{J}_{(n+1)}$. We then reverse the order of computing such that the magnetic field is calculated prior to the electric field,
-\begin{align}
-&\vec{B}_{(n+1)}=\vec{B}_{(n+1/2)}-\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{E}_{(n+1/2)}\right)\\
-&\vec{E}_{(n+1)}=\vec{E}_{(n+1/2)}+\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{B}_{(n+1)}-\frac{\vec{J}_{(n+1)}}{\epsilon_0}\right)
-\end{align}
-Using these fields when then calculate the new particles positions $\vec{x}_{(n)}$, we "push" the particles, thus completing the iteration step.
 
 \section{EPOCH}
 %The simulations presented in this thesis are generated using the open-source plasma physics PIC simulation code \textsc{EPOCH},
