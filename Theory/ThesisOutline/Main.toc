@@ -1,30 +1,29 @@
 \babel@toc {english}{}
 \contentsline {chapter}{List of Figures}{xi}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Conventional accelerators}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Plasma wakefield accelerators}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}Beam dumps}{2}{section.1.3}
-\contentsline {section}{\numberline {1.4}Outline of report}{4}{section.1.4}
-\contentsline {chapter}{\numberline {2}Simulations}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Plasma simulations}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}EPOCH}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Input deck}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Non-analytical bunch initialisation}{8}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {3}Theoretical foundations}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Linear fluid model }{11}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Longitudinal Accelerating Field}{13}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Transverse Field}{18}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Collective Plasma Deceleration -- Linear regime }{19}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Non-linear Regime}{20}{section.3.3}
-\contentsline {chapter}{\numberline {4}Simulation tests}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Plasma deceleration - Uniform density}{21}{section.4.1}
-\contentsline {section}{\numberline {4.2}Larger bunch}{22}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Transverse instabilities in quasilinear regime}{22}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Hybrid Scheme - Feasibility study}{22}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Initialising a decelerated bunch}{22}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Introduction of co-propagating laser}{24}{subsection.4.3.2}
-\contentsline {chapter}{\numberline {5}Ongoing and future work}{27}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{29}{chapter.6}
-\contentsline {chapter}{Bibliography}{31}{chapter.6}
+\contentsline {section}{\numberline {1.1}Conventional and plasma-wakefield accelerators}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Beam dumps}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Outline of report}{4}{section.1.3}
+\contentsline {chapter}{\numberline {2}Simulations}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Plasma simulations}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}EPOCH}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Input deck}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Non-analytical bunch initialisation}{6}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {3}Theoretical foundations}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Linear fluid model }{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Longitudinal Accelerating Field}{11}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Transverse Field}{16}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Collective Plasma Deceleration -- Linear regime }{17}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Non-linear Regime}{18}{section.3.3}
+\contentsline {chapter}{\numberline {4}Simulation tests}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Plasma deceleration - Uniform density}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Larger bunch}{20}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Transverse instabilities in quasilinear regime}{20}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Hybrid Scheme - Feasibility study}{20}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Initialising a decelerated bunch}{20}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Introduction of co-propagating laser}{22}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Ongoing and future work}{25}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{27}{chapter.6}
+\contentsline {chapter}{Bibliography}{29}{chapter.6}
 \contentsline {chapter}{\numberline {A}Appendix: Input decks}{I}{appendix.A}

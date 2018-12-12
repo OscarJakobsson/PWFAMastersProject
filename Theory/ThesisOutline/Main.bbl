@@ -3,6 +3,17 @@
 \bibitem{xfel}
 {The Technical Design Report (TDR) of the European XFEL}.
 
+\bibitem{Attwood}
+David~T. Attwood, Anne Sakdinawat, and Linda Geniesse.
+\newblock {\em {X-rays and extreme ultraviolet radiation : principles and
+  applications}}.
+
+\bibitem{Insepov2008}
+Z~Insepov, J~Norem, A~Bross, A~Moretti, Z~Qian, Y~Torun, D~Huang, R~A Rimmer,
+  S~Mahalingam, and S~Veitzer.
+\newblock {A model of rf breakdown arcs}.
+\newblock Technical report, 2008.
+
 \bibitem{LEP_dump}
 G~Schrgder, U~Jansson, R~Jung, G~R Stevenson, and E~B Vossenberg.
 \newblock {The LEP Beam Dumping System}.
@@ -24,19 +35,19 @@ H.~C. Wu, T.~Tajima, D.~Habs, A.~W. Chao, and J.~Meyer-ter Vehn.
 \newblock {\em Physical Review Special Topics - Accelerators and Beams},
   13(10):1--8, 2010.
 
-\bibitem{Bonatto2015}
-A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~G.R. Geddes, C.~Benedetti,
-  E.~Esarey, and W.~P. Leemans.
-\newblock {Passive and active plasma deceleration for the compact disposal of
-  electron beams}.
-\newblock {\em Physics of Plasmas}, 22(8), 2015.
-
 \bibitem{Hanahoe2017}
 Kieran Hanahoe, Guoxing Xia, Mohammad Islam, Yangmei Li, {\"{O}}znur
   Mete-Apsimon, Bernhard Hidding, and Jonathan Smith.
 \newblock {Simulation study of a passive plasma beam dump using varying plasma
   density}.
 \newblock {\em Physics of Plasmas}, 24(2), 2017.
+
+\bibitem{Bonatto2015}
+A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~G.R. Geddes, C.~Benedetti,
+  E.~Esarey, and W.~P. Leemans.
+\newblock {Passive and active plasma deceleration for the compact disposal of
+  electron beams}.
+\newblock {\em Physics of Plasmas}, 22(8), 2015.
 
 \bibitem{Dawson1959}
 John~M Dawson.
