@@ -21,53 +21,61 @@ Warning--empty year in xfel
 Warning--empty publisher in Attwood
 Warning--empty year in Attwood
 Warning--empty institution in Insepov2008
+Warning--empty institution in Tajima1979a
+Warning--empty institution in Strickland1985
+Warning--empty journal in Leemans
+Warning--empty year in Leemans
+Warning--empty author in Facet
+Warning--empty institution in Facet
+Warning--empty year in Facet
 Warning--empty journal in LEP_dump
 Warning--empty year in LEP_dump
+Warning--empty institution in Leuschner1998
 Warning--empty institution in Dawson1959
 Warning--empty institution in Gessner2016
 Warning--empty institution in Katsouleas1987
 Warning--empty institution in Vaganian1995
 Warning--empty journal in Mira2017
 Warning--there's a number but no volume in Mira2017
-You've used 16 entries,
+You've used 29 entries,
             1791 wiz_defined-function locations,
-            544 strings with 6666 characters,
-and the built_in function-call counts, 3301 in all, are:
-= -- 239
-> -- 238
-< -- 2
-+ -- 86
-- -- 70
-* -- 250
-:= -- 582
-add.period$ -- 44
-call.type$ -- 16
-change.case$ -- 19
+            629 strings with 10997 characters,
+and the built_in function-call counts, 7704 in all, are:
+= -- 465
+> -- 776
+< -- 3
++ -- 270
+- -- 241
+* -- 737
+:= -- 1427
+add.period$ -- 81
+call.type$ -- 29
+change.case$ -- 35
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 134
-empty$ -- 271
-format.name$ -- 70
-if$ -- 681
+cite$ -- 51
+duplicate$ -- 239
+empty$ -- 517
+format.name$ -- 241
+if$ -- 1508
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 11
-newline$ -- 79
-num.names$ -- 15
-pop$ -- 54
+int.to.str$ -- 29
+missing$ -- 20
+newline$ -- 142
+num.names$ -- 27
+pop$ -- 82
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 57
+skip$ -- 92
 stack$ -- 0
-substring$ -- 100
-swap$ -- 20
-text.length$ -- 2
+substring$ -- 267
+swap$ -- 29
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 14
-while$ -- 25
-width$ -- 18
-write$ -- 157
-(There were 14 warnings)
+warning$ -- 22
+while$ -- 50
+width$ -- 31
+write$ -- 289
+(There were 22 warnings)

@@ -1,15 +1,16 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces \relax }}{3}{figure.caption.4}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Outline of the hybrid beam dump scheme at five stages. (i) The incoming ultra-relativistic (violet) electron bunch passes through vacuum towards the first plasma cell. (ii) The electron bunch loses energy as it propagates through the plasma. A non-relativistic (red) tail of particles is formed behind the the head of the bunch, which maintains its energy. (iii) The non-relativistic tail is removed by propagating through an absorbing material and the path of the head is bent by magnets so as to be aligned behind a laser pulse. (iv) The laser pulse drives a plasma wakefield in front of the remaining bunch, decelerating it to non-relativistic energies. (v) The remaining energy is absorbed.}\relax }}{4}{figure.caption.5}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Energy distributions of an electron bunch during propagation through a dense plasma, as found by Wu et. al \cite {Wu2010}. 1(b) shows non-relativistic particles falling behind the head of the bunch and 1(c) shows their subsequently re-acceleration. The x-axis shows the distance along the bunch in relation to the plasma wavelength, which is covered in chapter 3.}\relax }}{3}{figure.caption.4}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Outline of the hybrid beam dump scheme at five stages. (i) The incoming ultra-relativistic (violet) electron bunch passes through vacuum towards the first plasma cell. (ii) The electron bunch loses energy as it propagates through the plasma. A non-relativistic (red) tail of particles is formed behind the the head of the bunch, which maintains its energy. (iii) The non-relativistic tail is removed by propagating through an absorbing material and the path of the head is bent by magnets so as to be aligned behind a laser pulse. (iv) The laser pulse drives a plasma wakefield in front of the remaining bunch, decelerating it to non-relativistic energies. (v) The remaining energy is absorbed.}\relax }}{4}{figure.caption.5}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The field update and particle push algorithm run b\relax }}{7}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces \IeC {\textbullet }\relax }}{15}{figure.caption.6}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Simulation vs. theory for linear regime with $n_p/n_b=100$. \relax }}{16}{figure.caption.7}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces \IeC {\textbullet }\relax }}{17}{figure.caption.8}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Transverse force - theory vs. simulation\relax }}{18}{figure.caption.9}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \IeC {\textbullet }\relax }}{15}{figure.caption.7}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Simulation vs. theory for linear regime with $n_p/n_b=100$. \relax }}{15}{figure.caption.8}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \IeC {\textbullet }\relax }}{16}{figure.caption.9}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Transverse force - theory vs. simulation\relax }}{17}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \IeC {\textbullet }\relax }}{20}{figure.caption.11}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \IeC {\textbullet }\relax }}{20}{figure.caption.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

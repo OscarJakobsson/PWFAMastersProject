@@ -14,6 +14,88 @@ Z~Insepov, J~Norem, A~Bross, A~Moretti, Z~Qian, Y~Torun, D~Huang, R~A Rimmer,
 \newblock {A model of rf breakdown arcs}.
 \newblock Technical report, 2008.
 
+\bibitem{Chen2002}
+Pisin Chen, Toshiki Tajima, and Yoshiyuki Takahashi.
+\newblock {Plasma Wakefield Acceleration for Ultrahigh-Energy Cosmic Rays}.
+\newblock {\em Physical Review Letters}, 89(16):14--17, 2002.
+
+\bibitem{Tajima1979a}
+T~Tajima and J~M Dawson.
+\newblock {Laser Electron Accelerator}.
+\newblock Technical Report~4, 1979.
+
+\bibitem{Esarey2009}
+E.~Esarey, C.~B. Schroeder, and W.~P. Leemans.
+\newblock {Physics of laser-driven plasma-based electron accelerators}.
+\newblock {\em Reviews of Modern Physics}, 81(3):1229--1285, 2009.
+
+\bibitem{Strickland1985}
+Donna Strickland and Gerard Mourou.
+\newblock {Compression of amplified chirped optical pulses}.
+\newblock Technical report, 1985.
+
+\bibitem{Clayton1993}
+C.~E. Clayton, K.~A. Marsh, A.~Dyson, M.~Everett, A.~Lal, W.~P. Leemans,
+  R.~Williams, and C.~Joshi.
+\newblock {Ultrahigh-gradient acceleration of injected electrons by
+  laser-excited relativistic electron plasma waves}.
+\newblock {\em Physical Review Letters}, 70(1):37--40, jan 1993.
+
+\bibitem{Leemans}
+W~P Leemans, B~Nagler, A~J Gonsalves, K~Nakamura, C~G~R Geddes, E~Esarey, C~B
+  Schroeder, and S~M Hooker.
+\newblock {GeV electron beams from a centimetre-scale accelerator}.
+
+\bibitem{Wang2013}
+Xiaoming Wang, Rafal Zgadzaj, Neil Fazel, Zhengyan Li, S.~A. Yi, Xi~Zhang,
+  Watson Henderson, Y.-Y. Chang, R.~Korzekwa, H.-E. Tsai, C.-H. Pai,
+  H.~Quevedo, G.~Dyer, E.~Gaul, M.~Martinez, A.~C. Bernstein, T.~Borger,
+  M.~Spinks, M.~Donovan, V.~Khudik, G.~Shvets, T.~Ditmire, and M.~C. Downer.
+\newblock {Quasi-monoenergetic laser-plasma acceleration of electrons to
+  2 GeV}.
+\newblock {\em Nature Communications}, 4(1):1988, dec 2013.
+
+\bibitem{Leemans2014}
+W. P. Leemans, A. J. Gonsalves, H.-S. Mao, K.~Nakamura, C.~Benedetti,
+  C. B. Schroeder, Cs. T{\'{o}}th, J.~Daniels, D. E. Mittelberger, S. S.
+  Bulanov, J.-L. Vay, C. G. R. Geddes, and E.~Esarey.
+\newblock {Multi-GeV Electron Beams from Capillary-Discharge-Guided Subpetawatt
+  Laser Pulses in the Self-Trapping Regime}.
+\newblock {\em Physical Review Letters}, 113(24):245002, dec 2014.
+
+\bibitem{Huang2012}
+Zhirong Huang, Yuantao Ding, and Carl~B. Schroeder.
+\newblock {Compact X-ray Free-Electron Laser from a Laser-Plasma Accelerator
+  Using a Transverse-Gradient Undulator}.
+\newblock {\em Physical Review Letters}, 109(20):204801, nov 2012.
+
+\bibitem{Facet}
+{Preliminary Conceptual Design Report for the FACET-II Project at SLAC National
+  Accelerator Laboratory}.
+\newblock Technical report.
+
+\bibitem{Adli2018}
+E.~Adli, A.~Ahuja, O.~Apsimon, R.~Apsimon, A.~M. Bachmann, D.~Barrientos,
+  F.~Batsch, J.~Bauche, V.~K. {Berglyd Olsen}, M.~Bernardini, T.~Bohl,
+  C.~Bracco, F.~Braunm{\"{u}}ller, G.~Burt, B.~Buttensch{\"{o}}n, A.~Caldwell,
+  M.~Cascella, J.~Chappell, E.~Chevallay, M.~Chung, D.~Cooke, H.~Damerau,
+  L.~Deacon, L.~H. Deubner, A.~Dexter, S.~Doebert, J.~Farmer, V.~N. Fedosseev,
+  R.~Fiorito, R.~A. Fonseca, F.~Friebel, L.~Garolfi, S.~Gessner, I.~Gorgisyan,
+  A.~A. Gorn, E.~Granados, O.~Grulke, E.~Gschwendtner, J.~Hansen, A.~Helm,
+  J.~R. Henderson, M.~H{\"{u}}ther, M.~Ibison, L.~Jensen, S.~Jolly, F.~Keeble,
+  S.~Y. Kim, F.~Kraus, Y.~Li, S.~Liu, N.~Lopes, K.~V. Lotov, L.~{Maricalva
+  Brun}, M.~Martyanov, S.~Mazzoni, D.~{Medina Godoy}, V.~A. Minakov,
+  J.~Mitchell, J.~C. Molendijk, J.~T. Moody, M.~Moreira, P.~Muggli,
+  E.~{\"{O}}z, C.~Pasquino, A.~Pardons, F.~{Pe{\~{n}}a Asmus}, K.~Pepitone,
+  A.~Perera, A.~Petrenko, S.~Pitman, A.~Pukhov, S.~Rey, K.~Rieger, H.~Ruhl,
+  J.~S. Schmidt, I.~A. Shalimova, P.~Sherwood, L.~O. Silva, L.~Soby, A.~P.
+  Sosedkin, R.~Speroni, R.~I. Spitsyn, P.~V. Tuev, M.~Turner, F.~Velotti,
+  L.~Verra, V.~A. Verzilov, J.~Vieira, C.~P. Welsch, B.~Williamson, M.~Wing,
+  B.~Woolley, and G.~Xia.
+\newblock {Acceleration of electrons in the plasma wakefield of a proton
+  bunch}.
+\newblock {\em Nature}, 561(7723):363--367, 2018.
+
 \bibitem{LEP_dump}
 G~Schrgder, U~Jansson, R~Jung, G~R Stevenson, and E~B Vossenberg.
 \newblock {The LEP Beam Dumping System}.
@@ -28,6 +110,19 @@ Polepalle Satyamurthy, Pravin Rai, Vikas Tiwari, Kiran Kulkarni, John Amann,
 \newblock {\em Nuclear Instruments and Methods in Physics Research, Section A:
   Accelerators, Spectrometers, Detectors and Associated Equipment}, 679:67--81,
   2012.
+
+\bibitem{Schumann2009}
+D~Schumann, J~Neuhausen, J~Eikenberg, M~R{\"{u}}thi, M~Wohlmuther, P~W Kubik,
+  H.-A Synal, V~Alfimov, G~Korschinek, G~Rugel, and Th~Faestermann.
+\newblock {Radiochemical analysis of a copper beam dump irradiated with
+  high-energetic protons}.
+\newblock {\em Radiochim. Acta}, 97:123--131, 2009.
+
+\bibitem{Leuschner1998}
+A~Leuschner and K~Tesch.
+\newblock {The residual radioactivity of a water-copper beam dump for the TESLA
+  Test Facility}.
+\newblock Technical report, 1998.
 
 \bibitem{Wu2010}
 H.~C. Wu, T.~Tajima, D.~Habs, A.~W. Chao, and J.~Meyer-ter Vehn.
