@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{Wu2010}
+H.~C. Wu, T.~Tajima, D.~Habs, A.~W. Chao, and J.~Meyer-ter Vehn.
+\newblock {Collective deceleration: Toward a compact beam dump}.
+\newblock {\em Physical Review Special Topics - Accelerators and Beams},
+  13(10):1--8, 2010.
+
 \bibitem{xfel}
 {The Technical Design Report (TDR) of the European XFEL}.
 
@@ -124,12 +130,6 @@ A~Leuschner and K~Tesch.
   Test Facility}.
 \newblock Technical report, 1998.
 
-\bibitem{Wu2010}
-H.~C. Wu, T.~Tajima, D.~Habs, A.~W. Chao, and J.~Meyer-ter Vehn.
-\newblock {Collective deceleration: Toward a compact beam dump}.
-\newblock {\em Physical Review Special Topics - Accelerators and Beams},
-  13(10):1--8, 2010.
-
 \bibitem{Hanahoe2017}
 Kieran Hanahoe, Guoxing Xia, Mohammad Islam, Yangmei Li, {\"{O}}znur
   Mete-Apsimon, Bernhard Hidding, and Jonathan Smith.
@@ -143,6 +143,31 @@ A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~G.R. Geddes, C.~Benedetti,
 \newblock {Passive and active plasma deceleration for the compact disposal of
   electron beams}.
 \newblock {\em Physics of Plasmas}, 22(8), 2015.
+
+\bibitem{Pukhov2015}
+Alexander Pukhov.
+\newblock {Particle-in-Cell Codes for plasma-based particle acceleration}.
+\newblock 2015.
+
+\bibitem{Lawrence-Douglas2013}
+Alistair Lawrence-Douglas.
+\newblock {Ionisation effects for laser-plasma interactions by particle-in-cell
+  code}.
+\newblock 2013.
+
+\bibitem{Bennett2015}
+K.~Bennett.
+\newblock {EPOCH Users Manual for the EPOCH PIC codes, Ver. 4.3.4}.
+\newblock 2015.
+
+\bibitem{ChrisBRADYKeithBENNETTHolgerSCHMITZ}
+Christopher~Ridgers {Chris BRADY, Keith BENNETT, Holger SCHMITZ}.
+\newblock {EPOCH: Extendable PIC Open Collaboration}.
+
+\bibitem{Ruhl}
+Hartmut Ruhl.
+\newblock {Classical Particle Simulations with the PSC code}.
+\newblock Technical report.
 
 \bibitem{Dawson1959}
 John~M Dawson.

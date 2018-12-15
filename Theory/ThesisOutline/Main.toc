@@ -6,8 +6,8 @@
 \contentsline {section}{\numberline {1.3}Outline of report}{4}{section.1.3}
 \contentsline {chapter}{\numberline {2}Simulations}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Plasma simulations}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}EPOCH}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Particle-in-Cell Codes}{6}{section.2.3}
+\contentsline {section}{\numberline {2.2}Particle-in-Cell Codes}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}EPOCH}{6}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Input deck}{7}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Non-analytical bunch initialisation}{7}{subsection.2.3.2}
 \contentsline {chapter}{\numberline {3}Theoretical foundations}{9}{chapter.3}

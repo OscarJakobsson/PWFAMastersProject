@@ -253,3 +253,39 @@ where, the electric fields are extrapolated (?) to the intermediate point $n+1/2
 &\vec{E}_{(n+1)}=\vec{E}_{(n+1/2)}+\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{B}_{(n+1)}-\frac{\vec{J}_{(n+1)}}{\epsilon_0}\right)
 \end{align}
 Using these fields when then calculate the new particles positions $\vec{x}_{(n)}$, we "push" the particles, thus completing the iteration step.
+
+
+
+
+
+
+
+
+\clearpage 
+Particles are not on yee grid but fields are on yee grid. So rho and J need to be put on yee grid to find fields, and to find new particle positions the fields need to be calculated off-yee grid. However, since the electric field is sourced in part by magnetic flux variations, the fields are sovled at intermediate steps.\\
+Since the fields are determined by the position and velocity of the particles, which in turn are determined by the fields, these can not be calculated simulataneously. In its simpelest form, PIC codes decouple these calculations by dividing each iterations step into four seperate parts.  
+EM fields are fixed on grid, particles move freely
+\label{sec:Particle-in-Cell Codes}
+Starting from EM fields $\vec{E}_{(n)},\vec{B}_{(n)}$ and charge current $\vec{J}_{(n)}$ present at iteration $n$ [at a specific position, middle of Yee grid?] we obtained the fields at the next time step $n+1$ by computing the resulting fields and currents at an intermediate half-way step $n+1/2$. We do this by first computing the change in the electric field, using Ampere's law, $\Delta \vec{E}_{(n)}$ which we add to our current field such that
+\begin{equation}
+\vec{E}_{(n+1/2)}=\vec{E}_{(n)}+\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{B}_{(n)}-\frac{\vec{J}_{(n)}}{\epsilon_0}\right)
+\end{equation}
+from this the magnetic field is given by
+\begin{equation}
+\vec{B}_{(n+1/2)}=\vec{B}_{(n)}-\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{E}_{(n+1/2)}\right)
+\end{equation}
+(at which point the particle pusher, detailed below, updates the current to $\vec{J}_{(n+1)}$)\\
+at which point we need to update the current to $\vec{J}_{(n+1)}$ in order to proceed finding the fields at time step $n+1$. This is done using the particle pusher. We update the position of each particle 
+\begin{equation}
+\vec{x}_{(n+1/2)}=\vec{x}_{(n)}+\frac{\Delta t}{2}\vec{v}_{(n)}
+\end{equation}
+from which we also obtain the intermediate velocity $\vec{v}_{(n)}$ [correct?]. Using the Lorentz force law we then compute the force $\vec{F}_{(n)}=\Delta p/\Delta t$ which gives the momentum at $n+1$ as
+\begin{equation}
+\vec{p}_{(n+1)}=\vec{p}_{(n)}+q\Delta t\left[\vec{E}_{(n+1/2)}\left(\vec{x}_{(n+1/2)}\right)+\vec{x}_{(n+1/2)}\times\vec{B}_{(n+1/2)}\left(\vec{x}_{(n+1/2)}\right) \right]
+\end{equation}
+where, the electric fields are extrapolated (?) to the intermediate point $n+1/2$. Then, using $\vec{p}=\gamma m \vec{v}$, we can find the velocity at $n+1$, from which we then have the current $\vec{J}_{(n+1)}$. We then reverse the order of computing such that the magnetic field is calculated prior to the electric field,
+\begin{align}
+&\vec{B}_{(n+1)}=\vec{B}_{(n+1/2)}-\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{E}_{(n+1/2)}\right)\\
+&\vec{E}_{(n+1)}=\vec{E}_{(n+1/2)}+\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{B}_{(n+1)}-\frac{\vec{J}_{(n+1)}}{\epsilon_0}\right)
+\end{align}
+Using these fields when then calculate the new particles positions $\vec{x}_{(n)}$, we "push" the particles, thus completing the iteration step.
