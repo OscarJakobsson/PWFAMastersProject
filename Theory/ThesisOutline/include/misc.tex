@@ -289,3 +289,14 @@ where, the electric fields are extrapolated (?) to the intermediate point $n+1/2
 &\vec{E}_{(n+1)}=\vec{E}_{(n+1/2)}+\frac{\Delta t}{2}\left(c^2\mathbf{\nabla}\times \vec{B}_{(n+1)}-\frac{\vec{J}_{(n+1)}}{\epsilon_0}\right)
 \end{align}
 Using these fields when then calculate the new particles positions $\vec{x}_{(n)}$, we "push" the particles, thus completing the iteration step.
+
+
+
+
+
+
+The hybrid scheme approach that the endeavour to investigate in this project relies on us being able to simulate a laser pulse propagating in front of a pre-saturated bunch. Previous investigations by our colleagues have shown that this is not a trivial task using the simulation software that have been tried. The issue with epoch in this regard is that everything that is to be included in the simulation need to be specified in the input deck and introduced at the beging of a simulation. Hence, simulations of the active beam dump are entirely possible in EPOCH, since a laser can be initialised in front of a bunch at $t=0$ and driven together. Introducing a laser at a later stage $t>0$ appeared however not to be possible. The majority of the work so far in this project has been concerned with solving this issue. The approach taken was to simulate the passive part first and then export the data of the saturated bunch into a new simulation which includes a laser driver. The structure of the SDF data files output by EPOCH are however not suitable for accessing and retrieving particular sets of data. A workaround was found by using VisIt to read the files and subsequently export only the data related to the electron beam. This data was subsequently read by EPOCH during the compilation stage in a specific file included in EPOCH. This file, usually left empty, allows users to over-ride section of the input file by assigning custom values to each of the macroparticles that are intialised in at the start of a simulation. Through this approach we are now able to define a simulation where a laser pulse is driven ahead of a standard bi-gaussian electron beam. By then over-riding the parameters for the electron beam we can then use the data from a pre-saturated bunch to reposition each macroparticle in the bi-gaussian to its corresponding position relative to the rest of the bunch. By also over-riding momentum parameters we can completely mould the bunch into the one we had exported after a passive beam dump. \\
+\\
+Real accelerators operate at a range of beam parameters tailored to specific reserach purposes. In order to avoid having to set up week-long simulations for each minor change of parameters it is crucial to understand the theory underlying these plasma wakefield phenomena and to see to what extent the theoretical predictions match the simulations
+
+For any pracitactal implementation of the hybrid scheme to an existing experiment it 

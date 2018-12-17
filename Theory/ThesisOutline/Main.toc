@@ -9,12 +9,12 @@
 \contentsline {section}{\numberline {2.2}Particle-in-Cell Codes}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}EPOCH}{6}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Input deck}{7}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Non-analytical bunch initialisation}{7}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Non-analytical bunch initialisation}{8}{subsection.2.3.2}
 \contentsline {chapter}{\numberline {3}Theoretical foundations}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Linear fluid model }{9}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Longitudinal Accelerating Field}{11}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Transverse Field}{14}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Transverse Field}{15}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Collective Plasma Deceleration -- Linear regime }{17}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Non-linear Regime}{18}{section.3.3}
 \contentsline {chapter}{\numberline {4}Simulation tests}{19}{chapter.4}

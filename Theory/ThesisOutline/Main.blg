@@ -36,51 +36,53 @@ Warning--empty journal in Lawrence-Douglas2013
 Warning--empty journal in Bennett2015
 Warning--empty institution in Ruhl
 Warning--empty year in Ruhl
+Warning--empty journal in LANL2005
+Warning--there's a number but no volume in LANL2005
 Warning--empty institution in Dawson1959
 Warning--empty institution in Gessner2016
 Warning--empty institution in Katsouleas1987
 Warning--empty institution in Vaganian1995
 Warning--empty journal in Mira2017
 Warning--there's a number but no volume in Mira2017
-You've used 34 entries,
+You've used 36 entries,
             1791 wiz_defined-function locations,
-            649 strings with 11575 characters,
-and the built_in function-call counts, 8325 in all, are:
-= -- 512
-> -- 796
+            658 strings with 11688 characters,
+and the built_in function-call counts, 8553 in all, are:
+= -- 528
+> -- 801
 < -- 3
-+ -- 280
-- -- 246
-* -- 752
-:= -- 1535
-add.period$ -- 95
-call.type$ -- 34
-change.case$ -- 41
++ -- 283
+- -- 247
+* -- 760
+:= -- 1565
+add.period$ -- 99
+call.type$ -- 36
+change.case$ -- 43
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 274
-empty$ -- 589
-format.name$ -- 246
-if$ -- 1640
+cite$ -- 65
+duplicate$ -- 287
+empty$ -- 622
+format.name$ -- 247
+if$ -- 1693
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 23
-newline$ -- 166
-num.names$ -- 32
-pop$ -- 106
+int.to.str$ -- 36
+missing$ -- 24
+newline$ -- 174
+num.names$ -- 33
+pop$ -- 116
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 109
+skip$ -- 119
 stack$ -- 0
 substring$ -- 267
-swap$ -- 30
+swap$ -- 31
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 27
-while$ -- 55
-width$ -- 36
-write$ -- 332
-(There were 27 warnings)
+warning$ -- 29
+while$ -- 56
+width$ -- 38
+write$ -- 347
+(There were 29 warnings)

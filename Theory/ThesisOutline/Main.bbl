@@ -169,6 +169,14 @@ Hartmut Ruhl.
 \newblock {Classical Particle Simulations with the PSC code}.
 \newblock Technical report.
 
+\bibitem{CSF}
+{The Computational Shared Facility}.
+
+\bibitem{LANL2005}
+LANL.
+\newblock {VisIt User ' s Manual}.
+\newblock (October), 2005.
+
 \bibitem{Dawson1959}
 John~M Dawson.
 \newblock {Electron Oscillations in a Cold Plasma}.
