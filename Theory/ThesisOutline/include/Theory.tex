@@ -1,6 +1,6 @@
 \chapter{Theoretical foundations}
 \section{Introduction}
-Real accelerators operate at a range of beam parameters tailored to specific research purposes. In order to avoid having to set up week-long simulations for each minor change of parameters it is crucial to understand the theory underlying these plasma wakefield phenomena and to see to what extent the theoretical predictions match the simulations.\\
+Real accelerators operate at a range of beam parameters tailored to specific research purposes. In order to avoid having to set up week-long simulations for each minor change of parameters it is crucial to understand the theory underlying these plasma wakefield phenomena and to investigate to what extent the theoretical predictions match the simulations.\\
 \indent In this chapter we introduce the linear fluid model of plasma wakefield acceleration and derive the equations governing the response of a plasma to an electron bunch propagating through. This model assumes that the bunch is ultra-relativistic and that the plasma density is much higher than the bunch density, which will allow us to treat the plasma response as a first order perturbation to the background density.  We also discuss the non-linear, so-called "blowout", regime which can not be treated perturbatively and is characterised by the expulsion of plasma electrons in a volume behind the bunch. The response to a laser being driven through the plasma, the so-called pondermotive force response, shares many similar features to the theory presented in this chapter but presents other issues such as dissipation and de-phasing in the plasma which will need to be address in the context of the active beam dump. For this reason the theory of laser-plasma interactions will be covered in a subsequent report. 
 \section{Linear fluid model }
 In this section, we derive the response of a plasma to an electron bunch by considering the plasma electrons as a fluid. We shall make the assumptions;  (i) the initial plasma is uniform and electrically neutral everywhere; (ii) the plasma ions can be considered stationary since for all plasmas the mass of the ions is much larger than the electron mass, $m_{\text{ion}}>>m_{e}$; (iii) the electron bunch is ultra-relativistic, $v/c\approx 1$, such that the density distribution of the bunch does not evolve as it interacts with the plasma; (iv) the bunch density is much less than the plasma electron density, $n_b<<n_p$.  A beam propagating through a plasma satisfying these conditions is said to be in the \textit{linear regime}. The dynamics of the plasma electrons is governed by the continuity equation
@@ -308,7 +308,7 @@ from which multiplication by the beam number density $n_b(r,\xi)$ and integratio
 U(s)=\int  U_e(r,\xi,0)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi-se\int E_z(r,\xi)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi
 \label{energy_loss_bonatto}
 \end{equation}
-where $E_z$ and $n_b$ are found from equations (\ref{longitudinalforce}) and (\ref{bigaussian}). A program to compute this numerically has not yet been implement, but we endeavour to do so in the latter part of this project to allow for comparisons between the linear theory, simulations and hopefully with experimental data from the FLASHForward facility at DESY.
+where $E_z$ and $n_b$ are found from equations (\ref{longitudinalforce}) and (\ref{bigaussian}). A program to compute this numerically has not yet been implement, but we endeavour to do so in the latter part of this project to allow for comparisons between the linear theory and simulations.
 %\subsection{Notes Bonatto}
 %Rate of change due to the longitudinal electric field acting on an electron beam, i.e position beam in the decelerating region of the wakefield.\\
 %"the beam only experiences its self-excited wakefield."\\
@@ -335,6 +335,6 @@ where $E_z$ and $n_b$ are found from equations (\ref{longitudinalforce}) and (\r
 
 %Based on the work of Lu et. al \citep{Lu2006}, wherein it was shown that the predictions from the linear models perform well even in the non-linear regime, it is of interest to compute the energy loss in the linear regime. 
 
-\section{Non-linear Regime} 
-Lower density, larger plasma response, not possible to describe perturbatively. Hamiltonian approach taken by Lu. et al []\\
-Self-injection?
+%\section{Non-linear Regime} 
+%Lower density, larger plasma response, not possible to describe perturbatively. Hamiltonian approach taken by Lu. et al []\\
+%Self-injection?
