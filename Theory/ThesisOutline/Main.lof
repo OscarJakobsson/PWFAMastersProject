@@ -5,14 +5,14 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Flowchart showing the general operations conducted during one time iteration of the Particle-In-Cell simulation method. The colours indicate whether the EM fields and particle distributions are calculated at points on the discretized Yee grid (orange) or in the continuous space of particles (blue). The field update and particle push algorithms}\relax }}{6}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces \IeC {\textbullet }\relax }}{15}{figure.caption.7}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Simulation vs. theory for linear regime with $n_p/n_b=100$. \relax }}{16}{figure.caption.8}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces \IeC {\textbullet }\relax }}{16}{figure.caption.9}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Transverse force - theory vs. simulation\relax }}{17}{figure.caption.10}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Two-dimensional simulation plot of the co-moving longitudinal electric field in the linear regime, $n_p=100n_b$. The electron bunch (not shown) is centred on $\xi =0$ and moves to the right.\relax }}{13}{figure.caption.7}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Simulation vs. theory for linear regime with $n_p/n_b=100$. \relax }}{14}{figure.caption.8}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \IeC {\textbullet }\relax }}{15}{figure.caption.9}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Transverse force - theory vs. simulation\relax }}{16}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \IeC {\textbullet }\relax }}{20}{figure.caption.12}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces quasiplots\relax }}{21}{figure.caption.14}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces abc\relax }}{21}{figure.caption.15}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \IeC {\textbullet }\relax }}{18}{figure.caption.12}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces quasiplots\relax }}{19}{figure.caption.14}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces abc\relax }}{19}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
