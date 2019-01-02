@@ -1,11 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Wu2010}
-H.~C. Wu, T.~Tajima, D.~Habs, A.~W. Chao, and J.~Meyer-ter Vehn.
-\newblock {Collective deceleration: Toward a compact beam dump}.
-\newblock {\em Physical Review Special Topics - Accelerators and Beams},
-  13(10):1--8, 2010.
-
 \bibitem{xfel}
 {The Technical Design Report (TDR) of the European XFEL}.
 
@@ -130,6 +124,12 @@ A~Leuschner and K~Tesch.
   Test Facility}.
 \newblock Technical report, 1998.
 
+\bibitem{Wu2010}
+H.~C. Wu, T.~Tajima, D.~Habs, A.~W. Chao, and J.~Meyer-ter Vehn.
+\newblock {Collective deceleration: Toward a compact beam dump}.
+\newblock {\em Physical Review Special Topics - Accelerators and Beams},
+  13(10):1--8, 2010.
+
 \bibitem{Hanahoe2017}
 Kieran Hanahoe, Guoxing Xia, Mohammad Islam, Yangmei Li, {\"{O}}znur
   Mete-Apsimon, Bernhard Hidding, and Jonathan Smith.
@@ -218,9 +218,23 @@ A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~R. Geddes, C.~Benedetti, E.~Esarey,
   laser-driven plasma decelerating stage}.
 \newblock {\em AIP Conference Proceedings}, 1777(1):0--5, 2016.
 
+\bibitem{Eupraxia}
+{ACCELERATOR WITH EXCELLENCE IN APPLICATIONS}.
+
+\bibitem{Walker2017}
+P.~A. Walker.
+\newblock {HORIZON 2020 EuPRAXIA Design Study}.
+\newblock {\em Journal of Physics: Conference Series}, 874:012029, 2017.
+
 \bibitem{Schmid2012}
 K~Schmid and L~Veisz.
 \newblock {Supersonic gas jets for laser-plasma experiments}.
 \newblock {\em Citation: Review of Scientific Instruments}, 83:53304, 2012.
+
+\bibitem{Maier2012}
+A.~R. Maier, A.~Meseck, S.~Reiche, C.~B. Schroeder, T.~Seggebrock, and
+  F.~Gr{\"{u}}ner.
+\newblock {Demonstration Scheme for a Laser-Plasma-Driven Free-Electron Laser}.
+\newblock {\em Physical Review X}, 2(3):031019, sep 2012.
 
 \end{thebibliography}

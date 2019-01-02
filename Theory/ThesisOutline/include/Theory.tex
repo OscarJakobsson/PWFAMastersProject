@@ -66,7 +66,7 @@ n_1\left(r,\xi \right)&=k_p\int_{-\infty}^{\xi}\sin\left(k_p(\xi-\xi')\right)n_b
 \label{density_perturbation} 
 \end{equation} %\int_{-\infty}^{\infty}G\left(\xi,\xi'\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'\\
 where we have used the trigonometric identify for $\sin\left(k_p(\xi-\xi'\right))$. Hence the electron bunch induces oscillatory density perturbations in the plasma with a wavelength given by $\lambda_p=2\pi/k_p$. In addition, the magnitude of these perturbation scales linearly with $n_b$, the density of the beam driver, and as $n_0^{1/2}$, the square root of the unperturbed plasma density through equation (\ref{plasma_frequency}). These perturbations set up electromagnetic fields in the plasma behind the beam driver. An understanding of the electromagnetic fields that these perturbations induce is crucial to design a functioning plasma wakefield experiment.
-\subsection{Longitudinal Accelerating Field} 
+\subsection{Longitudinal accelerating field} 
 The electric field parallel to the propagation of the beam driver, the so-called longitudinal plasma wakefield, drives particles to either accelerate or decelerate and consequently determines the efficiency of our plasma beam dump. Hence, in this section we derive an expression for this field in the linear regime considered above. 
 From Maxwell's equations (\ref{Maxwell1}-\ref{Maxwell4}) it is straightforward to show that the electric field in the plasma obeys a wave equation:
 \begin{equation}
@@ -209,120 +209,63 @@ To test the validity of the linear fluid model as well as highlight some key fea
 n_b(r,\xi)=\frac{N_b}{(2\pi)^{3/2}\sigma_r^2\sigma_{\xi}}e^{-\xi/(2\sigma_{\xi}^2)-r/(2\sigma_{r}^2)}
 \label{bigaussian}
 \end{equation}
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.8\textwidth]{longitudinal2d_final}
-\label{transverse_plot}
-\caption{Two-dimensional simulation plot of the co-moving longitudinal electric field in the linear regime, $n_p=100n_b$. The electron bunch (not shown) is centred on $\xi=0$ and moves to the right.}
-\end{figure}
-\clearpage
-where $N_b$ is the number of electrons in the bunch and $\sigma_{\xi}$ and $\sigma_r$ are the standard deviation of the bunch in the longitudinal and transverse direction. At this stage we will also compare these calculations to equivalent two-dimensional PIC simulations using EPOCH, as described in chapter 2.  We choose a plasma density $n_p=100n_b$ to ensure that the electron beam is in the linear regime. We also set the bunch dimensions to $\sigma_{\xi}=\sigma_r=5~\mu\text{m}$ and $N_b=10^6$ to allow for later comparisons with the simulations presented in chapter 4. The beam dump that we have in mind will not necessarily have the beam in the linear regime, however the linear-regime simulations in this chapter will function as a benchmark for the validity of the linear model. The resulting two-dimensional co-moving longitudinal wakefield from this simulations is shown in figure (\ref{transverse_plot}), where the beam has propagated only $200~\mu\text{m}$ to the right to minimize bunch distortions. Remembering that these fields are induced by electron density modulations this plot clearly shows the oscillatory density-perturbations described by equation (\ref{density_perturbation}). To allow for comparison with equation (\ref{longitudinalforce}) we extract the data for the electric field at $Y=0$ and compare to calculations at $r=|y|=0$, the result of which is shown in figure \ref{theory_vs_simulation}. We note that the theoretical calculations and the simulations are indeed in good agreement, with the linear model predicting both the amplitude and the wavelength of the induced plasma wakefield. We also note that the electric field is positive along the bunch, implying that there is a decelerating force on the electron bunch. We can also identify some of the features that previous studies have found. In particular, the energy chirp found by Wu et. al, figure \re{Wu}, can be explained by the fact that both theory and simulation predict that the head of the bunch, $\xi>0$, should experience a near-zero electric field. As a result, energy loss should only occur through scattering mechanisms, which are entirely negligible compared to the effect of this wakefield \cite{Wu2010}. We may furthermore predict that this method can not fully deplete the energy of the beam on its own. For, assuming that the electric field maintains its form as the beam propagates, as soon as particles lose enough energy to fall behind the rest of the bunch, they will end up in a region of negative electric field, $-25<\xi<-15 ~\mu\text{m}$, and subsequently get re-accelerated. One method for dealing with this was described in chapter 1, whereby Wu et al. \cite{Wu2010}. simulated the use of foils to prevent particles reaching the re-acceleration region. The other method, proposed by Hanahoe et al. \cite{Hanahoe2017} was to let the beam propagate through an increasing plasma density. Although this method has not been simulated so far, if the proposed experiments at FLASHForward at DESY in 2019 include the possibility to test this proposal this method will need to be explored further in the upcoming report. This method utilizes the transverse wakefields, which we cover below for completeness. 
-
-
-
-%This might at first sight appear unsurprising, since if the bunch moved through a solid material it would loose energy as well, and as the bunch moves through the plasma it displaces electrons which transfers kinetic energy to the plasma. The surprise here however is the uneven way in which the plasma electrons rearrange themselves. Each electron displaces plasma electrons, and each electron transfers a small amount of energy to the plasma electrons, the plasma electrons arrange themselves in such a way as to collective create a large electric field in the middle of the bunch. So even though each electron transfers some energy kinetically, the ones in the middle will lose a lot more energy through this decelerating  electric field which all the electrons in the bunch has contributed to setting up. 
-
-
-
-
-
-
-
-%For this reason this is referred to as collective deceleration. 
-
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{longitudinal_theory_vs_simulation.pdf}
-\caption{Simulation vs. theory for linear regime with $n_p/n_b=100$. }
-\label{theory_vs_simulation}
+\includegraphics[width=0.8\textwidth]{longitudinal2d_final2}
+\caption{\small{Two-dimensional simulation plot of the co-moving longitudinal electric field in the linear regime, $n_p=100n_b$. The electron bunch (not shown) is centred on $\xi=0$ and moves to the right.}}
+\label{longitudinal_plot}
 \end{figure}
 \clearpage
-\subsection{Transverse Field} 
-An ultrarelativisitic electron bunch will be highly contracted in the direction of propagation relative to the plasma electrons in the 'lab' frame. Assuming $\beta=1$ as before the electric field due to the bunch is purely radial, $E_r$. In addition, the magnetic field due to the charge is azimuthal, $B_{\theta}$. The resulting transverse wakefield $W_{\perp}=E_+-cB_{\theta}$ experienced by a realtivisit particle due to the wake is given by the \textit{Panofsky-Wenzel theorem}\cite{Vaganian1995}, which says that the transverse wakefield at a position $\xi=z-ct$ behind the head of the bunch is related to the longtiduinal wakefield $W_{\parallel}$ via
+where $N_b$ is the number of electrons in the bunch and $\sigma_{\xi}$ and $\sigma_r$ are the standard deviation of the bunch in the longitudinal and transverse direction. At this stage we will also compare these calculations to equivalent two-dimensional PIC simulations using EPOCH, as described in chapter 2.  We choose a plasma density $n_p=100n_b$ to ensure that the electron beam is in the linear regime. We also set the bunch dimensions to $\sigma_{\xi}=\sigma_r=5~\mu\text{m}$ and $N_b=10^6$ to allow for later comparisons with the simulations presented in chapter 4. The beam dump that we have in mind will not necessarily have the beam in the linear regime, however the linear-regime simulations in this chapter will function as a benchmark for the validity of the linear model. The resulting two-dimensional co-moving longitudinal wakefield from this simulations is shown in figure (\ref{longitudinal_plot}), where the beam has propagated only $200~\mu\text{m}$ to the right to minimize bunch distortions. Remembering that these fields are induced by electron density modulations this plot clearly shows the oscillatory density-perturbations described by equation (\ref{density_perturbation}). To allow for comparison with equation (\ref{longitudinalforce}) we extract the data for the electric field at $Y=0$ and compare to calculations at $r=|y|=0$, the result of which is shown in figure \ref{theory_vs_simulation_longitudinal}. We note that the theoretical calculations and the simulations are indeed in good agreement, with the linear model predicting both the amplitude and the wavelength of the induced plasma wakefield. We also note that the electric field is positive along the bunch, implying that there is a decelerating force on the electron bunch. We can also identify some of the features that previous studies have found. In particular, the energy chirp found by Wu et. al, figure \ref{Wu}, can be explained by the fact that both theory and simulation predict that the head of the bunch, $\xi>0$, should experience a near-zero electric field. As a result, energy loss should only occur through scattering mechanisms, which are entirely negligible compared to the effect of this wakefield \cite{Wu2010}. We may furthermore predict that this method can not fully deplete the energy of the beam on its own. For, assuming that the electric field maintains its form as the beam propagates, as soon as particles lose enough energy to fall behind the rest of the bunch, they will end up in a region of negative electric field, $-25<\xi<-15 ~\mu\text{m}$, and subsequently get re-accelerated. One method for dealing with this was described in chapter 1, whereby Wu et al. \cite{Wu2010}. simulated the use of foils to prevent particles reaching the re-acceleration region. The other method, proposed by Hanahoe et al. \cite{Hanahoe2017} was to let the beam propagate through an increasing plasma density. Although this method has not been simulated so far, if the proposed experiments at FLASHForward at DESY in 2019 include the possibility to test this proposal this method will need to be explored further in the upcoming report. This method utilizes transverse wakefields, which we cover below for completeness. 
+
+\vspace{-50pt}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{test2.pdf}
+\caption{\small{Plot comparing the longitudinal wakefield on axis, $r=0$, for PIC simulation and linear fluid theory for $n_p/n_b=100$. The simulation data corresponds to values along the dotted line in figure \ref{longitudinal_plot}. The theory prediction is given by equation  (\ref{longitudinalforce}).The Gaussian bunch distribution in the longitudinal direction is also shown.}}
+\label{theory_vs_simulation_longitudinal}
+\end{figure}\vspace{50pt}
+\subsection{Transverse field} 
+Relative to the stationary plasma electrons an ultra-relativistic electron bunch will be fully Lorentz contracted in its direction of propagation, with a purely radial electric field. Consequently, the plasma electrons will be displaced radially, which not only act to to set up the longitudinal wakefield we calculated above but also a radial restoring field, $E_r$.
+In addition, the electron bunch induce an azimuthal magnetic field, $B_{\theta}$, which further affect the plasma electrons. The resulting transverse wakefield, $W_{\perp}=E_r-cB_{\theta}$, will also affect the electron bunch itself.  The wakefield experienced by an ultra-relativistic electron in the bunch is given by the \textit{Panofsky-Wenzel theorem} \cite{Vaganian1995}, which says that the transverse wakefield at a position $\xi<0$ behind the bunch is related to the longitudinal wakefield $W_{\parallel}$ via
 \begin{equation}
-\frac{\partial W_{\perp} }{\partial z}=\frac{\partial W_{\parallel} }{\partial r}~.
+\frac{\partial W_{\perp} }{\partial z}=\frac{\partial W_{\parallel} }{\partial r}~,
 \end{equation} 
-Since $W_{\parallel} =E_z$ this gives a transverse wakefield
+where, in our case, $W_{\parallel}=E_z$ such that
 \begin{equation}
-W_{\perp}(\xi)=\int \frac{\partial E_z }{\partial r}\mathrm{d}z~.
+W_{\perp}(r,\xi)=\int \frac{\partial E_z(r,\xi) }{\partial r}\mathrm{d}z~.
 \end{equation}
-The transverse force on a bi-Gaussian bunch can now by found by applying this expression to on the longitudinal single-particle wakefield (\ref{singe-particle-wake}) and then performing the same convolution as above \cite{Katsouleas1987, Mira2017}, which yields 
-\begin{equation}
-F_r(r,\xi)=-\frac{e^2 k_p}{\epsilon_0} \int_{-\infty}^{\xi} \sin(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}\frac{\partial G\left(r,r'\right)}{\partial r} \frac{n_b(r',\xi')}{\partial r'}
-r'\mathrm{d}r'
-\end{equation}
-%where 
-%\begin{equation}
-%n_b(r,\xi)=\frac{N_b}{(2\pi)^{3/2}\sigma_r^2\sigma_{\xi}}e^{-\xi/(2\sigma_{\xi}^2)-r/%(2\sigma_{r}^2)}
-%\label{bigaussian}
-%\end{equation}
-%and 
-%\begin{equation}
-%G\left(r,r'\right)=- I_0(k_pr)K_0(k_pr')\Theta(r'-r)-I_0(k_pr')K_0(k_pr)\Theta(r-r')~.
-%\end{equation}
+The transverse force on a bi-Gaussian bunch can now by found by applying this expression to the longitudinal single-particle wakefield (\ref{singe-particle-wake}) and then performing the same convolution as above \cite{Katsouleas1987, Mira2017}, which yields 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{transverse_2d_plot}
+\includegraphics[width=0.8\textwidth]{transverse2d_final}
+\caption{\small{Two-dimensional simulation plot of the co-moving transverse wakefield in the linear regime, $n_p=100n_b$, showing successive focusing and defocusing regions. The electron bunch (not shown) is centred on $\xi=0$ and moves to the right.}}
 \label{transverse_plot}
-\caption{•}
 \end{figure}
-
-From this we note that the radial field exhibits the same oscillatory behaviour that we have seen before and that the phase of the transverse and longitudinal fields differ by $\pi/2$. This is of particular importance to plasma wakefield accelration experiments, since it implies that there will be a region which is simultaneously accelrating and focusing, enabling high acceleration of narrow beams. Hanahoe et al. was able to use a similar appraoch to show that by employing a varying density one could find that reaccelration of particles that had fallen behind the bunch occurred in a defocusing region. Thereby forcing the particles outwards, where they were subsequently decelerated through ordinary scattering. Figure \ref{transverse_plot}.\\
-%Firstly, the radial field at $r=0$ is zero since 
-%begin{equation}
-%\left.\frac{\partial G\left(r,r'\right)}{\partial r} \right|_{r=0}=\frac{k_p}{2} I_1(0)K_0(k_pr')=0
-%\end{equation}
-%\begin{figure}
-%\includegraphics[width=0.49\textwidth]{longitudinal_gessner}\includegraphics[width=0.49\textwidth]{transverse_gessner}
-%\end{figure}
+\begin{equation}
+W_{\perp}(r,\xi)=\frac{e k_p}{\epsilon_0} \int_{-\infty}^{\xi} \sin(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}\frac{\partial G\left(r,r'\right)}{\partial r} \frac{n_b(r',\xi')}{\partial r'}
+r'\mathrm{d}r'
+\label{transverse_wakefield}
+\end{equation}
+For consistency we also extract $E_r$ and $B_{\theta}$ from the same simulation as above and plot $W_{\perp}$ in figure \ref{transverse_plot}.  From this we note that the radial field exhibits the same longitudinal oscillatory behaviour that we have seen before, with equation (\ref{transverse_wakefield}) saying that the phase of the transverse and longitudinal fields differ by $\pi/2$. In contrast to before, however, we also have radial oscillations. This is of particular importance to plasma wakefield acceleration experiments, since it implies that there will be a region which is simultaneously accelerating and focusing, enabling high acceleration of narrow beams \cite{Esarey2009}. Hanahoe et al. \cite{Hanahoe2017} was able to use a similar approach to show that by employing a varying density one could find that re-acceleration of particles that had fallen behind the bunch occurred in a de-focusing region. Thereby forcing the particles outwards, where they were subsequently decelerated through ordinary scattering. In fact, the dotted line in figure \ref{transverse_plot} shows such a de-focusing region, since $W_{\perp}<0$ act to drive electrons to increasing $Y$ values and vice versa.  Figure \ref{theory_vs_simulation_transverse} shows that this field is again in good agreement with the linear fluid theory predictions of equation (\ref{transverse_wakefield}).
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{test.pdf}
-\caption{Transverse force - theory vs. simulation}
+\includegraphics[width=0.8\textwidth]{test.pdf}
+\caption{\small{Plot comparing the co-moving transverse wakefield at $\xi=-25 ~\mu\text{m}$, for PIC simulation and linear fluid theory for $n_p/n_b=100$. The simulation data corresponds to values along the dotted line in figure \ref{transverse_plot}, the theory prediction is given by equation  (\ref{transverse_wakefield}) and the Gaussian bunch distribution in the transverse direction is also shown.}}
+\label{theory_vs_simulation_transverse}
 \end{figure}
 
-\subsection{Collective Plasma Deceleration -- Linear regime }
-As described above parts of the electron bunch can be in either accelerating or decelerating regions. The parts of the bunch that are in a decelerating region will lose energy; this is the general idea behind a plasma beam dump. Since we can calculate the electric field at any position ($\xi,r$) along the bunch we can estimate the energy loss by calculating the work carried out by the longitudinal electric field. Since the beam is assumed to be rigid in the linear regime this does not take into account accelerated particles. This is the approach taken by Bonatto et al. to estimate the distance required to dump various beams in passive or active plasma beam dumps \citep{Bonatto2016}, and as we shall see in section XXX this approach provides good agreement with simulations.\\
-The rate of energy change with propagation distance of a particle at position $(r,\xi)$ in the bunch after travelling is given by the force exerted on the particle by the longitudinal electric field:
+\subsection{Plasma deceleration}
+Electrons in the bunch that are in a decelerating region will lose energy; this is the general idea behind the plasma beam dump. Since we can calculate the electric field at any position ($\xi,r$) along the bunch we can estimate the energy loss by calculating the work carried out by the longitudinal electric field. This is the approach taken by Bonatto et al. \cite{Bonatto2016} to estimate the distance required to dump various beams in their passive or active plasma beam-dump scenarios. Assuming that there occurs no modulation of the particle bunch as it propagates through the plasma, the energy of one particle in the beam at position $(r,\xi)$ after travelling a distance $s$ is given by:
 \begin{equation}
-\frac{\mathrm{d}U_p}{\mathrm{d}s}=-eE_z(r,\xi)
+U_e(r,\xi,s)=U_e(r,\xi,0)-seE_z(r,\xi)~,
 \end{equation}
-where we have assumed that there occurs no modulation of the particle bunch as it traverses the plasma, hence the electric field is only a function of the position in the bunch $E_z(r,\xi)$ and not the propagation distance $s$. Integrating over the propagation distance then gives the energy of one particle in the beam at position $(r,\xi)$ after travelling a distance s:
+from which multiplication by the beam number density $n_b(r,\xi)$ and integration over the volume of the bunch gives the total energy of all particles in the bunch as a function of propagation distance:
 \begin{equation}
-U_e(r,\xi,s)=U_e(r,\xi,0)-seE_z(r,\xi)
-\end{equation}
-from which multiplication by the beam number density $n_b(r,\xi)$ and integration over the volume of the bunch gives the total energy of all particles in the bunch after propagation distance s
-\begin{equation}
-U(s)=\int  U_e(r,\xi,0)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi-se\int E_z(r,\xi)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi
+U(s)=\int  U_0-se\int E_z(r,\xi)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi
 \label{energy_loss_bonatto}
 \end{equation}
 where $E_z$ and $n_b$ are found from equations (\ref{longitudinalforce}) and (\ref{bigaussian}). A program to compute this numerically has not yet been implement, but we endeavour to do so in the latter part of this project to allow for comparisons between the linear theory and simulations.
-%\subsection{Notes Bonatto}
-%Rate of change due to the longitudinal electric field acting on an electron beam, i.e position beam in the decelerating region of the wakefield.\\
-%"the beam only experiences its self-excited wakefield."\\
-%In the passive beam dump, are we essentially slowing down a "drive bunch" without having a witness bunch behind to get accelerated?\\
-%It is probaly better to u se gamma as in Bonatto's paper, to make it easier to explain total beam energy integral. Basically integrate over all particles.\\
-%$U=\gamma m_ec^2$
-%\begin{equation}
-%-\frac{\mathrm{d}U}{\mathrm{d}s}=(F_e)_z=eE_z
-%\end{equation}
-%where $s$ is the distance travelled in the plasma and $U$ is the energy of a particle in the beam at position $\xi$. 
-%for ultra relativistic beams, $\beta\sim 1$, the longitudinal electric field is a function of the position along the bunch $\xi=z-ct$ and not $z$ explicitly. 
-%\begin{equation}
-%U(s,\xi)=U_0-esE_z(\xi)
-%\end{equation}
-%The total energy of the beam after travelling a distance $s$ is then found by integrating across all the particles in the beam, which is integrating across $\xi$ since analysis is in 1-D.
-%\begin{equation}
-%\mathcal{U}(s)=U_0\int_{-\infty}
-%\end{equation}
 
-%We will proceed by calculating the gamma factor of a given particle in the beam who's energy we wish to compute.
-%\begin{equation}
-%\gamma(s,\xi)=\gamma_0-esE_z(\xi)
-%\end{equation}
-
-%Based on the work of Lu et. al \citep{Lu2006}, wherein it was shown that the predictions from the linear models perform well even in the non-linear regime, it is of interest to compute the energy loss in the linear regime. 
-
-%\section{Non-linear Regime} 
-%Lower density, larger plasma response, not possible to describe perturbatively. Hamiltonian approach taken by Lu. et al []\\
-%Self-injection?
+\subsection{Non-linear regime}
+At this point, we 

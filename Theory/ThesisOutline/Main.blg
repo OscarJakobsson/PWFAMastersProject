@@ -44,45 +44,48 @@ Warning--empty institution in Katsouleas1987
 Warning--empty institution in Vaganian1995
 Warning--empty journal in Mira2017
 Warning--there's a number but no volume in Mira2017
-You've used 36 entries,
+Warning--empty author in Eupraxia
+Warning--empty journal in Eupraxia
+Warning--empty year in Eupraxia
+You've used 39 entries,
             1791 wiz_defined-function locations,
-            658 strings with 11688 characters,
-and the built_in function-call counts, 8553 in all, are:
-= -- 528
-> -- 801
+            674 strings with 12076 characters,
+and the built_in function-call counts, 9124 in all, are:
+= -- 571
+> -- 826
 < -- 3
-+ -- 283
-- -- 247
-* -- 760
-:= -- 1565
-add.period$ -- 99
-call.type$ -- 36
-change.case$ -- 43
++ -- 293
+- -- 254
+* -- 809
+:= -- 1655
+add.period$ -- 106
+call.type$ -- 39
+change.case$ -- 46
 chr.to.int$ -- 0
-cite$ -- 65
-duplicate$ -- 287
-empty$ -- 622
-format.name$ -- 247
-if$ -- 1693
+cite$ -- 71
+duplicate$ -- 313
+empty$ -- 681
+format.name$ -- 254
+if$ -- 1814
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 24
-newline$ -- 174
-num.names$ -- 33
-pop$ -- 116
+int.to.str$ -- 39
+missing$ -- 27
+newline$ -- 187
+num.names$ -- 35
+pop$ -- 125
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 119
+skip$ -- 129
 stack$ -- 0
-substring$ -- 267
-swap$ -- 31
+substring$ -- 303
+swap$ -- 33
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 29
-while$ -- 56
-width$ -- 38
-write$ -- 347
-(There were 29 warnings)
+warning$ -- 32
+while$ -- 60
+width$ -- 41
+write$ -- 374
+(There were 32 warnings)
