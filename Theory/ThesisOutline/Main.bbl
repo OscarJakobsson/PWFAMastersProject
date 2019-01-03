@@ -237,4 +237,21 @@ A.~R. Maier, A.~Meseck, S.~Reiche, C.~B. Schroeder, T.~Seggebrock, and
 \newblock {Demonstration Scheme for a Laser-Plasma-Driven Free-Electron Laser}.
 \newblock {\em Physical Review X}, 2(3):031019, sep 2012.
 
+\bibitem{Huang2007}
+C~Huang, W~Lu, M~Zhou, C~E Clayton, C~Joshi, W~B Mori, P~Muggli, S~Deng, E~Oz,
+  T~Katsouleas, M~J Hogan, I~Blumenfeld, F~J Decker, R~Ischebeck, R~H Iverson,
+  N~A Kirby, and D~Walz.
+\newblock {Hosing Instability in the Blow-Out Regime for Plasma-Wakefield
+  Acceleration}.
+\newblock 255001(December):1--4, 2007.
+
+\bibitem{Godfrey2018}
+Brendan~B Godfrey.
+\newblock {Suppressing the Numerical Cherenkov Instability in FDTD PIC Codes}.
+\newblock 2018.
+
+\bibitem{Blinne}
+Alexander Blinne, David Schinkel, Stephan Kuschel, and Nina Elkina.
+\newblock {Maxwell Solvers}.
+
 \end{thebibliography}

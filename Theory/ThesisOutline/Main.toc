@@ -15,11 +15,9 @@
 \contentsline {subsection}{\numberline {3.2.1}Longitudinal accelerating field}{11}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Transverse field}{15}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Plasma deceleration}{16}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Non-linear regime}{17}{subsection.3.2.4}
-\contentsline {chapter}{\numberline {4}Simulation tests}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Bunch parameters}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Linear and quasilinear regimes}{20}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Transverse instabilities in quasilinear regime}{20}{subsection.4.2.1}
-\contentsline {chapter}{\numberline {5}Ongoing and future work}{23}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{25}{chapter.6}
-\contentsline {chapter}{Bibliography}{27}{chapter.6}
+\contentsline {chapter}{\numberline {4}Simulation tests}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Bunch parameters}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Linear and quasilinear regimes}{18}{section.4.2}
+\contentsline {chapter}{\numberline {5}Current work and concluding remarks}{21}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{23}{chapter.6}
+\contentsline {chapter}{Bibliography}{25}{chapter.6}

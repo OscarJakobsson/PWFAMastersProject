@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  2 JAN 2019 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.19)  3 JAN 2019 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2098,7 +2098,11 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip75
 )
 \c@@todonotes@numberoftodonotes=\count320
-)) (./Main.aux)
+)) (./Main.aux
+
+LaTeX Warning: Label `linearplots' multiply defined.
+
+)
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -2115,8 +2119,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 7.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 7.
@@ -2272,7 +2275,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
-<frontpage4.pdf, id=102, 597.50829pt x 845.0471pt>
+<frontpage4.pdf, id=94, 597.50829pt x 845.0471pt>
 File: frontpage4.pdf Graphic file (type pdf)
 <use frontpage4.pdf>
 Package pdftex.def Info: frontpage4.pdf  used on input line 42.
@@ -2317,7 +2320,7 @@ page4.pdf>]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<figure/auxiliary/ManchesterCrest.pdf, id=146, 164.37741pt x 280.16078pt>
+<figure/auxiliary/ManchesterCrest.pdf, id=138, 164.37741pt x 280.16078pt>
 File: figure/auxiliary/ManchesterCrest.pdf Graphic file (type pdf)
 <use figure/auxiliary/ManchesterCrest.pdf>
 Package pdftex.def Info: figure/auxiliary/ManchesterCrest.pdf  used on input li
@@ -2403,7 +2406,7 @@ Chapter 1.
 [1
 
 ]
-<Wu_energy_uniform.pdf, id=305, 340.26141pt x 123.66974pt>
+<Wu_energy_uniform.pdf, id=295, 340.26141pt x 123.66974pt>
 File: Wu_energy_uniform.pdf Graphic file (type pdf)
 <use Wu_energy_uniform.pdf>
 Package pdftex.def Info: Wu_energy_uniform.pdf  used on input line 19.
@@ -2412,14 +2415,14 @@ Package pdftex.def Info: Wu_energy_uniform.pdf  used on input line 19.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./Wu_energy_uniform.pdf>]
-<hybrid_outline5.pdf, id=388, 722.7pt x 406.51875pt>
+<hybrid_outline5.pdf, id=378, 722.7pt x 406.51875pt>
 File: hybrid_outline5.pdf Graphic file (type pdf)
 <use hybrid_outline5.pdf>
 Package pdftex.def Info: hybrid_outline5.pdf  used on input line 44.
 (pdftex.def)             Requested size: 469.47049pt x 264.07896pt.
 ) (./include/Simulations.tex [4 <./hybrid_outline5.pdf>]
 Chapter 2.
-<PIC_loop2.pdf, id=422, 722.7pt x 406.51875pt>
+<PIC_loop2.pdf, id=412, 722.7pt x 406.51875pt>
 File: PIC_loop2.pdf Graphic file (type pdf)
 <use PIC_loop2.pdf>
 Package pdftex.def Info: PIC_loop2.pdf  used on input line 32.
@@ -2437,7 +2440,7 @@ Chapter 3.
 [9
 
 ] [10] [11] [12]
-<longitudinal2d_final2.pdf, id=589, 696.25697pt x 379.66583pt>
+<longitudinal2d_final2.pdf, id=578, 696.25697pt x 379.66583pt>
 File: longitudinal2d_final2.pdf Graphic file (type pdf)
 <use longitudinal2d_final2.pdf>
 Package pdftex.def Info: longitudinal2d_final2.pdf  used on input line 214.
@@ -2449,7 +2452,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 215.
  [13 <./longitudinal2d_final2.pdf>]
-<test2.pdf, id=643, 492.40582pt x 258.41603pt>
+<test2.pdf, id=633, 492.40582pt x 258.41603pt>
 File: test2.pdf Graphic file (type pdf)
 <use test2.pdf>
 Package pdftex.def Info: test2.pdf  used on input line 224.
@@ -2460,95 +2463,106 @@ Underfull \vbox (badness 3108) has occurred while \output is active []
  [14
 
  <./test2.pdf>]
-<transverse2d_final.pdf, id=666, 698.15762pt x 379.75966pt>
+<transverse2d_final.pdf, id=656, 698.15762pt x 379.75966pt>
 File: transverse2d_final.pdf Graphic file (type pdf)
 <use transverse2d_final.pdf>
 Package pdftex.def Info: transverse2d_final.pdf  used on input line 241.
 (pdftex.def)             Requested size: 375.57782pt x 204.30225pt.
-<test.pdf, id=674, 492.96666pt x 254.59422pt>
+<test.pdf, id=664, 492.96666pt x 254.59422pt>
 File: test.pdf Graphic file (type pdf)
 <use test.pdf>
 Package pdftex.def Info: test.pdf  used on input line 253.
 (pdftex.def)             Requested size: 375.57782pt x 193.97922pt.
- [15 <./transverse2d_final.pdf>]) (./include/Results.tex [16 <./test.pdf>] [17]
- [18
-
-]
+ [15 <./transverse2d_final.pdf>]) (./include/Results.tex [16 <./test.pdf>]
 Chapter 4.
-<table_eupraxia.pdf, id=756, 359.33557pt x 96.50394pt>
+<table_eupraxia.pdf, id=738, 359.33557pt x 96.50394pt>
 File: table_eupraxia.pdf Graphic file (type pdf)
 <use table_eupraxia.pdf>
-Package pdftex.def Info: table_eupraxia.pdf  used on input line 8.
+Package pdftex.def Info: table_eupraxia.pdf  used on input line 6.
 (pdftex.def)             Requested size: 399.05278pt x 107.17657pt.
-<Energies30pc_lowres.pdf, id=757, 462.52798pt x 346.89601pt>
-File: Energies30pc_lowres.pdf Graphic file (type pdf)
-<use Energies30pc_lowres.pdf>
-Package pdftex.def Info: Energies30pc_lowres.pdf  used on input line 17.
-(pdftex.def)             Requested size: 230.0431pt x 172.53185pt.
-<Energy30pc_per_particle_lowres.pdf, id=758, 462.52798pt x 346.89601pt>
-File: Energy30pc_per_particle_lowres.pdf Graphic file (type pdf)
-<use Energy30pc_per_particle_lowres.pdf>
-Package pdftex.def Info: Energy30pc_per_particle_lowres.pdf  used on input line
- 18.
-(pdftex.def)             Requested size: 230.0431pt x 172.53185pt.
-[19 <./table_eupraxia.pdf>]
-<linearplots.pdf, id=796, 722.7pt x 264.88722pt>
-File: linearplots.pdf Graphic file (type pdf)
-<use linearplots.pdf>
-Package pdftex.def Info: linearplots.pdf  used on input line 24.
-(pdftex.def)             Requested size: 469.47049pt x 172.0736pt.
-<quasiplots.pdf, id=797, 722.7pt x 269.21577pt>
-File: quasiplots.pdf Graphic file (type pdf)
-<use quasiplots.pdf>
-Package pdftex.def Info: quasiplots.pdf  used on input line 27.
-(pdftex.def)             Requested size: 469.47049pt x 174.88548pt.
-<CherenkovInstability.pdf, id=798, 716.20276pt x 263.81502pt>
+<Energy30pc_per_particle_lowres2.pdf, id=739, 531.65392pt x 255.29773pt>
+File: Energy30pc_per_particle_lowres2.pdf Graphic file (type pdf)
+<use Energy30pc_per_particle_lowres2.pdf>
+Package pdftex.def Info: Energy30pc_per_particle_lowres2.pdf  used on input lin
+e 15.
+(pdftex.def)             Requested size: 399.05278pt x 191.63254pt.
+[17
+
+ <./table_eupraxia.pdf>]
+
+LaTeX Warning: Reference `quasiplots' on page 18 undefined on input line 21.
+
+[18 <./Energy30pc_per_particle_lowres2.pdf>]
+<linear.pdf, id=810, 354.58263pt x 353.93576pt>
+File: linear.pdf Graphic file (type pdf)
+<use linear.pdf>
+Package pdftex.def Info: linear.pdf  used on input line 32.
+(pdftex.def)             Requested size: 220.6517pt x 220.24799pt.
+<linear2.pdf, id=811, 355.5959pt x 354.28944pt>
+File: linear2.pdf Graphic file (type pdf)
+<use linear2.pdf>
+Package pdftex.def Info: linear2.pdf  used on input line 33.
+(pdftex.def)             Requested size: 220.6517pt x 219.84099pt.
+ [19 <./linear.pdf> <./linear2.pdf>]
+<CherenkovInstability.pdf, id=942, 716.20276pt x 263.81502pt>
 File: CherenkovInstability.pdf Graphic file (type pdf)
 <use CherenkovInstability.pdf>
-Package pdftex.def Info: CherenkovInstability.pdf  used on input line 34.
+Package pdftex.def Info: CherenkovInstability.pdf  used on input line 40.
 (pdftex.def)             Requested size: 469.47049pt x 172.93092pt.
-) (./include/Future_Work.tex [20 <./Energies30pc_lowres.pdf> <./Energy30pc_per_
-particle_lowres.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Energy30pc_per_particle_lo
-wres.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
-> <./linearplots.pdf>] [21 <./quasiplots.pdf> <./CherenkovInstability.pdf>]
-[22
-
-]
+<quasiplots3.pdf, id=943, 353.72792pt x 353.63573pt>
+File: quasiplots3.pdf Graphic file (type pdf)
+<use quasiplots3.pdf>
+Package pdftex.def Info: quasiplots3.pdf  used on input line 51.
+(pdftex.def)             Requested size: 220.6517pt x 220.59549pt.
+<quasiplots2.pdf, id=944, 355.06593pt x 353.96906pt>
+File: quasiplots2.pdf Graphic file (type pdf)
+<use quasiplots2.pdf>
+Package pdftex.def Info: quasiplots2.pdf  used on input line 52.
+(pdftex.def)             Requested size: 220.6517pt x 219.96625pt.
+) (./include/Future_Work.tex [20 <./CherenkovInstability.pdf> <./quasiplots3.pd
+f> <./quasiplots2.pdf>]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-[23]) (./include/Conclusion.tex [24
+[21
+
+
+]) (./include/Conclusion.tex [22
 
 ]
 Chapter 6.
-) [25
+) [23
 
-] [26
+] [24
 
-] (./include/backmatter/References.tex (./Main.bbl [27
+] (./include/backmatter/References.tex (./Main.bbl [25
 
-] [28]))
-[29]
+] [26]))
+[27]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (./Main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 72BB034B1D4BDA822706AE21461EAE26;1567.
+(rerunfilecheck)             Checksum: C3DF7BDDF5824F12241DADA5935588D9;1408.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 31924 strings out of 492649
- 592764 string characters out of 6129622
- 662273 words of memory out of 5000000
- 35081 multiletter control sequences out of 15000+600000
+ 31939 strings out of 492649
+ 592964 string characters out of 6129622
+ 662480 words of memory out of 5000000
+ 35096 multiletter control sequences out of 15000+600000
  640879 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,13n,67p,10458b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2587,10 +2601,10 @@ nts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 public/rsfs/rsfs10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helv
 etic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uh
 vr8a.pfb>
-Output written on Main.pdf (39 pages, 19874892 bytes).
+Output written on Main.pdf (37 pages, 53018992 bytes).
 PDF statistics:
- 1189 PDF objects out of 1200 (max. 8388607)
- 926 compressed objects within 10 object streams
- 158 named destinations out of 1000 (max. 500000)
- 280 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1241 PDF objects out of 1440 (max. 8388607)
+ 1016 compressed objects within 11 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
