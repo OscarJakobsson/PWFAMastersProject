@@ -1,12 +1,16 @@
 \begin{thebibliography}{10}
 
 \bibitem{xfel}
-{The Technical Design Report (TDR) of the European XFEL}.
+{DESY XFEL Project Group}.
+\newblock {The Technical Design Report (TDR) of the European XFEL,
+  http://xfel.desy.de/technical{\_}information/, accesed on: 2018-12-02}.
+\newblock 2007.
 
 \bibitem{Attwood}
 David~T. Attwood, Anne Sakdinawat, and Linda Geniesse.
 \newblock {\em {X-rays and extreme ultraviolet radiation : principles and
   applications}}.
+\newblock Cambridge University Press, 2nd edition.
 
 \bibitem{Insepov2008}
 Z~Insepov, J~Norem, A~Bross, A~Moretti, Z~Qian, Y~Torun, D~Huang, R~A Rimmer,
@@ -75,23 +79,7 @@ Zhirong Huang, Yuantao Ding, and Carl~B. Schroeder.
 \newblock Technical report.
 
 \bibitem{Adli2018}
-E.~Adli, A.~Ahuja, O.~Apsimon, R.~Apsimon, A.~M. Bachmann, D.~Barrientos,
-  F.~Batsch, J.~Bauche, V.~K. {Berglyd Olsen}, M.~Bernardini, T.~Bohl,
-  C.~Bracco, F.~Braunm{\"{u}}ller, G.~Burt, B.~Buttensch{\"{o}}n, A.~Caldwell,
-  M.~Cascella, J.~Chappell, E.~Chevallay, M.~Chung, D.~Cooke, H.~Damerau,
-  L.~Deacon, L.~H. Deubner, A.~Dexter, S.~Doebert, J.~Farmer, V.~N. Fedosseev,
-  R.~Fiorito, R.~A. Fonseca, F.~Friebel, L.~Garolfi, S.~Gessner, I.~Gorgisyan,
-  A.~A. Gorn, E.~Granados, O.~Grulke, E.~Gschwendtner, J.~Hansen, A.~Helm,
-  J.~R. Henderson, M.~H{\"{u}}ther, M.~Ibison, L.~Jensen, S.~Jolly, F.~Keeble,
-  S.~Y. Kim, F.~Kraus, Y.~Li, S.~Liu, N.~Lopes, K.~V. Lotov, L.~{Maricalva
-  Brun}, M.~Martyanov, S.~Mazzoni, D.~{Medina Godoy}, V.~A. Minakov,
-  J.~Mitchell, J.~C. Molendijk, J.~T. Moody, M.~Moreira, P.~Muggli,
-  E.~{\"{O}}z, C.~Pasquino, A.~Pardons, F.~{Pe{\~{n}}a Asmus}, K.~Pepitone,
-  A.~Perera, A.~Petrenko, S.~Pitman, A.~Pukhov, S.~Rey, K.~Rieger, H.~Ruhl,
-  J.~S. Schmidt, I.~A. Shalimova, P.~Sherwood, L.~O. Silva, L.~Soby, A.~P.
-  Sosedkin, R.~Speroni, R.~I. Spitsyn, P.~V. Tuev, M.~Turner, F.~Velotti,
-  L.~Verra, V.~A. Verzilov, J.~Vieira, C.~P. Welsch, B.~Williamson, M.~Wing,
-  B.~Woolley, and G.~Xia.
+{The AWAKE Collaboration}.
 \newblock {Acceleration of electrons in the plasma wakefield of a proton
   bunch}.
 \newblock {\em Nature}, 561(7723):363--367, 2018.
@@ -177,10 +165,10 @@ LANL.
 \newblock {VisIt User ' s Manual}.
 \newblock (October), 2005.
 
-\bibitem{Dawson1959}
-John~M Dawson.
-\newblock {Electron Oscillations in a Cold Plasma}.
-\newblock Technical Report~2, 1959.
+\bibitem{Katsouleas1987}
+T~Katsouleas, S~Wilks, P~Chen, J~M Dawson, and J~J Su.
+\newblock {BEAM LOADING IN PLASMA ACCELERATORS}.
+\newblock Technical report, 1987.
 
 \bibitem{Gessner2016}
 Spencer~J Gessner.
@@ -190,14 +178,19 @@ Spencer~J Gessner.
   REQUIREMENTS FOR THE DEGREE OF DOCTOR OF PHIL}.
 \newblock Technical report, 2016.
 
+\bibitem{Keinigs1987}
+Rhon Keinigs and Michael~E. Jones.
+\newblock {Two-dimensional dynamics of the plasma wakefield accelerator}.
+\newblock {\em Physics of Fluids}, 30(1):252, 1987.
+
+\bibitem{Dawson1959}
+John~M Dawson.
+\newblock {Electron Oscillations in a Cold Plasma}.
+\newblock Technical Report~2, 1959.
+
 \bibitem{Jackson1962}
 John~David Jackson.
 \newblock {Jackson - Classical Electrodynamics (3rd Ed.).pdf}, 1962.
-
-\bibitem{Katsouleas1987}
-T~Katsouleas, S~Wilks, P~Chen, J~M Dawson, and J~J Su.
-\newblock {BEAM LOADING IN PLASMA ACCELERATORS}.
-\newblock Technical report, 1987.
 
 \bibitem{Vaganian1995}
 S~Vaganian and H~Henke.
