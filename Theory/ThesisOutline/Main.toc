@@ -18,5 +18,5 @@
 \contentsline {chapter}{\numberline {4}Simulation tests}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Bunch parameters}{17}{section.4.1}
 \contentsline {section}{\numberline {4.2}Linear and quasilinear regimes}{18}{section.4.2}
-\contentsline {chapter}{\numberline {5}Current work and concluding remarks}{21}{chapter.5}
+\contentsline {chapter}{\numberline {5}Ongoing work and concluding remarks}{21}{chapter.5}
 \contentsline {chapter}{Bibliography}{23}{chapter.5}

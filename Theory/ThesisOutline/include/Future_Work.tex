@@ -1,41 +1,4 @@
-\chapter{Current work and concluding remarks}
-Having constructed the necessary computational framework for simulating the hybrid beam dump scheme we can now investigate the feasibility of this scheme and proceed to work out the details of the bunch-laser interaction. This will include investigating and optimizing the distance at which   the laser is introduced, the spatial separation between the bunch and the the laser, the intensity and pulse length of the laser and effects caused by the difference in phase velocity between the bunch and the laser.\\
-Once the details of the hybrid scheme has been investigated and a desirable approach has been determined we should proceed by high resolution simulations to verify that that the scheme works. As we have seen in section XXX the effect of insufficiently high simulation resolution can yield wildly different outcomes, as small effects can become amplified or neglected, in comparison to higher resolution runs. Consequently, in order to obtain reliable results from our simulations it is crucial to investigate the parameters that determine the resolution of the simulation. These include:
-\begin{itemize}
-\item The number of grid points: where a finer grid will increase the spatial resolution by having the macro-particles in adjacent grid cells be closer together, thus allowing the distribution of the plasma and bunch electrons to be more accurately modelled. This however comes at the cost of longer computational time.
-\item The number of macro particles in each grid cell: this has the same effect as using a finer grid by allowing the contents of grid cells to more accurately describe the distribution of micro-particles in those cells, since if only one macroparticle was used in a cell with electrons of varying energy and momentum that macroparticle would have to average these properties and thus remove the finer details of the plasma and bunch.
-\item The number of macro particles in the electron bunch: This number is crucial to accurately capture the small-scale effects on the bunch caused by the interaction with the plasma electrons. 
-\end{itemize}
-How to establish these simulation parameters?\\
+\chapter{Ongoing work and concluding remarks}
+The natural continuation of the simulation results presented in figure \ref{quasiplots}(a) is to conduct the same theoretical comparisons as described in chapter \ref{theorychapter}. Preliminary analysis shows that the linear fluid is still predictive in the quasilinear regime. For consistency, however, we choose to postpone the full theoretical analysis of this situation until the derived energy-loss equation (\ref{energy_loss_bonatto}) has been properly implemented. It is furthermore desirable to include the space-charge force in our theoretical analysis to compare against the transverse wakefield, thus estimating the density compression of the bunch as it travels through the plasma. \\
+\indent The modifications to EPOCH described in section \ref{Nonanalytical}, to allow a laser pulse to be introduced in front of the bunch in figure \ref{quasiplots}(a), have been successfully tested. The laser pulses we have tested so far display rapid dispersion in the plasma, to the extent that we have not been able to demonstrate any laser-driven deceleration. To this end, we are now working in close collaboration with Alexandre Bonatto to implement a so-called plasma channel in our EPOCH simulations. This channel is composed of a non-uniform plasma density which increases parabolically in the radial direction . Studies have shown that by optimizing the shape of such a channel dispersionless laser propagation can be achieved in 3D simulations. We have however not been able to replicate this result in our 2D simulations. Current work is concerned with investigating why this is and how to otherwise proceed with the active beam dump simulations, given that we are at the present computationally limited to 2D simulations.
 
-\clearpage
-We may divide the work on the hybrid scheme into three broad areas. 
-\begin{itemize}
-\item Energy loss w.r.t bunch and plasma parameters
-\begin{itemize}
-\item Eloss(beam width)
-\item Eloss(length)
-\item Eloss($n_p/n_b$), where $n_p=n_p$(beam width, beam length)
-\end{itemize}
-\item Simulation parameters
-\begin{itemize}
-\item Grid settings and resolution to avoid transverse instabilities
-\item Minimise numerical noise using laser ramp
-\item Accuracy vs. Computational cost
-\end{itemize}
-\item Laser driver 
-\begin{itemize}
-\item Optimise laser parameters
-\begin{itemize}
-\item Time when introduced in simulation (at/before saturation)
-\item Distance from bunch
-\item Pulse length
-\item Intensity, wavelength
-\item Laser ramp
-\end{itemize}
-\item Further laser investigations
-\begin{itemize}
-\item Multiple consecutive laser pulses
-\end{itemize}
-\end{itemize}
-\end{itemize}
