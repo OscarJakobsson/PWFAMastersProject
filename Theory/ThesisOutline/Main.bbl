@@ -23,10 +23,10 @@ Pisin Chen, Toshiki Tajima, and Yoshiyuki Takahashi.
 \newblock {Plasma Wakefield Acceleration for Ultrahigh-Energy Cosmic Rays}.
 \newblock {\em Physical Review Letters}, 89(16):14--17, 2002.
 
-\bibitem{Tajima1979a}
+\bibitem{Tajima1979}
 T~Tajima and J~M Dawson.
 \newblock {Laser Electron Accelerator}.
-\newblock Technical Report~4, 1979.
+\newblock {\em Physical Review Letters}, 4(4):267--270, 1979.
 
 \bibitem{Esarey2009}
 E.~Esarey, C.~B. Schroeder, and W.~P. Leemans.
@@ -36,7 +36,7 @@ E.~Esarey, C.~B. Schroeder, and W.~P. Leemans.
 \bibitem{Strickland1985}
 Donna Strickland and Gerard Mourou.
 \newblock {Compression of amplified chirped optical pulses}.
-\newblock Technical report, 1985.
+\newblock {\em Optics Communications}, 56(3):219--221, 1985.
 
 \bibitem{Clayton1993}
 C.~E. Clayton, K.~A. Marsh, A.~Dyson, M.~Everett, A.~Lal, W.~P. Leemans,
@@ -49,14 +49,12 @@ C.~E. Clayton, K.~A. Marsh, A.~Dyson, M.~Everett, A.~Lal, W.~P. Leemans,
 W~P Leemans, B~Nagler, A~J Gonsalves, K~Nakamura, C~G~R Geddes, E~Esarey, C~B
   Schroeder, and S~M Hooker.
 \newblock {GeV electron beams from a centimetre-scale accelerator}.
+\newblock {\em Nature Physics}, 2:696--699, 2006.
 
 \bibitem{Wang2013}
-Xiaoming Wang, Rafal Zgadzaj, Neil Fazel, Zhengyan Li, S.~A. Yi, Xi~Zhang,
-  Watson Henderson, Y.-Y. Chang, R.~Korzekwa, H.-E. Tsai, C.-H. Pai,
-  H.~Quevedo, G.~Dyer, E.~Gaul, M.~Martinez, A.~C. Bernstein, T.~Borger,
-  M.~Spinks, M.~Donovan, V.~Khudik, G.~Shvets, T.~Ditmire, and M.~C. Downer.
-\newblock {Quasi-monoenergetic laser-plasma acceleration of electrons to
-  2 GeV}.
+Wang et~al.
+\newblock {Quasi-monoenergetic laser-plasma acceleration of electrons to 2
+  GeV}.
 \newblock {\em Nature Communications}, 4(1):1988, dec 2013.
 
 \bibitem{Leemans2014}
@@ -75,8 +73,9 @@ Zhirong Huang, Yuantao Ding, and Carl~B. Schroeder.
 
 \bibitem{Facet}
 {Preliminary Conceptual Design Report for the FACET-II Project at SLAC National
-  Accelerator Laboratory}.
-\newblock Technical report.
+  Accelerator Laboratory,
+  http://slac.stanford.edu/pubs/slacreports/reports21/slac-r-1067.pdf, accessed
+  on: 2018-12-13}.
 
 \bibitem{Adli2018}
 {The AWAKE Collaboration}.
@@ -85,14 +84,13 @@ Zhirong Huang, Yuantao Ding, and Carl~B. Schroeder.
 \newblock {\em Nature}, 561(7723):363--367, 2018.
 
 \bibitem{LEP_dump}
-G~Schrgder, U~Jansson, R~Jung, G~R Stevenson, and E~B Vossenberg.
+G~Schr{\"{o}}der, U~Jansson, R~Jung, G~R Stevenson, and E~B Vossenberg.
 \newblock {The LEP Beam Dumping System}.
-\newblock pages 2429--2431.
+\newblock {\em Proceedings of the 4th European Particle Accelerator
+  Conference}, pages 2429--2431, 1994.
 
 \bibitem{Satyamurthy2012}
-Polepalle Satyamurthy, Pravin Rai, Vikas Tiwari, Kiran Kulkarni, John Amann,
-  Raymond~G. Arnold, Dieter Walz, Andrei Seryi, Tristan Davenne, Ottone
-  Caretta, Chris Densham, and Robert~B. Appleby.
+Satyamurthy et~al.
 \newblock {Design of an 18 MW vortex flow water beam dump for 500 GeV
   electrons/positrons of an international linear collider}.
 \newblock {\em Nuclear Instruments and Methods in Physics Research, Section A:
@@ -100,8 +98,7 @@ Polepalle Satyamurthy, Pravin Rai, Vikas Tiwari, Kiran Kulkarni, John Amann,
   2012.
 
 \bibitem{Schumann2009}
-D~Schumann, J~Neuhausen, J~Eikenberg, M~R{\"{u}}thi, M~Wohlmuther, P~W Kubik,
-  H.-A Synal, V~Alfimov, G~Korschinek, G~Rugel, and Th~Faestermann.
+Schumann et~al.
 \newblock {Radiochemical analysis of a copper beam dump irradiated with
   high-energetic protons}.
 \newblock {\em Radiochim. Acta}, 97:123--131, 2009.
@@ -110,7 +107,8 @@ D~Schumann, J~Neuhausen, J~Eikenberg, M~R{\"{u}}thi, M~Wohlmuther, P~W Kubik,
 A~Leuschner and K~Tesch.
 \newblock {The residual radioactivity of a water-copper beam dump for the TESLA
   Test Facility}.
-\newblock Technical report, 1998.
+\newblock {\em Technical Report No. DESY D3- 92 (Deutsches
+  Elektronen-Synchrotron, Hamburg, Germany)}, 1998.
 
 \bibitem{Wu2010}
 H.~C. Wu, T.~Tajima, D.~Habs, A.~W. Chao, and J.~Meyer-ter Vehn.
@@ -133,15 +131,15 @@ A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~G.R. Geddes, C.~Benedetti,
 \newblock {\em Physics of Plasmas}, 22(8), 2015.
 
 \bibitem{Pukhov2015}
-Alexander Pukhov.
+A.~Pukhov.
 \newblock {Particle-in-Cell Codes for plasma-based particle acceleration}.
-\newblock 2015.
+\newblock {\em CERN Yellow Reports}, 1:1--28, 2016.
 
 \bibitem{Lawrence-Douglas2013}
 Alistair Lawrence-Douglas.
-\newblock {Ionisation effects for laser-plasma interactions by particle-in-cell
-  code}.
-\newblock 2013.
+\newblock {\em {Ionisation effects for laser-plasma interactions by
+  particle-in-cell code}}.
+\newblock PhD thesis, University of Warwick, 2013.
 
 \bibitem{Bennett2015}
 K.~Bennett.
@@ -149,34 +147,30 @@ K.~Bennett.
 \newblock 2015.
 
 \bibitem{ChrisBRADYKeithBENNETTHolgerSCHMITZ}
-Christopher~Ridgers {Chris BRADY, Keith BENNETT, Holger SCHMITZ}.
-\newblock {EPOCH: Extendable PIC Open Collaboration}.
+Christopher~Ridgers {Chris Brady, Keith Bennet, Holger Schmitz}.
+\newblock {EPOCH: Developers Manual}.
+\newblock Ver.4, 2015.
 
 \bibitem{Ruhl}
 Hartmut Ruhl.
 \newblock {Classical Particle Simulations with the PSC code}.
-\newblock Technical report.
-
-\bibitem{CSF}
-{The Computational Shared Facility}.
+\newblock Technical report, RUB Bochum, Germany, 2009.
 
 \bibitem{LANL2005}
-LANL.
-\newblock {VisIt User ' s Manual}.
-\newblock (October), 2005.
+{VisIt User 's Manual}.
+\newblock Technical Report Ver. 1.5, Lawrence Livermore National Laboratory,
+  2005.
 
 \bibitem{Katsouleas1987}
-T~Katsouleas, S~Wilks, P~Chen, J~M Dawson, and J~J Su.
-\newblock {BEAM LOADING IN PLASMA ACCELERATORS}.
-\newblock Technical report, 1987.
+J~M Dawson, T~Katsouleas, S~Wilks, P~Chen, and J~J Su.
+\newblock {Beam loading in plasma accelerators}.
+\newblock {\em Particle Accelerators}, 22:81--99, 1987.
 
 \bibitem{Gessner2016}
 Spencer~J Gessner.
-\newblock {DEMONSTRATION OF THE HOLLOW CHANNEL PLASMA WAKEFIELD ACCELERATOR A
-  DISSERTATION SUBMITTED TO THE DEPARTMENT OF PHYSICS AND THE COMMITTEE ON
-  GRADUATE STUDIES OF STANFORD UNIVERSITY IN PARTIAL FULFILLMENT OF THE
-  REQUIREMENTS FOR THE DEGREE OF DOCTOR OF PHIL}.
-\newblock Technical report, 2016.
+\newblock {\em {Demonstration of the hollow channel plasma wakefield
+  accelerator}}.
+\newblock PhD thesis, Stanford Univeristy, 2016.
 
 \bibitem{Keinigs1987}
 Rhon Keinigs and Michael~E. Jones.
@@ -186,43 +180,39 @@ Rhon Keinigs and Michael~E. Jones.
 \bibitem{Dawson1959}
 John~M Dawson.
 \newblock {Electron Oscillations in a Cold Plasma}.
-\newblock Technical Report~2, 1959.
+\newblock {\em Physical Review}, 113(2), 1959.
 
 \bibitem{Jackson1962}
 John~David Jackson.
-\newblock {Jackson - Classical Electrodynamics (3rd Ed.).pdf}, 1962.
+\newblock {\em {Classical Electrodynamics, Chapter 3.11}}.
+\newblock John Wiley {\&} Sons, Inc., 3rd edition, 1962.
 
 \bibitem{Vaganian1995}
 S~Vaganian and H~Henke.
-\newblock {THE PANOFSKY-WENZEL THEOREM AND GENERAL RELATIONS FOR THE WAKE
-  POTENTIAL}.
-\newblock Technical report, 1995.
+\newblock {The Panofsky-Wenzel theorem and general relations for the wake
+  potential}.
+\newblock {\em Particle Accelerators}, 48:239--242, 1995.
 
 \bibitem{Mira2017}
 Francesco Mira and Thesis Advisor.
-\newblock {Self Injection of High Brightness electron beams via Wakefield
-  Ionization in beam-driven Plasma Ac- celeration}.
-\newblock (October), 2017.
-
-\bibitem{Bonatto2016}
-A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~R. Geddes, C.~Benedetti, E.~Esarey,
-  and W.~P. Leemans.
-\newblock {Compact disposal of high-energy electron beams using passive or
-  laser-driven plasma decelerating stage}.
-\newblock {\em AIP Conference Proceedings}, 1777(1):0--5, 2016.
+\newblock {\em {Self Injection of High Brightness electron beams via Wakefield
+  Ionization in beam-driven Plasma Acceleration}}.
+\newblock PhD thesis, Sapienza – University of Rome, 2017.
 
 \bibitem{Eupraxia}
-{ACCELERATOR WITH EXCELLENCE IN APPLICATIONS}.
+{EuPRAXIA: European Please Reserach Accelerator with Excellence in
+  Applications}.
+\newblock {\em EuPRAXIA Brochure, http://www.eupraxia-project.eu}, 2018.
 
 \bibitem{Walker2017}
 P.~A. Walker.
 \newblock {HORIZON 2020 EuPRAXIA Design Study}.
-\newblock {\em Journal of Physics: Conference Series}, 874:012029, 2017.
+\newblock {\em Journal of Physics: Conference Series}, 874:012029.
 
 \bibitem{Schmid2012}
 K~Schmid and L~Veisz.
 \newblock {Supersonic gas jets for laser-plasma experiments}.
-\newblock {\em Citation: Review of Scientific Instruments}, 83:53304, 2012.
+\newblock {\em Review of Scientific Instruments}, 83:53304, 2012.
 
 \bibitem{Maier2012}
 A.~R. Maier, A.~Meseck, S.~Reiche, C.~B. Schroeder, T.~Seggebrock, and
@@ -231,20 +221,26 @@ A.~R. Maier, A.~Meseck, S.~Reiche, C.~B. Schroeder, T.~Seggebrock, and
 \newblock {\em Physical Review X}, 2(3):031019, sep 2012.
 
 \bibitem{Huang2007}
-C~Huang, W~Lu, M~Zhou, C~E Clayton, C~Joshi, W~B Mori, P~Muggli, S~Deng, E~Oz,
-  T~Katsouleas, M~J Hogan, I~Blumenfeld, F~J Decker, R~Ischebeck, R~H Iverson,
-  N~A Kirby, and D~Walz.
+Huang et~al.
 \newblock {Hosing Instability in the Blow-Out Regime for Plasma-Wakefield
   Acceleration}.
 \newblock 255001(December):1--4, 2007.
 
 \bibitem{Godfrey2018}
-Brendan~B Godfrey.
+Brendan~B Godfrey and J.-L. Vay.
 \newblock {Suppressing the Numerical Cherenkov Instability in FDTD PIC Codes}.
-\newblock 2018.
+\newblock {\em Journal of Computational Physics}, 261:1--6, 2014.
 
 \bibitem{Blinne}
 Alexander Blinne, David Schinkel, Stephan Kuschel, and Nina Elkina.
-\newblock {Maxwell Solvers}.
+\newblock {A Systematic Approach to Numerical Dispersion in Maxwell Solvers
+  Alexander}.
+\newblock {\em Comput. Phys. Commun.}, (224):273--281, 2018.
+
+\bibitem{PlasmaChannel}
+C~Benedetti, C~B Schroeder, E~Esarey, and W~P Leemans.
+\newblock {Quasi-matched propagation of ultra-short , intense laser pulses in
+  plasma channels}.
+\newblock {\em Physics of Plasmas}, 19(053101), 2012.
 
 \end{thebibliography}

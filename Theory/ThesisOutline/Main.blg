@@ -18,75 +18,53 @@ Reallocated name_sep_char (elt_size=1) to 60000 items from 40000.
 Warning--empty journal in xfel
 Warning--empty year in Attwood
 Warning--empty institution in Insepov2008
-Warning--empty institution in Tajima1979a
-Warning--empty institution in Strickland1985
-Warning--empty journal in Leemans
-Warning--empty year in Leemans
-Warning--empty author in Facet
-Warning--empty institution in Facet
-Warning--empty year in Facet
-Warning--empty journal in LEP_dump
-Warning--empty year in LEP_dump
-Warning--empty institution in Leuschner1998
-Warning--empty journal in Pukhov2015
-Warning--empty journal in Lawrence-Douglas2013
 Warning--empty journal in Bennett2015
+Warning--empty journal in ChrisBRADYKeithBENNETTHolgerSCHMITZ
 Warning--empty institution in Ruhl
-Warning--empty year in Ruhl
-Warning--empty journal in LANL2005
-Warning--there's a number but no volume in LANL2005
-Warning--empty institution in Katsouleas1987
-Warning--empty institution in Gessner2016
-Warning--empty institution in Dawson1959
-Warning--empty institution in Vaganian1995
-Warning--empty journal in Mira2017
-Warning--there's a number but no volume in Mira2017
+Warning--empty author in LANL2005
 Warning--empty author in Eupraxia
-Warning--empty journal in Eupraxia
-Warning--empty year in Eupraxia
+Warning--empty year in Walker2017
 Warning--empty journal in Huang2007
-Warning--empty journal in Godfrey2018
-Warning--empty journal in Blinne
-Warning--empty year in Blinne
-You've used 43 entries,
+Warning--there's a number but no volume in Blinne
+You've used 42 entries,
             1791 wiz_defined-function locations,
-            699 strings with 11368 characters,
-and the built_in function-call counts, 8844 in all, are:
-= -- 632
-> -- 631
-< -- 3
-+ -- 230
-- -- 187
-* -- 693
-:= -- 1556
-add.period$ -- 120
-call.type$ -- 43
-change.case$ -- 51
+            721 strings with 10726 characters,
+and the built_in function-call counts, 8584 in all, are:
+= -- 729
+> -- 441
+< -- 2
++ -- 167
+- -- 125
+* -- 629
+:= -- 1451
+add.period$ -- 122
+call.type$ -- 42
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 347
-empty$ -- 749
-format.name$ -- 187
-if$ -- 1812
+cite$ -- 53
+duplicate$ -- 364
+empty$ -- 797
+format.name$ -- 125
+if$ -- 1821
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 31
+int.to.str$ -- 42
+missing$ -- 37
 newline$ -- 209
-num.names$ -- 40
-pop$ -- 136
+num.names$ -- 39
+pop$ -- 87
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 141
+skip$ -- 147
 stack$ -- 0
-substring$ -- 325
-swap$ -- 34
-text.length$ -- 3
+substring$ -- 485
+swap$ -- 47
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 33
-while$ -- 68
-width$ -- 45
-write$ -- 418
-(There were 33 warnings)
+warning$ -- 11
+while$ -- 81
+width$ -- 44
+write$ -- 443
+(There were 11 warnings)

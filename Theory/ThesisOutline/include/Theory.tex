@@ -4,7 +4,7 @@
 Real accelerators operate at a range of beam parameters tailored to specific research purposes. In order to avoid having to set up week-long simulations for each minor change of parameters it is crucial to understand the theory underlying these plasma wakefield phenomena and to investigate to what extent the theoretical predictions match the simulations. Hence, in this chapter, the linear fluid model of plasma wakefield acceleration is introduced and  the equations governing the plasma response to an electron beam driver are derived. The derivations follow the original treatment by Dawson \cite{Katsouleas1987}, with inputs from Gessner \citep{Gessner2016} and Keinigs and Jones \cite{Keinigs1987}. The response to a laser being driven through the plasma, the so-called pondermotive force response, shares many similar features to the theory presented in this chapter but presents other issues such as dissipation and de-phasing in the plasma which will need to be address in the context of the active beam dump. For this reason the theory of laser-plasma interactions will be covered in a subsequent report.  %This model assumes that the electron bunch is ultra-relativistic and that the plasma density is much higher than the bunch density; this will allow us to treat the plasma response as a first-order perturbation to the background density
 %We also briefly discuss the non-linear, so-called "blowout", regime which can not be treated perturbatively and is characterised by the expulsion of plasma electrons in a volume behind the bunch.
 \section{Linear fluid model }
-In this section, we derive the response of a plasma to an electron bunch by considering the plasma electrons as a fluid. We shall make the assumptions:  (i) the initial plasma is uniform and electrically neutral everywhere; (ii) the plasma ions are stationary; (iii) the electron bunch is ultra-relativistic, $v/c\approx 1$, such that the density distribution of the bunch does not evolve significantly as it interacts with the plasma; (iv) the bunch density is much less than the plasma electron density, $n_b<<n_p$.  A beam propagating through a plasma satisfying these conditions is said to be in the \textit{linear regime}. The dynamics of the plasma electrons is governed by the continuity equation
+In this section, we derive the response of a plasma to an electron bunch by considering the plasma electrons as a fluid. We shall make the assumptions:  (i) the initial plasma is uniform and electrically neutral everywhere; (ii) the plasma ions are stationary; (iii) the electron bunch is ultra-relativistic, $v/c\approx 1$, such that the density distribution of the bunch does not evolve significantly as it interacts with the plasma; (iv) the bunch density is much less than the plasma electron density, $n_b<<n_p$.  A beam propagating through a plasma satisfying these conditions is said to be in the linear regime. The dynamics of the plasma electrons is governed by the continuity equation
 \begin{equation}
 \frac{\partial n_p}{\partial t}=-\mathbf{\nabla}\cdot (n_p\vec{v}_p)~,
 \end{equation}
@@ -34,41 +34,41 @@ Similarly, substitution into the Lorentz force law simply leaves the electric fo
 \end{equation} %m_en_0\frac{\partial (1+n_1/n_0)\vec{v}}{\partial t}\approx en_0(1+n_1/n_0)\vec{E} \quad \Rightarrow \quad 
 which, using Gauss's law, gives
 \begin{equation}
-\frac{\partial (\mathbf{\nabla}\cdot\vec{v}_p)}{\partial t}= \frac{e^2}{m_e}4\pi (n_1+n_b)
+\frac{\partial (\mathbf{\nabla}\cdot\vec{v}_p)}{\partial t}= \frac{e^2}{m_e}4\pi (n_1+n_b)~,
 \label{n''2}
 \end{equation}
 where we have introduced $n_b$ as the density of the electron bunch. Equations (\ref{n''}) and (\ref{n''2}) hence give
 \begin{equation}
-\frac{\partial^2 n_1}{\partial t^2}+\omega_p^2n_1=-\omega_p^2n_b
+\frac{\partial^2 n_1}{\partial t^2}+\omega_p^2n_1=-\omega_p^2n_b~,
 \label{ndotdot}
 \end{equation}
 where 
 \begin{equation}
-\omega_p=\sqrt{\frac{4\pi e^2n_0}{m_e} }
+\omega_p=\sqrt{\frac{4\pi e^2n_0}{m_e} }~,
 \label{plasma_frequency}
 \end{equation}
-is the plasma frequency which determines the magnitude of the plasma-density perturbation. This justifies the stationary-ion assumption (ii) stated above, since for all plasmas the mass of the ions $m_{\text{ion}}>>m_{e}$ the ion-density perturbations will be negligible in comparison to the electron density. Hence the plasma-density perturbation is described by a second-order differential equation with the bunch acting as a source term. We proceed to solve this for a radially symmetric beam by evaluating equation (\ref{ndotdot}) in a reference frame co-moving with the electron bunch \cite{Dawson1959} by defining $\xi=z-ct$ as the position along the bunch as it travels in the $z$-direction. This yields that the co-moving density perturbations  behind with the bunch satisfy
+is the plasma frequency which determines the magnitude of the plasma-density perturbation. This justifies the stationary-ion assumption (ii) stated above, since for all plasmas the mass of the ions $m_{\text{ion}}>>m_{e}$ and the ion-density perturbations will be negligible in comparison to the electron density. Hence the plasma-density perturbation is described by a second-order differential equation with the bunch acting as a source term. We proceed to solve this for a radially symmetric beam by evaluating equation (\ref{ndotdot}) in a reference frame co-moving with the electron bunch \cite{Dawson1959} by defining $\xi=z-ct$ as the position along the bunch as it travels in the $z$-direction. This yields that the co-moving density perturbations behind the bunch satisfy
 \begin{equation}
--\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)n_1\left(r,\xi \right)=n_b\left(r,\xi \right) 
+-\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)n_1\left(r,\xi \right)=n_b\left(r,\xi \right) ~,
 \end{equation}  %and causality demands that $n_1\left(r,\xi<0 \right)=0$
-where $k_p=\omega_p/c$ is the wavenumber . We evaluate this by finding the Green's function $G\left(\xi,\xi'\right)$, which by definition obeys 
+where $k_p=\omega_p/c$ is the wavenumber. We evaluate this by finding the Green's function $G\left(\xi,\xi'\right)$, which by definition obeys 
 \begin{equation}
--\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)G\left(\xi,\xi'\right)=\delta\left(\xi-\xi'\right)
+-\frac{1}{k_p^2}\left(\frac{\partial^2 }{\partial \xi^2}+k_p^2\right)G\left(\xi,\xi'\right)=\delta\left(\xi-\xi'\right)~,
 \label{density_greens}
 \end{equation}
 where causality demands that $G\left(\xi<0 ,\xi'\right)=0$ such that
 \begin{equation}
-G\left(\xi,\xi'\right)=\Theta(\xi-\xi')\left(A(\xi')\sin\left(k_p\xi \right) + B(\xi')\cos\left(k_p\xi \right)\right) 
+G\left(\xi,\xi'\right)=\Theta(\xi-\xi')\left(A(\xi')\sin\left(k_p\xi \right) + B(\xi')\cos\left(k_p\xi \right)\right) ~,
 \end{equation}
 where $\Theta(r)$ is the Heavieside step function and the constant $A(\xi')=-k_p\cos(k_p\xi')$ and $B(\xi')=kp\sin(k_p\xi')$ are determined by by requiring continuity at $\xi=\xi'$. The resulting plasma perturbation is therefore
 \begin{equation}
 \begin{aligned}
-n_1\left(r,\xi \right)&=k_p\int_{-\infty}^{\xi}\sin\left(k_p(\xi-\xi')\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'
+n_1\left(r,\xi \right)&=k_p\int_{-\infty}^{\xi}\sin\left(k_p(\xi-\xi')\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'~,
 \end{aligned}
 \label{density_perturbation} 
 \end{equation} %\int_{-\infty}^{\infty}G\left(\xi,\xi'\right)n_b\left(r,\xi' \right) \mathrm{d}\xi'\\
 where we have used the trigonometric identify for $\sin\left(k_p(\xi-\xi'\right))$. Hence the electron bunch induces oscillatory density perturbations in the plasma with a wavelength given by $\lambda_p=2\pi/k_p$. In addition, the magnitude of these perturbation scales linearly with $n_b$, the density of the beam driver, and as $n_0^{1/2}$, the square root of the unperturbed plasma density through equation (\ref{plasma_frequency}). These perturbations set up electromagnetic fields in the plasma behind the beam driver. An understanding of the electromagnetic fields that these perturbations induce is crucial to design a functioning plasma wakefield experiment.
-\subsection{Longitudinal accelerating field} 
+\subsection{Longitudinal field} 
 The electric field parallel to the propagation of the beam driver, the so-called longitudinal plasma wakefield, drives particles to either accelerate or decelerate and consequently determines the efficiency of our plasma beam dump. Hence, in this section we derive an expression for this field in the linear regime considered above. 
 From Maxwell's equations (\ref{Maxwell1}-\ref{Maxwell4}) it is straightforward to show that the electric field in the plasma obeys a wave equation:
 \begin{equation}
@@ -119,20 +119,20 @@ We note that in this form the two contributions from the beam, $\vec{J}_b$ and $
 %At this point it should be noted that a setting the beam velocity to $\beta=1$ before solving this equation, as we have done here, is technically not valid...... However, the effect of this is altogether negligible in our case (calc extra term from their paper).\\
 \begin{equation}
  \left(\frac{\partial^2 }{\partial r^2}+\frac{1}{r}\frac{\partial }{\partial r} -k^2_p\right)\wtilde{E}_z
-=4\pi ik_p^2 \frac{k}{k^2-k_p^2}\wtilde{\rho}_b
+=4\pi ik_p^2 \frac{k}{k^2-k_p^2}\wtilde{\rho}_b~,
 \label{diffeq_in_transformspace}
 \end{equation}
 which we define in a compact form as $\mathscr{L}\wtilde{E}_z= \wtilde{f}(r,k)$. This is the Fourier transformed version of equation (\ref{Ez_wave_equation}), which has the advantage of the source term $\wtilde{f}(r,k)$ being a function of the beam density alone. Hence by solving this this PDE we can find $E_z$ through an inverse Fourier transform. This is again done by finding its Green's function, $G(\vec{r},\vec{r}')$, which in cylindrical coordinate satisfies
 \begin{equation}
-\mathscr{L}G(\vec{r},\vec{r}')=\frac{1}{r}\delta(r-r')\delta(\phi-\phi')\delta(z-z')
+\mathscr{L}G(\vec{r},\vec{r}')=\frac{1}{r}\delta(r-r')\delta(\phi-\phi')\delta(z-z')~,
 \end{equation}
 where the delta function has been written in cylindrical polar coordinates. Since the PDE is radial we can write the Green's function as
 \begin{equation}
-G(\vec{r},\vec{r}')=G_r(r,r')\delta(\phi-\phi')\delta(z-z')
+G(\vec{r},\vec{r}')=G_r(r,r')\delta(\phi-\phi')\delta(z-z')~,
 \end{equation}
 which leads to 
 \begin{equation}
-\mathscr{L}G_r(r,r')=\frac{1}{r}\delta(r-r')
+\mathscr{L}G_r(r,r')=\frac{1}{r}\delta(r-r')~,
 \label{greens_diff_eq}
 \end{equation}
 where left-hand side is the modified Bessel function of order zero \cite{Jackson1962}. Consequently, the Green's function is formed by linear combinations of the modified Bessel functions of order zero, denoted by $K_0$ and $I_0$: %\todo{Standard Bessel function with complex arguments} the linearly independent, 
@@ -146,16 +146,16 @@ By requiring that the two parts of this expression each satisfy one of the bound
 \begin{equation}
 G\left(r,r'\right)=A_0\left\{ \begin{array}{ll}
 I_0(k_pr)K_0(k_pr') &,~ 0<r<r'\\
-I_0(k_pr')K_0(k_pr)  &,~ r'<r<\infty
+I_0(k_pr')K_0(k_pr)  &,~ r'<r<\infty~,
 \end{array}\right.
 \end{equation}
 where $A_0$ is a constant of proportionality that we find by integrating %$\mathscr{L}G(r,r')=\delta(r-r')/r$ 
-equation (\ref{greens_diff_eq}) across the interval $r\in\left[r'-\epsilon, r'+\epsilon \right]$. This expression needs to be satisfied for all $\epsilon$, including the limit as $\epsilon\to 0$, such that
+equation (\ref{greens_diff_eq}) across the interval $\left[r'-\epsilon, r'+\epsilon \right]$. This expression needs to be satisfied for all $\epsilon$, including the limit as $\epsilon\to 0$, such that
 %\begin{equation}
  %\lim_{\epsilon\to 0}\int_{r'-\epsilon}^{r'+\epsilon}\left(\frac{\partial^2 G}{\partial r^2}+\frac{1}{r}\frac{\partial G}{\partial r} -k^2_pG\right)\mathrm{d}r= \lim_{\epsilon\to 0}\int_{r'-\epsilon}^{r'+\epsilon}\frac{1}{r}\delta(r-r')\mathrm{d}r
  %\end{equation}
 \begin{equation}
-\lim_{\epsilon\to 0}\int_{r'-\epsilon}^{r'+\epsilon}\mathscr{L}G_r(r,r')\mathrm{d}r= \lim_{\epsilon\to 0}\int_{r'-\epsilon}^{r'+\epsilon}\frac{1}{r}\delta(r-r')\mathrm{d}r
+\lim_{\epsilon\to 0}\int_{r'-\epsilon}^{r'+\epsilon}\mathscr{L}G_r(r,r')\mathrm{d}r= \lim_{\epsilon\to 0}\int_{r'-\epsilon}^{r'+\epsilon}\frac{1}{r}\delta(r-r')\mathrm{d}r~,
  \end{equation}
  %\lim_{\epsilon\to 0}\Big[\frac{1}{k_p}\frac{\partial G}{\partial r} \Big]_{z-\epsilon}^{z+\epsilon}=
 % \begin{equation}
@@ -171,7 +171,7 @@ G\left(r,r'\right)=- I_0(k_pr)K_0(k_pr')\Theta(r'-r)-I_0(k_pr')K_0(k_pr)\Theta(r
 \end{equation}
 We can thus find $\wtilde{E}_z$ from 
 \begin{equation}
-\wtilde{E}_z(r,k)=\int_{0}^{\infty}G\left(r,r'\right)f(r',k)r'\mathrm{d}r'
+\wtilde{E}_z(r,k)=\int_{0}^{\infty}G\left(r,r'\right)f(r',k)r'\mathrm{d}r'~,
 \end{equation}
 and then perform an inverse Fourier transform to find the co-moving longitudinal wakefield:
 %\begin{equation}
@@ -179,13 +179,13 @@ and then perform an inverse Fourier transform to find the co-moving longitudinal
 %\end{equation}
 %Doing this yields 
 \begin{align}
-E_z(r,\xi)&=-{2ik_p^2}\int_{-\infty}^{\infty}\frac{ke^{ik\xi}}{k^2-k_p^2}\mathrm{d}k\int_0^{\infty}G\left(r,r'\right)\wtilde{\rho}_b(r')r'\mathrm{d}r'
+E_z(r,\xi)&=-{2ik_p^2}\int_{-\infty}^{\infty}\frac{ke^{ik\xi}}{k^2-k_p^2}\mathrm{d}k\int_0^{\infty}G\left(r,r'\right)\wtilde{\rho}_b(r')r'\mathrm{d}r'~.
 \label{e_z}
 \end{align}
 %For a known beam distribution $\rho_b(r,\xi)$ (add $\xi$ in all previous expressions?) this expression can be used to compute the resulting longitudinal electric field. We shall now proceed by calculating this for a bi-Gaussian bunch distribution. To do this, we could compute the electric field from the Green's function directly and then carrying out the inverse Fourier transform, or we could choose to first compute the field due to a point-particle and then convolving it with the bi-Gaussian distribution. We proceed by doing the latter by following the approach of Dawson \cite{Katsouleas1987} ; we choose a charge distribution with radial symmetry and a delta function in the $z$-direction to match our Green's function.
-For a known beam distribution $\rho_b(r,\xi)$ this expression can be used to compute the resulting longitudinal electric field. Of particular interest to us is the field induced by the propagation of an electron bunch that is Gaussian in both the transverse and longitudinal direction, a so-called bi-Gaussian bunch. To compute this we follow an approach by Dawson \cite{Katsouleas1987} and first evaluate the field due to a point-particle and then convolve it with our bi-Gaussian driver. We choose a radially symmetric point-particle distribution ${\rho}_{0}(r,\xi)$ to match our Green's function:
+For a known beam distribution $\rho_b(r,\xi)$ this expression can be used to compute the resulting longitudinal electric field. Of particular interest to us is the field induced by the propagation of an electron bunch that is Gaussian in both the transverse and longitudinal directions, a so-called bi-Gaussian bunch. To compute this we follow an approach by Dawson \cite{Katsouleas1987} and first evaluate the field due to a point-particle and then convolve it with our bi-Gaussian driver. We choose a radially symmetric point-particle distribution ${\rho}_{0}(r,\xi)$ to match our Green's function:
 \begin{align}
-{\rho}_{0}(r,\xi)=-\frac{e}{2\pi r}\delta(r-r')\delta(\xi) %\quad \Rightarrow\quad  \wtilde{\rho}_{b_0}(r,k)=\int_ {-\infty}^{\infty}\rho_b(r,\xi)e^{-ik\xi}\mathrm{d}\xi=\frac{e}{2\pi r}\delta(r-r')
+{\rho}_{0}(r,\xi)=-\frac{e}{2\pi r}\delta(r-r')\delta(\xi)~. %\quad \Rightarrow\quad  \wtilde{\rho}_{b_0}(r,k)=\int_ {-\infty}^{\infty}\rho_b(r,\xi)e^{-ik\xi}\mathrm{d}\xi=\frac{e}{2\pi r}\delta(r-r')
 \end{align}
 Substituting the Fourier transform of this into equation (\ref{e_z}) and performing a contour integrating in k-space yields 
 \begin{equation}
@@ -194,7 +194,7 @@ E_z(r,\xi)=2ek_p^2\cos(k_p\xi)G\left(r,r'\right)\Theta(\xi)~,
 \end{equation}
 where $\Theta(\xi)$ ensures causality is preserved. This is the so called single-particle wake function \cite{Katsouleas1987}. The longitudinal electric field resulting from an arbitrary radially-symmetric source distribution $n_b(r,\xi)$ is now given by convolving the source by the single-particle wake function:
 \begin{align}
-E_z(r,\xi)=2ek_p^2\int_0^{2\pi}\mathrm{d}\phi  \int_{-\infty}^{\infty} \cos(k_p(\xi-\xi'))\Theta(\xi-\xi')\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r'\right) n_b(r',\xi')r'\mathrm{d}r'
+E_z(r,\xi)=2ek_p^2\int_0^{2\pi}\mathrm{d}\phi  \int_{-\infty}^{\infty} \cos(k_p(\xi-\xi'))\Theta(\xi-\xi')\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r'\right) n_b(r',\xi')r'\mathrm{d}r'~.
 \end{align}
 %\begin{equation}
 %\wtilde{E}_z(r,k)=-2eik_p^2\frac{k}{k^2-k_p2}G\left(r,r'\right)
@@ -203,12 +203,12 @@ E_z(r,\xi)=2ek_p^2\int_0^{2\pi}\mathrm{d}\phi  \int_{-\infty}^{\infty} \cos(k_p(
 %\textcolor{red}{But my Green's function has a $A=-1$ as constant and not $A=4\pi$ as Bonatto and Gessner}\\The electric force is thus $F_z(r,\xi)=-eE_z(r,\xi)$. 
 To compare with simulations and experiments we now choose to convert from CGS to SI units by having $e^{\text{CGS}}\to e^{SI}/\sqrt{4\pi\epsilon_0}$. The longitudinal wakefield in SI units (J/m) is thus
 \begin{equation}
-E_z(r,\xi)=\frac{e k_p^2}{\epsilon_0} \int_{-\infty}^{\xi} \cos(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r'\right) n_b(r',\xi')r'\mathrm{d}r'
+E_z(r,\xi)=\frac{e k_p^2}{\epsilon_0} \int_{-\infty}^{\xi} \cos(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}G\left(r,r'\right) n_b(r',\xi')r'\mathrm{d}r'~.
 \label{longitudinalforce}
 \end{equation}
 To test the validity of the linear fluid model as well as highlight some key features of the longitudinal wakefield we will calculate this field numerically for a 1 GeV bi-Gaussian bunch with a density of the form
 \begin{equation}
-n_b(r,\xi)=\frac{N_b}{(2\pi)^{3/2}\sigma_r^2\sigma_{\xi}}e^{-\xi/(2\sigma_{\xi}^2)-r/(2\sigma_{r}^2)}
+n_b(r,\xi)=\frac{N_b}{(2\pi)^{3/2}\sigma_r^2\sigma_{\xi}}e^{-\xi/(2\sigma_{\xi}^2)-r/(2\sigma_{r}^2)}~,
 \label{bigaussian}
 \end{equation}
 \begin{figure}
@@ -218,13 +218,13 @@ n_b(r,\xi)=\frac{N_b}{(2\pi)^{3/2}\sigma_r^2\sigma_{\xi}}e^{-\xi/(2\sigma_{\xi}^
 \label{longitudinal_plot}
 \end{figure}
 \clearpage
-\noindent where $N_b$ is the number of electrons in the bunch and $\sigma_{\xi}$ and $\sigma_r$ are the standard deviation of the bunch in the longitudinal and transverse directions. At this stage we will also compare these calculations to equivalent two-dimensional PIC simulations using EPOCH, as described in chapter 2.  We choose a plasma density $n_p=100n_b$ to ensure that the electron beam is in the linear regime. We also set the bunch dimensions to $\sigma_{\xi}=\sigma_r=5~\mu\text{m}$ and $N_b=10^6$ to allow for later comparisons with the simulations presented in chapter 4. The beam dump that we have in mind will not necessarily have the beam in the linear regime, however the linear-regime simulations in this chapter will function as a benchmark for the validity of the linear model. The resulting two-dimensional co-moving longitudinal wakefield from this simulations is shown in figure (\ref{longitudinal_plot}), where the beam has propagated only $200~\mu\text{m}$ to the right to minimize bunch distortions. Remembering that these fields are induced by electron density modulations this plot clearly shows the oscillatory density-perturbations described by equation (\ref{density_perturbation}). To allow for comparison with equation (\ref{longitudinalforce}) we extract the data for the electric field at $Y=0$ and compare to calculations at $r=|y|=0$, the result of which is shown in figure \ref{theory_vs_simulation_longitudinal}. We note that the theoretical calculations and the simulations are indeed in good agreement, with the linear model predicting both the amplitude and the wavelength of the induced plasma wakefield. We also note that the electric field is positive along the bunch, implying that there is a decelerating force on the electron bunch. We can also identify some of the features that previous studies have found. In particular, the energy chirp found by Wu et. al, figure \ref{Wu}, can be explained by the fact that both theory and simulation predict that the head of the bunch, $\xi>0$, should experience a near-zero electric field. As a result, energy loss should only occur through scattering mechanisms, which are entirely negligible compared to the effect of this wakefield \cite{Wu2010}. We may furthermore predict that this method can not fully deplete the energy of the beam on its own. For, assuming that the electric field maintains its form as the beam propagates, as soon as particles lose enough energy to fall behind the rest of the bunch, they will end up in a region of negative electric field, $-25<\xi<-15 ~\mu\text{m}$, and subsequently get re-accelerated. One method for dealing with this was described in chapter 1, whereby Wu et al. \cite{Wu2010}. simulated the use of foils to prevent particles reaching the re-acceleration region. The other method, proposed by Hanahoe et al. \cite{Hanahoe2017} was to let the beam propagate through an increasing plasma density. Although this method has not been simulated so far, if the proposed experiments at FLASHForward at DESY in 2019 include the possibility to test this proposal this method will need to be explored further in the upcoming report. This method utilizes transverse wakefields, which we cover below for completeness. 
+\noindent where $N_b$ is the number of electrons in the bunch and $\sigma_{\xi}$ and $\sigma_r$ are the standard deviation of the bunch in the longitudinal and transverse directions. At this stage we will also compare these calculations to equivalent two-dimensional PIC simulations using EPOCH, as described in chapter 2.  We choose a plasma density $n_p=100n_b$ to ensure that the electron beam is in the linear regime. We also set the bunch dimensions to $\sigma_{\xi}=\sigma_r=5~\mu\text{m}$ and $N_b=10^6$ to allow for later comparisons with the simulations presented in chapter 4. The beam dump that we have in mind will not necessarily have the beam in the linear regime, however the linear-regime simulations in this chapter will function as a benchmark for the validity of the linear model. The resulting two-dimensional co-moving longitudinal wakefield from this simulations is shown in figure \ref{longitudinal_plot}, where the beam has propagated only $200~\mu\text{m}$ to the right to minimize bunch distortions. Remembering that these fields are induced by electron density modulations this plot clearly shows the oscillatory density-perturbations described by equation (\ref{density_perturbation}). To allow for comparison with equation (\ref{longitudinalforce}) we extract the data for the electric field at $Y=0$ and compare to calculations at $r=|Y|=0$, the result of which is shown in figure \ref{theory_vs_simulation_longitudinal}. We note that the theoretical calculations and the simulations are indeed in good agreement, with the linear model predicting both the amplitude and the wavelength of the induced plasma wakefield. We also note that the electric field is positive along the bunch, implying that there is a decelerating force on the electron bunch. We can also identify some of the features that previous studies have found. In particular, the energy chirp found by Wu et. al, figure \ref{Wu}, can be explained by the fact that both theory and simulation predict that the head of the bunch, $\xi>0$, should experience a near-zero electric field. As a result, energy loss should only occur through scattering mechanisms, which are entirely negligible compared to the effect of this wakefield \cite{Wu2010}. We may furthermore predict that this method can not fully deplete the energy of the beam on its own. For, assuming that the electric field maintains its form as the beam propagates, as soon as particles lose enough energy to fall behind the rest of the bunch, they will end up in a region of negative electric field, $-25<\xi<-15 ~\mu\text{m}$, and subsequently get re-accelerated. One method for dealing with this was described in chapter 1, whereby Wu et al. \cite{Wu2010}. simulated the use of foils to prevent particles reaching the re-acceleration region. The other method, proposed by Hanahoe et al. \cite{Hanahoe2017} was to let the beam propagate through an increasing plasma density. Although this method has not been simulated so far, if recently proposed experiments at the FLASHForward facility at DESY in 2019 include the possibility to test this proposal this method will need to be explored further in the upcoming report. This method utilizes transverse wakefields, which we cover below for completeness. 
 
 \vspace{-50pt}
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{test2.pdf}
-\caption{\small{Plot comparing the longitudinal wakefield on axis, $r=0$, for PIC simulation and linear fluid theory for $n_p/n_b=100$. The simulation data corresponds to values along the dotted line in figure \ref{longitudinal_plot}. The theory prediction is given by equation  (\ref{longitudinalforce}).The Gaussian bunch distribution in the longitudinal direction is also shown.}}
+\caption{\small{Plot comparing the longitudinal wakefield on axis, $r=0$, for PIC simulation and linear fluid theory for $n_p/n_b=100$. The simulation data corresponds to values along the dotted line in figure \ref{longitudinal_plot}. The theory prediction is given by equation  (\ref{longitudinalforce}). The Gaussian bunch distribution in the longitudinal direction is also shown.}}
 \label{theory_vs_simulation_longitudinal}
 \end{figure}\vspace{50pt}
 \subsection{Transverse field} 
@@ -245,7 +245,7 @@ The transverse force on a bi-Gaussian bunch can now by found by applying this ex
 \label{transverse_plot}
 \end{figure}
 \begin{equation}
-W_{\perp}(r,\xi)=\frac{e k_p}{\epsilon_0} \int_{-\infty}^{\xi} \sin(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}\frac{\partial G\left(r,r'\right)}{\partial r} \frac{n_b(r',\xi')}{\partial r'}
+W_{\perp}(r,\xi)=\frac{e k_p}{\epsilon_0} \int_{-\infty}^{\xi} \sin(k_p(\xi-\xi'))\mathrm{d}\xi' \int_{0}^{\infty}\frac{\partial G\left(r,r'\right)}{\partial r} \frac{n_b(r',\xi')}{\partial r'}~.
 r'\mathrm{d}r'
 \label{transverse_wakefield}
 \end{equation}
@@ -258,13 +258,13 @@ For consistency we also extract $E_r$ and $B_{\theta}$ from the same simulation 
 \end{figure}
 
 \subsection{Plasma deceleration}
-Electrons in the bunch that are in a decelerating region will lose energy; this is the general idea behind the plasma beam dump. Since we can calculate the electric field at any position ($\xi,r$) along the bunch we can estimate the energy loss by calculating the work carried out by the longitudinal electric field. This is the approach taken by Bonatto et al. \cite{Bonatto2016} to estimate the distance required to dump various beams in their passive or active plasma beam-dump scenarios. Assuming that there occurs no modulation of the particle bunch as it propagates through the plasma, the energy of one particle in the beam at position $(r,\xi)$ after travelling a distance $s$ is given by:
+Electrons in the bunch that are in a decelerating region will lose energy; this is the general idea behind the plasma beam dump. Since we can calculate the electric field at any position ($r,\xi$) along the bunch we can estimate the energy loss by calculating the work carried out by the longitudinal electric field. This is the approach taken by Bonatto et al. \cite{Bonatto2015} to estimate the distance required to dump various beams in their passive or active plasma beam-dump scenarios. Assuming that there occurs no modulation of the particle bunch as it propagates through the plasma, the energy of one particle in the beam at position $(r,\xi)$ after travelling a distance $s$ is given by:
 \begin{equation}
 U_e(r,\xi,s)=U_e(r,\xi,0)-seE_z(r,\xi)~,
 \end{equation}
 from which multiplication by the beam number density $n_b(r,\xi)$ and integration over the volume of the bunch gives the total energy of all particles in the bunch as a function of propagation distance:
 \begin{equation}
-U(s)=\int  U_0-se\int E_z(r,\xi)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi
+U(s)=U_0-se\int E_z(r,\xi)n_b(r,\xi)r\mathrm{d}r\mathrm{d}\xi\mathrm{d}\phi~,
 \label{energy_loss_bonatto}
 \end{equation}
 where $E_z$ and $n_b$ are found from equations (\ref{longitudinalforce}) and (\ref{bigaussian}). A program to compute this numerically has not yet been implement, but we endeavour to do so in the latter part of this project to allow for comparisons between the linear theory and simulations.
