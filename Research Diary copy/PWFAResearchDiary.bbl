@@ -1,0 +1,52 @@
+\begin{thebibliography}{1}
+
+\bibitem{Chou2016}
+Shao-Wei Chou.
+\newblock {Investigation of electron acceleration and deceleration in plasmas}.
+\newblock 2016.
+
+\bibitem{Bonatto2015}
+A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~G.R. Geddes, C.~Benedetti,
+  E.~Esarey, and W.~P. Leemans.
+\newblock {Passive and active plasma deceleration for the compact disposal of
+  electron beams}.
+\newblock {\em Physics of Plasmas}, 22(8), 2015.
+
+\bibitem{Bonatto2016}
+A.~Bonatto, C.~B. Schroeder, J.~L. Vay, C.~R. Geddes, C.~Benedetti, E.~Esarey,
+  and W.~P. Leemans.
+\newblock {Compact disposal of high-energy electron beams using passive or
+  laser-driven plasma decelerating stage}.
+\newblock {\em AIP Conference Proceedings}, 1777(1):0--5, 2016.
+
+\bibitem{Lu2005}
+W.~Lu, C.~Huang, M.~M. Zhou, W.~B. Mori, and T.~Katsouleas.
+\newblock {Limits of linear plasma wakefield theory for electron or positron
+  beams}.
+\newblock {\em Physics of Plasmas}, 12(6):1--8, 2005.
+
+\bibitem{Wu2010}
+H.~C. Wu, T.~Tajima, D.~Habs, A.~W. Chao, and J.~Meyer-ter Vehn.
+\newblock {Collective deceleration: Toward a compact beam dump}.
+\newblock {\em Physical Review Special Topics - Accelerators and Beams},
+  13(10):1--8, 2010.
+
+\bibitem{Chou2016a}
+S.~Chou, J.~Xu, K.~Khrennikov, D.~E. Cardenas, J.~Wenz, M.~Heigoldt,
+  L.~Hofmann, L.~Veisz, and S.~Karsch.
+\newblock {Collective Deceleration of Laser-Driven Electron Bunches}.
+\newblock {\em Physical Review Letters}, 117(14):1--5, 2016.
+
+\bibitem{Hanahoe2017}
+Kieran Hanahoe, Guoxing Xia, Mohammad Islam, Yangmei Li, {\"{O}}znur
+  Mete-Apsimon, Bernhard Hidding, and Jonathan Smith.
+\newblock {Simulation study of a passive plasma beam dump using varying plasma
+  density}.
+\newblock {\em Physics of Plasmas}, 24(2), 2017.
+
+\bibitem{Bennett2015}
+K.~Bennett.
+\newblock {EPOCH Users Manual for the EPOCH PIC codes, Ver. 4.3.4}.
+\newblock 2015.
+
+\end{thebibliography}
